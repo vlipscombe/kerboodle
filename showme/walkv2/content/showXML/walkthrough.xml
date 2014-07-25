@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <topic>
+	<topicTitle>Next Generation Kerboodle</topicTitle>
+	<topicDialog><![CDATA[New Kerboodle is:
+	<ul>
+<li>A comprehensive, flexible assessment solution</li>
+<li>Full of inspiring resources</li>
+<li>Compatible with tablets</li>
+<li>Simple to navigate</li>
+<li>Customisable - it's easy to add your own content</li>
+<li>Complete with lots of support</li>
+</ul>
+Click <b>OK</b> to see how it works.
+]]></topicDialog>
+	<steps>
+		<step>
+			<stepTitle>User homepage</stepTitle>
+			<stepTextTip><![CDATA[Browse your available Kerboodle courses, and see a quick update on your live assignments.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/01_userHomepage.png</stepScreen>
+			<stepHotspot>44,169,145,214</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Course homepage</stepTitle>
+			<stepTextTip><![CDATA[<p>Use these tabs to browse the different sections of your Kerboodle course.</p>Most courses will have dedicated sections for Lessons, Resources, Assessment, Markbook and Kerboodle Books.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/02_courseHomepage.png</stepScreen>
+			<stepHotspot>204,69,548,90</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Resources section</stepTitle>
+			<stepTextTip><![CDATA[Click on the <b>Resources</b> tab to search the collection of class resources, such as videos, interactives and worksheets.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/03_resourcesModule.png</stepScreen>
+			<stepHotspot>277,70,323,89</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Resources section</stepTitle>
+			<stepTextTip><![CDATA[Find the content you want by using the course structure on the left...]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/03_resourcesModule.png</stepScreen>
+			<stepHotspot>24,227,110,253</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Resources section</stepTitle>
+			<stepTextTip><![CDATA[<p>...or the keyword search at the top.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/03_resourcesModule.png</stepScreen>
+			<stepHotspot>152,105,404,121</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Resources section</stepTitle>
+			<stepTextTip><![CDATA[Click on a resource title to view and play content.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/03_resourcesModule.png</stepScreen>
+			<stepHotspot>162,242,342,255</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Resource overlay</stepTitle>
+			<stepTextTip><![CDATA[<p>You can control which Resources your students can freely access.</p>Items in the Assessment area are only available to students if you choose to assign them.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/04_resourceOverlay.png</stepScreen>
+			<stepHotspot>457,349,520,368</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Assessment module</stepTitle>
+			<stepTextTip><![CDATA[You can make an assignment from the <b>Assessment</b> module.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/05_assessmentModule.png</stepScreen>
+			<stepHotspot>326,67,376,89</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Assessment module</stepTitle>
+			<stepTextTip><![CDATA[Simply select the item and click <b>Assign</b>.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/05_assessmentModule.png</stepScreen>
+			<stepHotspot>199,152,233,167</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Assignment dialogue</stepTitle>
+			<stepTextTip><![CDATA[<p>You can set dates and instructions, and choose which groups or individual students to assign to.</p>All assignments are then tracked through the Markbook.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/06_assignmentDialogue.png</stepScreen>
+			<stepHotspot>88,97,467,192</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Markbook</stepTitle>
+			<stepTextTip><![CDATA[From the <b>Markbook</b> you can adjust assignments, view submitted work, complete marking, and see results.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/07_markbook.png</stepScreen>
+			<stepHotspot>378,69,425,90</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Markbook</stepTitle>
+			<stepTextTip><![CDATA[You can easily run a number of reports for an overview of results, or to export data.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/07_markbook.png</stepScreen>
+			<stepHotspot>178,154,359,171</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Diagnostic report</stepTitle>
+			<stepTextTip><![CDATA[There are 3 different types of reports you can generate from the Markbook, including this Diagnostic report.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/08_diagnosticReport.png</stepScreen>
+			<stepHotspot>76,99,457,118</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Diagnostic report</stepTitle>
+			<stepTextTip><![CDATA[This particular report provides a question-by-question view of marks achieved in interactive assessments, as well as quick access to the actual submitted work.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/08_diagnosticReport.png</stepScreen>
+			<stepHotspot>83,188,445,214</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Diagnostic report</stepTitle>
+			<stepTextTip><![CDATA[All reports can be printed, or exported into a spreadsheet for use in other systems, and to inform your lesson planning.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/08_diagnosticReport.png</stepScreen>
+			<stepHotspot>404,342,453,353</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Lessons module</stepTitle>
+			<stepTextTip><![CDATA[Go to the <b>Lessons</b> module to find planning materials, and to use the updated Lesson Player function.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/09_lessonsModule.png</stepScreen>
+			<stepHotspot>236,68,276,88</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Lessons module</stepTitle>
+			<stepTextTip><![CDATA[Some courses will contain a number of Lesson Players for you to adapt and use, but you can also create your own.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/09_lessonsModule.png</stepScreen>
+			<stepHotspot>0,146,85,159</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Lesson player</stepTitle>
+			<stepTextTip><![CDATA[The new Lesson Player contains screen space for illustrations and text, to support your teaching in Lessons.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/10_lessonPlayerScreen.png</stepScreen>
+			<stepHotspot>0,16,560,41</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Lesson player</stepTitle>
+			<stepTextTip><![CDATA[Resources such as interactives, videos and worksheets can be launched from the side.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/10_lessonPlayerScreen.png</stepScreen>
+			<stepHotspot>442,39,552,98</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Lesson player</stepTitle>
+			<stepTextTip><![CDATA[Annotate the lesson to make it personal to your class...]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/10_lessonPlayerScreen.png</stepScreen>
+			<stepHotspot>271,369,318,386</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Lesson player</stepTitle>
+			<stepTextTip><![CDATA[...and click on the <b>Notes</b> to see information to support your teaching.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/10_lessonPlayerScreen.png</stepScreen>
+			<stepHotspot>63,367,114,388</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Lesson player</stepTitle>
+			<stepTextTip><![CDATA[Open the relevant Kerboodle book to just the right page with one click.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/10_lessonPlayerScreen.png</stepScreen>
+			<stepHotspot>322,370,393,386</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Within a Digital book</stepTitle>
+			<stepTextTip><![CDATA[From the Kerboodle book you have direct access to all course resources using the <b>Resources</b> button...]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/11_openDigitalBook.png</stepScreen>
+			<stepHotspot>117,376,174,393</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Within a Digital book</stepTitle>
+			<stepTextTip><![CDATA[...though some books will also contain quicklinks on the page itself.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/11_openDigitalBook.png</stepScreen>
+			<stepHotspot>352,73,372,91</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Within a Digital book</stepTitle>
+			<stepTextTip><![CDATA[Use the digital notebook, bookmark, and annotation tools, to personalise your copy.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/11_openDigitalBook.png</stepScreen>
+			<stepHotspot>193,374,257,395</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Within a Digital book</stepTitle>
+			<stepTextTip><![CDATA[Zoom in on the page to focus on a particular section...]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/11_openDigitalBook.png</stepScreen>
+			<stepHotspot>274,374,391,395</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Within a Digital book</stepTitle>
+			<stepTextTip><![CDATA[...and use the navigation buttons to move through the book.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/11_openDigitalBook.png</stepScreen>
+			<stepHotspot>408,374,551,395</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Digital book module</stepTitle>
+			<stepTextTip><![CDATA[Go to the <b>Digital Book</b> module to access all your Kerboodle books for this course...]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/12_digitalBookModule.png</stepScreen>
+			<stepHotspot>424,68,477,89</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Digital book module</stepTitle>
+			<stepTextTip><![CDATA[...then click on the cover of the book you wish to open.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/12_digitalBookModule.png</stepScreen>
+			<stepHotspot>206,147,352,295</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Digital book module</stepTitle>
+			<stepTextTip><![CDATA[Detailed <b>Help</b> is always available from any part of the site...]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/12_digitalBookModule.png</stepScreen>
+			<stepHotspot>481,23,506,38</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Digital book module</stepTitle>
+			<stepTextTip><![CDATA[...just click on the <b>Help</b> or <b>Support</b> link to be taken to the Support website.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/12_digitalBookModule.png</stepScreen>
+			<stepHotspot>311,384,350,398</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Support site</stepTitle>
+			<stepTextTip><![CDATA[Extensive online support is available for Teachers, Students, the Administrator, and Technicians...]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/13_supportSite.png</stepScreen>
+			<stepHotspot>132,251,274,279</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Support site</stepTitle>
+			<stepTextTip><![CDATA[...but you can contact us directly any time you need to.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/13_supportSite.png</stepScreen>
+			<stepHotspot>432,108,472,125</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Find out more</stepTitle>
+			<stepTextTip><![CDATA[If you need any more information, or want to place an order, simply get in touch! <ul> <li><b>Call</b> us on 01536 452620</li> <li><b>Email</b> us at schools.orders.uk@oup.com</li><li><b>Visit</b> <a href="http://www.oxfordsecondary.co.uk/kerboodle" target="_blank"> our website</a></li></ul> ]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/14_contactUs.png</stepScreen>
+		</step>
+	</steps>
+</topic>

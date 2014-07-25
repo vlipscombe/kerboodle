@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <step>
+	<contextInfo>
+		<title>How to Rename a Folder in your Messages page</title>
+		<id>renameFolder</id>
+		<parent>messages</parent>
+		<previousTitle>Overview of the Events Tab</previousTitle>
+		<previousLink>eventTab</previousLink>
+		<nextTitle></nextTitle>
+		<nextLink></nextLink>
+	</contextInfo>
+	<content>
+		<code><![CDATA[
+				<ol>
+					<li>Click on the name of your Folder to select it.</li>
+					<li>Click the <b>Rename</b> button.</li>
+				</ol>
+		]]></code>
+	</content>
+</step>

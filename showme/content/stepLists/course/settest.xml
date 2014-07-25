@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <step>
+	<contextInfo>
+		<title>Tests</title>
+		<id>settest</id>
+		<parent>course</parent>
+		<previousTitle></previousTitle>
+		<previousLink></previousLink>
+		<nextTitle></nextTitle>
+		<nextLink></nextLink>
+	</contextInfo>
+	<content>
+		<code><![CDATA[
+			<p>To quickly assign a Test Yourself activity for your students to complete:</p>
+			<ol>
+				<li>Click on the <b>Tests</b> bar.</li>
+				<li>Click the on drop-down arrow next to the Test and select <b>Assign this test to your Teaching Groups</b>.</li>
+			</ol>
+			]]></code>
+	</content>
+</step>

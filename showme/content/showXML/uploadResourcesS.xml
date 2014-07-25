@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <topic>
+	<topicTitle>Uploading your own Resources</topicTitle>
+	<topicDialog><![CDATA[<p>As well as the Nelson Thornes content that is available on Kerboodle, you can also add your own resources so that all your studying material is in one place.</p>]]></topicDialog>
+	<steps>
+		<step>
+			<stepTitle>Access Course</stepTitle>
+			<stepTextTip><![CDATA[<p>Once logged into Kerboodle, access your course by clicking on the <b>course name</b> on your homepage.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/students/uploadResources1.png</stepScreen>
+			<stepHotspot>10,153,95,165</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>My Resources</stepTitle>
+			<stepTextTip><![CDATA[<p>Click on the <b>My Resources</b> bar.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/students/uploadResources2.png</stepScreen>
+			<stepHotspot>150,315,544,333</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Upload a resource</stepTitle>
+			<stepTextTip><![CDATA[<p>Click on the <b>Upload a Resource</b> button.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/students/uploadResources3.png</stepScreen>
+			<stepHotspot>360,208,426,219</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Browse and Name</stepTitle>
+			<stepTextTip><![CDATA[<p>In the pop-up, <b>Browse</b> for your file and enter a <b>Name</b>.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/students/uploadResources4.png</stepScreen>
+			<stepHotspot>248,94,422,124</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Upload</stepTitle>
+			<stepTextTip><![CDATA[<p>Enter a <b>Description</b> and <b>Keywords</b>: keywords will be included when using the Search feature in the Library.</p><p>Then click on the <b>Upload</b> button.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/students/uploadResources5.png</stepScreen>
+			<stepHotspot>247,134,414,261</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Resource Appears</stepTitle>
+			<stepTextTip><![CDATA[<p>Your resource will then appear in the <b>My Resources</b> section.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/students/uploadResources6.png</stepScreen>
+			<stepHotspot></stepHotspot>	
+		</step>
+	</steps>	
+ </topic>

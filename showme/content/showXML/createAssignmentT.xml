@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <topic>
+	<topicTitle>Creating an assignment</topicTitle>
+	<topicDialog><![CDATA[INTRO TEXT ...........]]></topicDialog>
+	<steps>
+		<step>
+			<stepTitle>Assignment tab</stepTitle>
+			<stepTextTip><![CDATA[To create an assignment, click on the tab which reads Assessment or Assignment.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/assignment_01_tab.png</stepScreen>
+			<stepHotspot>343,43,391,60</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Select assignment materials</stepTitle>
+			<stepTextTip><![CDATA[Select the test item that you wish to assign by clicking on the box to the left of the item's title. You can also add support items to the assignment by selecting these as well. Once you have selected all the material, click Assign towards the top of the screen.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/assignment_02_select.png</stepScreen>
+			<stepHotspot>91,119,122,133</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Assignment overlay</stepTitle>
+			<stepTextTip><![CDATA[In the screen that appears you can edit the assignment's title, leave instructions to your students, set a start and end date, add further resources and select which groups or students you wish to set this work to. ]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/assignment_03_overlay1.png</stepScreen>
+			<stepHotspot>79,169,124,184</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Assignment overlay</stepTitle>
+			<stepTextTip><![CDATA[Once you have selected one or more groups to assign to, clicking on the students tab allows you to remove individual students. Once you've finished filling in the assignment's information, click Assign to send it to your students.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/assignment_04_overlay2.png</stepScreen>
+			<stepHotspot>352,324,383,339</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Confirmation</stepTitle>
+			<stepTextTip><![CDATA[You will see a confirmation message when you have successfully sent the assignment to your students. To view the assignment, or edit its details, click on the Markbook tab.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/assignment_05_confirm.png</stepScreen>
+			<stepHotspot>324,155,343,170</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Markbook tab</stepTitle>
+			<stepTextTip><![CDATA[Open the assignment to view more information, or to edit its details. ]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/assignment_06_markbook.png</stepScreen>
+			<stepHotspot>391,42,434,59</stepHotspot>
+		</step>
+	</steps>	
+ </topic>

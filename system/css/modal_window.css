@@ -1,0 +1,88 @@
+﻿
+th .modal_container {
+    float: right;
+    width: 16px;
+    height: 16px;
+}
+
+.modal_container {
+    position: relative;
+}
+
+.modal_container.overlay {
+    z-index: 2;
+}
+
+.inline_modal {
+    display: inline;
+}
+
+.modal_container .modal_link {
+    
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+}
+
+.modal_container .modal_link.auto_width {
+    width: auto;
+    height:auto;
+    display:inline;
+}
+
+.modal_container .modal_link.whitespace {
+    height: 20px;
+}
+
+.modal_container .modal_window {
+    position: absolute;
+    display: none;
+    padding-top: 28px;
+    z-index: 5000;
+    top: 0px;
+    right: 0px;
+    width: 440px;
+    text-align: left;
+    white-space: normal;
+    font-weight: normal;
+    line-height: 1.4em;
+    background-color: #FFFFFF;
+    border: 1px solid #6C6869;
+}
+
+.modal_container.wide .modal_window {
+    width: 700px;
+}
+
+.modal_container .modal_window .inner {
+    padding: 0px 20px;
+    width: 400px;
+    height: 200px;
+    overflow: auto;
+}
+
+.modal_container.wide .modal_window .inner {
+    width: 660px;
+}
+
+.modal_container.allow_hover:hover .modal_window,
+.modal_container.selected .modal_window {
+    display: block;
+}
+
+.modal_container .modal_window .close_link {
+    position: absolute;
+    display: none;
+    top: 6px;
+    right: 10px;
+    height: 15px;
+    line-height: 15px;
+}
+
+.modal_container.selected .modal_window .close_link {
+    display: block;
+}
+
+.modal_container .modal_window h3 {
+    margin-top: 0px;
+}

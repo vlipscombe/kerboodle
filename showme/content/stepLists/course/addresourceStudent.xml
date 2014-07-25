@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <step>
+	<contextInfo>
+		<title>My Resources</title>
+		<id>student_addresource</id>
+		<parent>course</parent>
+		<previousTitle></previousTitle>
+		<previousLink></previousLink>
+		<nextTitle>Create a New Test</nextTitle>
+		<nextLink>createTest</nextLink>
+	</contextInfo>
+	<content>
+		<code><![CDATA[
+			<p>Use the <b>My Resources</b> section to add your own resources, then all your studying material is in one place.</p>
+			<ol>
+				<li>Click on the <b>My Resources</b> bar.</li>
+				<li>Click on the <b>Upload a resource</b> button.</li>
+				<li>Browse to find your file, and click <b>Upload</b>.</li>
+			</ol>
+			<p><font color='#39A4DD'><b>Prefer to see it in action?</b></font> <a href="http://www.kerboodle.com/help/secondary/showMeHow.html?students??uploadResourcesS" onclick="window.open(this.href,'_blank','width=800,height=600,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes');return false;">Uploading your own Resources</a></p>
+		]]></code>
+	</content>
+</step>

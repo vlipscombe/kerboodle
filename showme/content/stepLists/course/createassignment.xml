@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <step>
+	<contextInfo>
+		<title>Assignments</title>
+		<id>createassignment</id>
+		<parent>course</parent>
+		<previousTitle></previousTitle>
+		<previousLink></previousLink>
+		<nextTitle></nextTitle>
+		<nextLink></nextLink>
+	</contextInfo>
+	<content>
+		<code><![CDATA[
+			<p>By using the assignments feature, you can assign work to your students through Kerboodle in order to mark returned work and track student progress.</p>
+			<ol>
+				<li>In the Library, select the resources you would like to include in your assignment by ticking the boxes alongside the resource names.</li>
+				<li>Click on the <b>Select an Action</b> drop down and choose <b>Assign these resources to your Teaching Groups</b>.</li>
+				<li>Complete the details in the pop-up screen and click <b>Assign</b>.</li>				
+			</ol>
+			<p><font color='#39A4DD'><b>Prefer to see it in action?</b></font>
+			<p><a href="http://www.kerboodle.com/help/secondary/showMeHow.html?teachers??createAssignment" onclick="window.open(this.href,'_blank','width=800,height=600,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes');return false;">Creating Assignments</a></p>
+			<p><a href="http://www.kerboodle.com/help/secondary/showMeHow.html?teachers??assignLesson" onclick="window.open(this.href,'_blank','width=800,height=600,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes');return false;">Assigning Lessons to Students</a></p>
+		]]></code>
+	</content>
+</step>

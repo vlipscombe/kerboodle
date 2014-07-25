@@ -1,0 +1,3486 @@
+﻿
+/*-----------------------------------------------------------------------------------------*/
+/* Site containers (with default text styles), clearing div and hr divider */
+
+body {
+    margin: 0px;
+    color: #6C6869;
+    font-size: 0.7em;
+    line-height: 1.4em;
+    font-family: Verdana, Geneva, Arial, Helvetica, Tahoma, Sans-Serif;
+    background-color: #EAE6DF;
+}
+
+div.clearer,
+div.left_clearer {
+    height: 0px;
+    line-height: 0px;
+    overflow: hidden;
+}
+
+div.clearer {
+    clear: both;
+}
+
+div.left_clearer {
+    clear: left;
+}
+
+div.transparent_overlay {
+    position: fixed;
+    display: none;
+    top: 0px;
+    left: 0px;
+    z-index: 5000;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+}
+
+div.spinner {
+    position: fixed;
+    display: none;
+    margin-top: -30px;
+    margin-left: -30px;
+    top: 50%;
+    left: 50%;
+    z-index: 5010;
+    width: 60px;
+    height: 60px;
+    background-image: url("../images/spinner.gif");
+    background-repeat: no-repeat;
+    background-position: center center;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+
+#wrapper {
+    margin: 0px auto;
+    padding: 0px 40px 20px 40px;
+    width: 894px;
+}
+
+hr {
+    margin: 0px;
+    padding: 0px;
+    height: 1px;
+    color: #E2DEDC;
+    line-height: 1px;
+    background-color: #E2DEDC;
+    border: none;
+}
+
+hr.double_height {
+    clear: both;
+    margin: 15px 0px 24px 0px;
+    height: 2px;
+    line-height: 2px;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/* Text styles */
+
+/*------------------------------------------*/
+/* Links to files for custom fonts */
+
+/*------------------------------------------*/
+/* Default headings */
+
+h1 {
+    margin: 0px;
+    padding: 0px;
+    font-weight: normal;
+    font-size: 4.3em;
+    line-height: 1em;
+}
+
+h1.zone_title {
+    font-weight: bold;
+    font-size: 3.9em;
+    line-height: 1.1em;
+}
+
+h1.product_title {
+    margin-bottom: 16px;
+    font-size: 2.8em;
+    line-height: 1.1em;
+}
+
+h2 {
+    margin: 6px 0px 8px 0px;
+    padding: 0px;
+    font-weight: bold;
+    font-size: 1.3em;
+    line-height: 1.3em;
+}
+
+h2.strapline {
+    font-weight: normal;
+    font-size: 1.8em;
+    line-height: 1.2em;
+}
+
+h3 {
+    margin: 6px 0px;
+    padding: 0px;
+    font-weight: bold;
+    font-size: 1.1em;
+    line-height: 1.3em;
+}
+
+h3.series_contents {
+    margin-top: 0px;
+    font-size: 1.3em;
+}
+
+/*------------------------------------------*/
+/* Paragraphs */
+
+p {
+    margin: 14px 0px;
+}
+
+p.strapline {
+    margin: 4px 0px 0px 0px;
+    font-size: 2em;
+    line-height: 1.2em;
+}
+
+p.product_strapline {
+    margin: 0px;
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
+
+p.product_description_message {
+    padding: 6px 8px;
+    width: 212px;
+    border: 1px solid #8E898A;
+}
+
+/* Used on expert page for quote with large/bold blue quote marks */
+p.expert_quote {
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 1.15em;
+    background-image: url("../images/expert_quote_right.gif");
+    background-repeat: no-repeat;
+    background-position: 236px bottom;
+}
+
+p.expert_quote span {
+    display: inline-block;
+    padding: 0 26px 0 26px;
+    background-image: url("../images/expert_quote_left.gif");
+    background-repeat: no-repeat;
+}
+
+p.quote_source {
+    font-size: 0.8em;
+}
+
+p.margin_top_none {
+    margin-top: 0px !important;
+}
+
+p.margin_bottom_none {
+    margin-bottom: 0px !important;
+}
+
+p.margin_bottom_large {
+    margin-bottom: 20px !important;
+}
+
+span.strike {
+    text-decoration: line-through;
+}
+/*------------------------------------------*/
+/* Links */
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a img {
+    border: none;
+}
+
+#skip_to_content {
+    visibility: hidden;
+}
+
+/*------------------------------------------*/
+/* Form elements */
+
+input,
+textarea {
+    font-size: 1em;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+textarea {
+    padding: 3px 6px;
+    border-top: 1px solid #A4A2A3;
+    border-left: 1px solid #6F6D6D;
+    border-bottom: 1px solid #DFDEDE;
+    border-right: 1px solid #DFDEDE;
+}
+
+input[type=radio] {
+    margin-left: 0px;
+    margin-right: 4px;
+}
+
+input[type=submit] {
+    padding: 3px 5px;
+    font-weight: bold;
+    background: #072563;
+    border: 1px solid #072563;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    background: #274583;
+}
+
+label {
+    display: none;
+}
+
+label.visible,
+p.form_checkbox label,
+table.form_table span label {
+    display: inline;
+}
+
+p.form_checkbox {
+    line-height: 1.8em;
+}
+
+p.form_checkbox input {
+    position: relative;
+    margin: 0px 6px 0px 0px;
+    top: 2px;
+}
+
+/*------------------------------------------*/
+/* General purpose tables containing form elements */
+
+table.form_table {
+    margin: 10px 0px 20px 0px;
+    padding: 0px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.form_table td {
+    padding: 4px 14px 4px 0px;
+    vertical-align: top;
+}
+
+/* Used for 'table within a table' on generic form page */
+table.form_table td table td {
+    padding: 0px 3px 20px 0px;
+}
+
+table.form_table td table td.question_number {
+    width: 10px;
+}
+
+
+table.form_table span.form_radio {
+    padding-right: 20px;
+}
+
+table.form_table td hr {
+    margin: 10px 0px;
+}
+
+table.form_table td span,
+table.form_table td a {
+    display: block;
+    padding-top: 3px;
+    line-height: 15px;
+}
+
+table.form_table td.field span {
+    width: 170px;
+}
+
+table.form_table td div.error {
+    width: 100%;
+}
+
+table.form_table td div.error span {
+    float: left;
+    font-size: 0.8em;
+    line-height: 1.5em;
+}
+
+/* Used for star character next to error message */
+table.form_table td div.error span.marker {
+    width: 9px;
+}
+
+table.form_table td div.error span.message {
+    width: 232px;
+}
+
+table.alternate_width td div.error span.message {
+    width: 322px;
+}
+
+table.form_table td p {
+    margin: 0px;
+    padding-top: 3px;
+}
+
+table.form_table td table td p {
+    padding-bottom: 5px;
+}
+
+/* Extra positioning options */
+table.form_table td .margin_left {
+    margin-left: 6px;
+}
+
+table.form_table td .margin_right {
+    margin-right: 6px;
+}
+
+table.form_table td .float_left {
+    float: left !important;
+}
+
+table.form_table td .float_right {
+    float: right !important;
+}
+
+/*--------------------*/
+/* Each column (all rows have one of each) has a specific function/class associated with it. */
+
+/* Field name */
+table.form_table td.field {
+    width: 170px;
+    min-width: 170px;
+    max-width: 170px;
+    text-align: right;
+}
+
+/* Control associated with field */
+table.form_table td.value {
+    width: 260px;
+    min-width: 260px;
+    max-width: 260px;
+}
+
+/* Used on the generic form page for wider variant of value column */
+table.alternate_width td.value {
+    width: 350px;
+    min-width: 350px;
+    max-width: 350px;
+}
+
+/* Search tips and error messages */
+table.form_table td.message {
+    width: 241px;
+    min-width: 241px;
+    max-width: 241px;
+}
+
+/* Adjust width down to allow for wider value column */
+table.alternate_width td.message {
+    width: 151px;
+    min-width: 151px;
+    max-width: 151px;
+}
+
+table.form_table td.value input,
+table.form_table td.value textarea {
+    margin-top: 0px;
+    width: 246px;
+}
+
+table.alternate_width td.value input,
+table.alternate_width td.value textarea {
+    width: 336px;
+}
+
+table.form_table td.value textarea {
+    margin-bottom: 0px;
+}
+
+table.form_table td.value input[type=submit],
+input.form_submit {
+    display: block;
+    float: right;
+    padding: 1px 6px 2px 6px;
+    width: 130px;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 16px;
+    background: #1F68A5 !important; /* Old browsers */
+    background: -moz-linear-gradient(top, #1F68A5 0%, #14498A 50%, #042A6B 100%) !important; /* FF 3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1F68A5), color-stop(50%, #14498A), color-stop(100%, #042A6B)) !important; /* Chrome, Safari 4+ */
+    background: -webkit-linear-gradient(top, #1F68A5 0%, #14498A 50%, #042A6B 100%) !important; /* Chrome 10+, Safari 5.1+ */
+    background: -o-linear-gradient(top, #1F68A5 0%, #14498A 50%, #042A6B 100%) !important; /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #1F68A5 0%, #14498A 50%, #042A6B 100%) !important; /* IE 10+ */
+    background: linear-gradient(top, #1F68A5 0%, #14498A 50%, #042A6B 100%) !important; /* W3C */
+    border: 1px solid #042A6B !important;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+
+table.form_table td.value input[type=submit][disabled],
+input.form_submit[disabled] {
+    color: #BCBABB !important;
+    background: #7FA8B5 !important; /* Old browsers */
+    background: -moz-linear-gradient(top, #7FA8B5 0%, #74899A 50%, #646A7B 100%) !important; /* FF 3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7FA8B5), color-stop(50%, #74899A), color-stop(100%, #646A7B)) !important; /* Chrome, Safari 4+ */
+    background: -webkit-linear-gradient(top, #7FA8B5 0%, #74899A 50%, #646A7B 100%) !important; /* Chrome 10+, Safari 5.1+ */
+    background: -o-linear-gradient(top, #7FA8B5 0%, #74899A 50%, #646A7B 100%) !important; /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #7FA8B5 0%, #74899A 50%, #646A7B 100%) !important; /* IE 10+ */
+    background: linear-gradient(top, #7FA8B5 0%, #74899A 50%, #646A7B 100%) !important; /* W3C */
+}
+
+input.form_submit.primary[disabled],
+table.form_table td.value input[type="submit"][disabled].primary,
+table.form_table td.value input[type="submit"][disabled].primary:hover,
+input.form_submit.primary[disabled]:hover {
+    cursor: default;
+    background: #e3ba79 !important;
+    background: -moz-linear-gradient(top,  #e3ba79 0%, #d4ab74 50%, #e29c56 100%) !important;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e3ba79), color-stop(50%,#d4ab74), color-stop(100%,#e29c56)) !important;
+    background: -webkit-linear-gradient(top,  #e3ba79 0%,#d4ab74 50%,#e29c56 100%) !important;
+    background: -o-linear-gradient(top,  #e3ba79 0%,#d4ab74 50%,#e29c56 100%) !important;
+    background: -ms-linear-gradient(top,  #e3ba79 0%,#d4ab74 50%,#e29c56 100%) !important;
+    background: linear-gradient(to bottom,  #e3ba79 0%,#d4ab74 50%,#e29c56 100%) !important;
+}
+
+table.form_table td.value input[type="submit"][disabled].primary,
+input.form_submit.primary[disabled],
+table.form_table td.value input[type="submit"][disabled].primary:hover,
+input.form_submit.primary[disabled]:hover {
+    border: 2px solid #C2AF93!important;
+    color: #967B50 !important;
+}
+
+input.form_submit {
+    margin: 0px 0px 8px 0px;
+    width: 200px;
+}
+
+input.form_submit.flexible_size {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: auto;
+    overflow: visible;
+}
+
+table.form_table td.value input[type=submit]:hover,
+input.form_submit:hover {
+    background: #2F78B5 !important; /* Old browsers */
+    background: -moz-linear-gradient(top, #2F78B5 0%, #24599A 50%, #143A7B 100%) !important; /* FF 3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2F78B5), color-stop(50%, #24599A), color-stop(100%, #143A7B)) !important; /* Chrome, Safari 4+ */
+    background: -webkit-linear-gradient(top, #2F78B5 0%, #24599A 50%, #143A7B 100%) !important; /* Chrome 10+, Safari 5.1+ */
+    background: -o-linear-gradient(top, #2F78B5 0%, #24599A 50%, #143A7B 100%) !important; /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #2F78B5 0%, #24599A 50%, #143A7B 100%) !important; /* IE 10+ */
+    background: linear-gradient(top, #2F78B5 0%, #24599A 50%, #143A7B 100%) !important; /* W3C */
+    border-color: #143A7B !important;
+}
+
+table.form_table td.value input[type=submit][disabled]:hover,
+input.form_submit[disabled]:hover {
+    cursor: default;
+    background: #7FA8B5 !important; /* Old browsers */
+    background: -moz-linear-gradient(top, #7FA8B5 0%, #74899A 50%, #646A7B 100%) !important; /* FF 3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7FA8B5), color-stop(50%, #74899A), color-stop(100%, #646A7B)) !important; /* Chrome, Safari 4+ */
+    background: -webkit-linear-gradient(top, #7FA8B5 0%, #74899A 50%, #646A7B 100%) !important; /* Chrome 10+, Safari 5.1+ */
+    background: -o-linear-gradient(top, #7FA8B5 0%, #74899A 50%, #646A7B 100%) !important; /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #7FA8B5 0%, #74899A 50%, #646A7B 100%) !important; /* IE 10+ */
+    background: linear-gradient(top, #7FA8B5 0%, #74899A 50%, #646A7B 100%) !important; /* W3C */
+}
+
+/* Variant on Advanced Search page where there is a select and text input in the same value cell */
+table.form_table td.value input.half_size,
+table.form_table td.value textarea.half_size {
+    width: 116px;
+}
+
+table.alternate_width td.value input.half_size,
+table.alternate_width td.value textarea.half_size {
+    width: 161px;
+}
+
+table.form_table td.value select.half_size {
+    width: 120px;
+}
+
+table.alternate_width td.value select.half_size {
+    width: 165px;
+}
+
+/*------------------------------------------*/
+/* Text colours */
+
+.text_colour_light_grey {
+    color: #E9E5E4;
+}
+
+/* Enclosed content blocks with a non-grey background also have white heading text */
+.text_colour_white,
+input.form_submit,
+#header #right_column #search_button,
+#primary_nav ul li a,
+ul#lower_nav li a.selected,
+.bg_colour_blue h2,
+.bg_colour_blue .find_out_more,
+.bg_colour_blue .find_out_more:hover,
+.bg_colour_zone h2,
+.bg_colour_zone .find_out_more,
+.bg_colour_zone .find_out_more:hover,
+.search_results h2,
+.search_results p.category_zone,
+.search_results table td span.marker,
+.narrow_search h2,
+.dictionary_help h2,
+.dictionary_help p,
+.link_button_list a,
+.link_button_list a:hover,
+a.show_all_resources,
+a.show_all_resources:hover,
+table.series_order_form td.series_title {
+    color: #FFFFFF;
+}
+
+/* Separated to avoid IE6 discarding all white text colours when ignoring this */
+input[type=submit] {
+    color: #FFFFFF;
+}
+
+a.text_colour_white:hover {
+    color: #FFFFFF;
+}
+
+/* Default link colour, and override selected colour on lower tiers of lower navigation */
+.text_colour_blue,
+ul#lower_nav ul li span.selected,
+ul#lower_nav ul li a.selected,
+ul#lower_nav ul li.selected,
+.faq_expandable h2,
+.ask_an_expert h2,
+.ask_an_editor h2,
+h1,
+h2.strapline,
+p.expert_quote,
+span.search_tip,
+a {
+    color: #1F68A5;
+}
+
+a.text_colour_blue:hover,
+ul#lower_nav ul li a.selected:hover,
+a:hover {
+    color: #3F98D5;
+}
+
+/* Used to make certain links and inputs use standard text colour, and reset colour
+   on lower tiers of primary navigation */
+.text_colour_default,
+textarea,
+#header a,
+#primary_nav ul li:hover a,
+#primary_nav ul li a:focus,
+#primary_nav ul li.menu_hover a,
+#primary_nav ul li.menu_tab_focus a,
+#lower_nav a,
+#account_nav a,
+table.form_table td hr,
+.find_out_more,
+.select_letter a,
+#footer a,
+#legal a,
+input {
+    color: #6C6869;
+}
+
+a.text_colour_default:hover,
+#header a:hover,
+#primary_nav ul ul ul a:hover,
+#lower_nav a:hover,
+#account_nav a:hover,
+.find_out_more:hover,
+#footer a:hover,
+#legal a:hover {
+    color: #8C8889;
+}
+
+.text_colour_light_grey {
+    color: #8E898A;
+}
+
+a.text_colour_light_grey {
+    color: #AEA9AA;
+}
+
+/* Only used on form error messages */
+.text_colour_pink,
+table.form_table td div.error span {
+    color: #D11B6D;
+}
+
+.text_colour_orange {
+    color: #E68F1A;
+}
+
+/*------------------------------------------*/
+/* Fonts */
+
+.text_font_arial {
+    font-family: Arial, Helvetica, Verdana, Geneva, Tahoma, Sans-Serif;
+}
+
+.text_font_oup_medium,
+#header #left_column span,
+#primary_nav ul li a,
+ul#lower_nav li a,
+h1,
+p.expert_quote,
+p.strapline,
+.dictionary_help h2,
+.dictionary_help p,
+.link_button_list a,
+.select_letter a,
+#checkout_process span {
+    font-family: Arial, Helvetica, Verdana, Geneva, Tahoma, Sans-Serif;
+}
+
+/* Used to reset font on lower tiers of navigation */
+.text_font_verdana,
+input,
+textarea,
+#header #right_column #search_input,
+#header #right_column #search_button,
+#primary_nav ul li a.refresh_page_link,
+#primary_nav ul ul li span,
+#primary_nav ul ul li a,
+ul#lower_nav ul li span,
+ul#lower_nav ul li a {
+    font-family: Verdana, Geneva, Arial, Helvetica, Tahoma, Sans-Serif;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/* Background colours */
+
+.bg_colour_white,
+#wrapper,
+#header #right_column #search_input,
+#primary_nav ul li:hover a,
+#primary_nav ul li a:focus,
+#primary_nav ul li.menu_hover a,
+#primary_nav ul li.menu_tab_focus a,
+#primary_nav ul li div,
+.enclosed .inner_block,
+div.spinner {
+    background-color: #FFFFFF;
+}
+
+.bg_colour_light_grey,
+ul#lower_nav ul,
+ul#account_nav,
+table.order_summary th.highlighted_column,
+table.order_summary td.highlighted_column,
+table.series_order_form td.item_title,
+p.product_description_message {
+    background-color: #F8F7F7;
+}
+
+/* Grey is the default background colour for enclosed content blocks */
+.bg_colour_grey,
+#header #right_column .selected,
+ul#lower_nav li a,
+.enclosed,
+.narrow_search .filters,
+.search_results p.category,
+.search_results p.category_zone,
+#footer,
+ul#sitemap li div {
+    background-color: #F1EEED;
+}
+
+a.bg_colour_grey:hover,
+ul#lower_nav li a:hover {
+    background-color: #F4F1F0;
+}
+
+.bg_colour_dark_grey {
+    background-color: #8E898A;
+}
+
+a.bg_colour_dark_grey:hover {
+    background-color: #9E999A;
+}
+
+.bg_colour_search_heading_grey,
+.search_results h2,
+.narrow_search h2 {
+    background-color: #827d7e;
+}
+
+/* Used to make horizontal rules in form tables same colour as text */
+.bg_colour_default_grey,
+table.form_table td hr {
+    background-color: #6C6869;
+}
+
+/* Background colour for blue content blocks */
+.bg_colour_blue,
+.dictionary_help,
+table.series_order_form td.series_title {
+    background-color: #1F68A5;
+}
+
+a.bg_colour_blue:hover {
+    background-color: #2F78B5;
+}
+
+.bg_colour_dark_blue {
+    background-color: #002D62 !important;
+}
+
+.bg_colour_purple,
+.search_results table td span.marker {
+    background-color: #D0186B;
+}
+
+/* General purpose zone background colours (e.g. for footer)
+   Content block zone colours are set in their respective stylesheets */
+.bg_colour_primary {
+    background-color: #99CA3C;
+}
+
+a.bg_colour_primary:hover {
+    background-color: #A9DA4C;
+}
+
+.bg_colour_secondary {
+    background-color: #D11B6D;
+}
+
+a.bg_colour_secondary:hover {
+    background-color: #E12B7D;
+}
+
+.bg_colour_dictionaries {
+    background-color: #7D81BE;
+}
+
+a.bg_colour_dictionaries:hover {
+    background-color: #8D91CE;
+}
+
+.bg_colour_children {
+    background-color: #00B8B3;
+}
+
+a.bg_colour_children:hover {
+    background-color: #10C8C3;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/* Border colours */
+
+.border_colour_primary,
+#primary_nav ul li:hover a.border_colour_primary,
+#primary_nav ul li.menu_tab_hover a.border_colour_primary,
+#primary_nav ul li.menu_tab_focus a.border_colour_primary,
+#primary_nav ul li:hover div.border_colour_primary,
+#primary_nav ul li.menu_tab_hover div.border_colour_primary,
+#primary_nav ul li.menu_tab_focus div.border_colour_primary {
+    border-color: #99CA3C;
+}
+
+.border_colour_secondary,
+#primary_nav ul li:hover a.border_colour_secondary,
+#primary_nav ul li.menu_tab_hover a.border_colour_secondary,
+#primary_nav ul li.menu_tab_focus a.border_colour_secondary,
+#primary_nav ul li:hover div.border_colour_secondary,
+#primary_nav ul li.menu_tab_hover div.border_colour_secondary,
+#primary_nav ul li.menu_tab_focus div.border_colour_secondary {
+    border-color: #D11B6D;
+}
+
+.border_colour_dictionaries,
+#primary_nav ul li:hover a.border_colour_dictionaries,
+#primary_nav ul li.menu_tab_hover a.border_colour_dictionaries,
+#primary_nav ul li.menu_tab_focus a.border_colour_dictionaries,
+#primary_nav ul li:hover div.border_colour_dictionaries,
+#primary_nav ul li.menu_tab_hover div.border_colour_dictionaries,
+#primary_nav ul li.menu_tab_focus div.border_colour_dictionaries {
+    border-color: #7D81BE;
+}
+
+.border_colour_children,
+#primary_nav ul li:hover a.border_colour_children,
+#primary_nav ul li.menu_tab_hover a.border_colour_children,
+#primary_nav ul li.menu_tab_focus a.border_colour_children,
+#primary_nav ul li:hover div.border_colour_children,
+#primary_nav ul li.menu_tab_hover div.border_colour_children,
+#primary_nav ul li.menu_tab_focus div.border_colour_children {
+    border-color: #00B8B3;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/* Site-wide header */
+
+#header {
+    width: 100%;
+    min-height: 83px;
+}
+
+/*------------------------------------------*/
+/* Left-hand column (logo) */
+
+#header #left_column {
+    float: left;
+    padding-top: 26px;
+    width: 405px;
+    height: 45px;
+}
+
+#header #left_column img {
+    margin-right: 20px;
+    border-right: 1px solid #E9E5E4;
+}
+
+#header #left_column a,
+#header #left_column span {
+    display: block;
+    float: left;
+}
+
+#header #left_column span {
+    font-size: 1.5em;
+    line-height: 36px;
+}
+
+#header #left_column span span {
+    display: inline;
+    float: none;
+    font-size: 1em;
+}
+
+/*------------------------------------------*/
+/* Right-hand column (basket, view and search) */
+
+#header #right_column {
+    float: right;
+    padding-top: 20px;
+    width: 485px;
+    min-height: 93px;
+    text-align: right;
+    font-size: 0.9em;
+	position: relative;
+}
+
+#header #right_column p {
+    margin: 7px 0px;
+}
+
+#header #right_column #view_basket {
+    padding-right: 22px;
+    background-image: url("../images/icon_basket.gif");
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+#header #right_column #uk_view,
+#header #right_column #international_view {
+    background-repeat: no-repeat;
+    background-position: 4px center;
+}
+
+#header #right_column #uk_view {
+    padding: 2px 4px 2px 25px;
+    background-image: url("../images/icon_uk_flag.gif");
+}
+
+#header #right_column #international_view {
+    padding: 2px 4px 2px 20px;
+    background-image: url("../images/icon_international_flag.gif");
+}
+
+/* Add ".selected" class to link that represents current view */
+#header #right_column #international_view.selected {
+    background-image: url("../images/icon_international_flag_selected.gif");
+}
+
+#header #right_column #search_input,
+#header #right_column #search_button {
+    margin: 0px 4px 0px 0px;
+    font-size: 1.1em;
+}
+
+#header #right_column #search_input {
+    padding: 3px 6px;
+    width: 220px;
+    border-top: 1px solid #A4A2A3;
+    border-left: 1px solid #6F6D6D;
+    border-bottom: 1px solid #DFDEDE;
+    border-right: 1px solid #DFDEDE;
+}
+
+#header #right_column #search_button {
+    padding: 3px 5px;
+    font-weight: bold;
+    background: #072563; /* Old browsers */
+    background: -moz-linear-gradient(top, #000940 0%, #115e9e 100%); /* FF 3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000940), color-stop(100%, #115e9e)); /* Chrome, Safari 4+ */
+    background: -webkit-linear-gradient(top, #000940 0%, #115e9e 100%); /* Chrome 10+, Safari 5.1+ */
+    background: -o-linear-gradient(top, #000940 0%, #115e9e 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #000940 0%, #115e9e 100%); /* IE 10+ */
+    background: linear-gradient(top, #000940 0%, #115e9e 100%); /* W3C */
+    border: 1px solid #637092;
+}
+
+#header #right_column #search_button:hover {
+    cursor: pointer;
+    background: #274583;
+    background: -moz-linear-gradient(top, #202960 0%, #317ebe 100%); /* FF 3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #202960), color-stop(100%, #317ebe)); /* Chrome, Safari 4+ */
+    background: -webkit-linear-gradient(top, #202960 0%, #317ebe 100%); /* Chrome 10+, Safari 5.1+ */
+    background: -o-linear-gradient(top, #202960 0%, #317ebe 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #202960 0%, #317ebe 100%); /* IE 10+ */
+    background: linear-gradient(top, #202960 0%, #317ebe 100%); /* W3C */
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/* Primary navigation */
+
+#primary_nav {
+    padding: 0px 2px;
+    width: 890px;
+    min-height: 34px;
+    background-image: url("../images/primary_nav_bg.gif");
+    background-repeat: repeat-x;
+    background-position: left bottom;
+}
+
+/*------------------------------------------*/
+/* First tier */
+
+#primary_nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+#primary_nav ul li {
+    display: inline;
+    float: left;
+    position: relative;
+    z-index: 1020;
+    margin: 0px;
+    padding: 0px;
+}
+
+#primary_nav ul li a {
+    display: block;
+    float: left;
+    position: relative;
+    margin: 7px 0px 11px 0px;
+    padding: 0px 57px 0px 43px;
+    height: 16px;
+    text-decoration: none;
+    font-size: 1.25em;
+    line-height: 16px;
+    background-image: url("../images/primary_nav_arrow_clear.gif");
+    background-repeat: no-repeat;
+    background-position: right 4px;
+    border-right: 1px solid #FFFFFF;
+}
+
+#primary_nav ul li.last,
+#primary_nav ul li.last a {
+    border-right: none;
+}
+
+#primary_nav ul li.menu_tab_focus {
+    z-index: 1025;
+}
+
+#primary_nav ul li:hover,
+#primary_nav ul li.menu_hover,
+#primary_nav ul li.menu_tab_hover {
+    z-index: 1030;
+}
+
+#primary_nav ul li:hover a,
+#primary_nav ul li a:focus,
+#primary_nav ul li.menu_hover a,
+#primary_nav ul li.menu_tab_focus a {
+    z-index: 1001;
+    height: 26px;
+    margin: 0px -1px 4px -2px;
+    line-height: 26px;
+    background-image: url("../images/primary_nav_arrow_hover.gif");
+    background-position: right 9px;
+    border: 2px solid #6C6869;
+}
+
+#primary_nav ul li.menu_default.three_column:hover a,
+#primary_nav ul li.menu_default.four_column:hover a,
+#primary_nav ul li.menu_jquery.menu_tab_hover a,
+#primary_nav ul li.menu_jquery.menu_tab_focus a {
+    margin-bottom: 0px;
+    z-index: 1010;
+    height: 32px;
+    line-height: 26px;
+    border-bottom: none;
+}
+
+#primary_nav ul li.home a {
+    padding-right: 43px !important;
+    background-image: none !important;
+}
+
+/*------------------------------------------*/
+/* Second tier */
+
+#primary_nav ul li div {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    padding: 12px 0px 22px 0px;
+    top: 32px;
+    height: 200px;
+    overflow: hidden;
+    border: 2px solid #6C6869;
+}
+
+/* Height overrides for specific drop-downs (adjust as needed) */
+#primary_nav ul li.primary div {
+    height: 460px;
+}
+
+#primary_nav ul li.secondary div {
+    height: 480px;
+}
+
+#primary_nav ul li.dictionaries div {
+    height: 200px;
+}
+
+#primary_nav ul li.children div {
+    height: 280px;
+}
+
+/* Extra rules can be added if a different number of columns is required */
+/* Each extra column would require 199 pixels of additional space */
+#primary_nav ul li.three_column div {
+    width: 620px;
+}
+
+#primary_nav ul li.four_column div {
+    width: 819px;
+}
+
+#primary_nav ul li.attach_left div {
+    left: -2px;
+}
+
+#primary_nav ul li.attach_right div {
+    right: -1px;
+}
+
+#primary_nav ul li.menu_default:hover div,
+#primary_nav ul li.menu_default.menu_tab_focus div {
+    display: block;
+}
+
+#primary_nav ul li.menu_jquery.menu_tab_hover div,
+#primary_nav ul li.menu_jquery.menu_tab_focus div {
+    display: block;
+}
+
+#primary_nav a.refresh_page_link {
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    margin: 0px !important;
+    padding: 0px !important;
+    bottom: 0px;
+    width: 50px !important;
+    height: 20px !important;
+    text-align: center;
+    font-size: 1em;
+    line-height: 20px !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    border: none !important;
+}
+
+#primary_nav li.attach_left a.refresh_page_link {
+    right: 0px;
+}
+
+#primary_nav li.attach_right a.refresh_page_link {
+    left: 0px;
+}
+
+#primary_nav ul ul {
+    height: 100%;
+}
+
+#primary_nav ul ul li {
+    float: left;
+    margin-left: 12px;
+    width: 187px;
+    height: 100%;
+    border-right: 1px solid #6C6869;
+}
+
+#primary_nav ul ul li span {
+    font-weight: bold;
+    line-height: 20px;
+}
+
+#primary_nav ul ul li span,
+#primary_nav ul ul li a {
+    font-size: 1em;
+}
+
+/*------------------------------------------*/
+/* Third tier */
+
+#primary_nav ul ul ul {
+    height: auto;
+}
+
+#primary_nav ul ul ul li {
+    float: none;
+    margin: 0px;
+    height: auto;
+    border: none;
+}
+
+#primary_nav ul ul ul li a {
+    display: block;
+    position: static;
+    float: none;
+    clear: left;
+    padding: 0px !important;
+    height: auto !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    border: none !important;
+	/*margin: 0px !important;
+	line-height: 20px !important;*/
+	margin: 6px 0px!important;
+	line-height:1.4em!important;
+}
+
+#primary_nav ul ul ul li a:hover {
+    text-decoration: underline;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/* Breadcrumb trail and mobile/print/share links */
+
+#location_sharing {
+    margin-top: 5px;
+    margin-bottom: 18px;
+    font-size: 0.9em;
+}
+
+#location_sharing p {
+    margin: 0px;
+}
+
+#location_sharing #breadcrumb {
+    float: left;
+    width: 600px;
+    line-height: 1.4em;
+}
+
+#location_sharing #breadcrumb span,
+#location_sharing #breadcrumb a {
+    white-space: nowrap;
+}
+
+#location_sharing #mobile_print_share {
+    float: right;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/* Page content outer containers */
+
+#page_top_banner {
+    margin-bottom: 18px;
+    width: 100%;
+}
+
+#page_navigation,
+#search_navigation {
+    float: left;
+    margin-bottom: 11px;
+    width: 170px;
+}
+
+#page_content,
+#title_content,
+#search_content {
+    float: left;
+    width: 554px;
+}
+
+#page_sidebar {
+    float: right;
+    width: 170px;
+	margin-top:5px;
+}
+
+#page_bottom_banner {
+    margin-bottom: 6px;
+    width: 100%;
+}
+
+/* Used on product details pages to allow the offset page title position */
+#product_details_container {
+    float: left;
+    width: 724px;
+}
+
+/* Used on event pages for 2 columns */
+#event_details_container {
+    float: left;
+    width: 724px;
+}
+
+#event_details_container .full_width {
+	margin:10px 0px!important;
+	width:100%!important;
+}
+
+#event_details_container #page_content {
+	width:100%!important;
+}
+
+#event_details_container .double_column .left_column{
+    width:403px;
+	overflow:hidden;
+	border:0px;
+	padding:0px;
+}
+#event_details_container .double_column .right_column{
+	width:290px;
+	overflow:hidden;
+}
+
+#event_details_container .double_column .right_column .floating_content_margin_top{
+	margin-right:10px;
+}
+
+/*------------------------------------------*/
+/* These overrides are for ecommerce pages where there is only one single column across the full width of the page */
+/* For example those with a basket contents table */
+
+#page_content.expanded_width {
+    padding: 0px 0px 0px 11px;
+    width: 883px;
+}
+
+#page_content.expanded_width .full_width {
+    margin-left: 0px;
+    width: 871px;
+}
+
+#page_content.expanded_width .half_width {
+    margin-left: 0px;
+    width: 430px;
+}
+
+/*------------------------------------------*/
+/* These overrides are to allow the use of form tables within zone template page contents without requiring changes to cell widths etc.  */
+/* It is expected that in this case the right-hand sidebar will be removed to create the extra space */
+/* These values exactly match those in home.css */
+
+#page_content.zone_form_content {
+    width: 724px;
+}
+
+#page_content.zone_form_content .full_width {
+    margin-left: 0px;
+    width: 713px;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/* Lower navigation */
+
+/*------------------------------------------*/
+/* First tier */
+
+ul#lower_nav,
+ul#lower_nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+ul#lower_nav li,
+ul#lower_nav ul li {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul#lower_nav li a {
+    display: block;
+    padding: 8px 8px 6px 8px;
+    width: 154px;
+    min-height: 28px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+ul#lower_nav li a:hover {
+    text-decoration: none;
+}
+
+/*------------------------------------------*/
+/* Second tier */
+
+ul#lower_nav ul {
+    margin-top: 4px;
+    padding: 8px;
+}
+
+ul#lower_nav ul li {
+    padding-bottom: 4px;
+}
+
+ul#lower_nav ul li span {
+    display: block;
+    margin-bottom: 4px;
+    padding-bottom: 4px;
+    font-weight: bold !important;
+    font-size: 1.2em;
+    line-height: 1.25em;
+    border-bottom: 1px solid #DCD7D5;
+}
+
+/*------------------------------------------*/
+/* Third tier */
+
+ul#lower_nav ul ul {
+    margin: 0px;
+    padding: 0px 0px 9px 0px;
+}
+
+ul#lower_nav ul ul li {
+    padding: 0px;
+}
+
+ul#lower_nav ul ul li span,
+ul#lower_nav ul ul li a {
+    margin: 0px;
+    padding: 0px 0px 7px 0px;
+    width: 154px;
+    height: auto;
+    min-height: 0px;
+    font-weight: normal !important;
+    font-size: 1em;
+    background-color: transparent !important;
+    border: none;
+}
+
+ul#lower_nav ul ul li a:hover {
+    text-decoration: underline;
+}
+
+/*------------------------------------------*/
+/* Fourth tier */
+
+ul#lower_nav ul ul ul {
+    padding-bottom: 0px;
+}
+
+ul#lower_nav ul ul ul li span,
+ul#lower_nav ul ul ul li a {
+    padding-left: 12px;
+    width: 142px;
+}
+
+/*------------------------------------------*/
+/* Fifth tier */
+
+ul#lower_nav ul ul ul ul {
+    padding-bottom: 0px;
+}
+
+ul#lower_nav ul ul ul ul li span,
+ul#lower_nav ul ul ul ul li a {
+    padding-left: 24px;
+    width: 132px;
+}
+
+/*------------------------------------------*/
+/* Sixth tier */
+
+ul#lower_nav ul ul ul ul ul{
+    padding-bottom: 0px;
+}
+
+ul#lower_nav ul ul ul ul ul li span,
+ul#lower_nav ul ul ul ul ul li a {
+    padding-left: 36px;
+    width: 122px;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/* Page content blocks */
+
+.content_block {
+    float: left;
+    margin-bottom: 11px;
+}
+
+.full_width {
+    width: 532px;
+}
+
+/* On IE6 and IE7 this is achieved using relative position and negative top (with negative bottom margin) instead */
+.full_width h1 {
+    margin-top: 6px;
+}
+
+.half_width {
+    width: 255px;
+}
+
+.column_width {
+    width: 170px;
+}
+
+/*------------------------------------------*/
+/* Margin adjustments to blocks in centre content column,
+   to give correct spacing */
+
+#page_content .full_width,
+#page_content .half_width,
+#title_content .full_width,
+#title_content .half_width,
+#search_content .full_width,
+#search_content .half_width {
+    margin: 0px 11px 11px 11px;
+}
+
+#page_content .column_width,
+#title_content .column_width,
+#search_content .column_width {
+    margin: 0px 0px 11px 11px;
+}
+
+/*------------------------------------------*/
+/* Content blocks with coloured surround */
+
+.enclosed h2 {
+    padding-left: 10px;
+    font-size: 1.2em;
+}
+
+.enclosed .inner_block {
+    margin: 3px 3px 9px 3px;
+}
+
+/*------------------------------------------*/
+/* General purpose page content blocks */
+
+/*--------------------*/
+/* Padded area of text, inside an enclosed block (such as full-width product description blocks) */
+.inset_text_block,
+.clipped_text_block {
+    padding: 10px;
+}
+
+/* Product details 'Reviews' blocks, where text does not cover the whole block width */
+.clipped_text_block {
+    width: 458px;
+}
+
+/* Used on Librarians page for text area of 'Our Authors and Illustrators' content block */
+.full_width .text .clipped_text_block {
+    padding: 0px;
+    width: 235px;
+}
+
+.inset_text_block h3:first-child,
+.inset_text_block p:first-child,
+.clipped_text_block h3:first-child,
+.clipped_text_block p:first-child,
+.double_column .left_column h3:first-child,
+.double_column .left_column p:first-child,
+.double_column .right_column h3:first-child,
+.double_column .right_column p:first-child {
+    margin-top: 0px;
+}
+
+.floating_content,
+.floating_content_margin_top {
+    float: right;
+    margin-left: 20px;
+    width: 259px;
+}
+
+.floating_content_margin_top {
+    margin-top: 14px;
+}
+
+floating_content_margin_left {
+    float: left
+    margin-left: 20px;
+    width: 259px;
+}
+
+.floating_content_margin_left,
+.floating_content_margin_top {
+    margin-top: 14px;
+}
+
+.video_container {
+    margin: 14px 0px;
+    width: 259px;
+    height: 205px;
+}
+
+/*--------------------*/
+/* Blocks with content separated into two columns */
+
+.double_column .left_column,
+.double_column .right_column {
+    float: left;
+}
+
+.double_column .left_column {
+    padding-right: 19px;
+    width: 246px;
+    border-right: 1px solid #6C6869;
+}
+
+.double_column .right_column {
+    padding-left: 20px;
+    width: 246px;
+}
+
+.double_column .inner_block .left_column {
+    margin: 14px 0px;
+    padding-left: 10px;
+    width: 233px;
+}
+
+.double_column .inner_block .right_column {
+    margin: 14px 0px;
+    width: 233px;
+}
+
+/*--------------------*/
+/* General text area h3 style (e.g. for product descriptions) */
+
+.inset_text_block h3,
+.clipped_text_block h3,
+.double_column .left_column h3,
+.double_column .right_column h3 {
+    margin: 14px 0px;
+    font-size: 1em;
+}
+
+/*--------------------*/
+/* Product description table styles */
+
+table.product_description {
+    margin-bottom: 20px;
+    padding: 0px;
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 1px solid #E2DEDC;
+}
+
+table.product_description td {
+    padding: 4px 0px;
+    border-bottom: 1px solid #E2DEDC;
+}
+
+table.product_description td.property {
+    width: 45%;
+}
+
+table.product_description td.value {
+    width: 55%;
+}
+
+/*--------------------*/
+/* 'Keep updated' and 'Technical support' expandable blocks, using custom 'expandable' jQuery plugin */
+
+.keep_updated_expandable,
+.tech_support_expandable {
+    padding-bottom: 9px;
+}
+
+.keep_updated_expandable .inner_block,
+.tech_support_expandable .inner_block {
+    clear: both;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.keep_updated_expandable .inset_text_block,
+.tech_support_expandable .inset_text_block {
+    padding-top: 1px !important;
+    padding-bottom: 1px !important;
+}
+
+.keep_updated_expandable h2.control,
+.tech_support_expandable h2.control {
+    background-image: url("../images/expandable_arrow_closed.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.keep_updated_expandable h2.control:hover,
+.tech_support_expandable h2.control:hover {
+    cursor: pointer;
+}
+
+.keep_updated_expandable h2.control.selected,
+.tech_support_expandable h2.control.selected {
+    background-image: url("../images/expandable_arrow_opened.png");
+}
+
+.bg_colour_primary h2.control {
+    background-position: 76px center;
+}
+
+.bg_colour_secondary h2.control {
+    background-position: 148px center;
+}
+
+.bg_colour_dictionaries h2.control {
+    background-position: 104px center;
+}
+
+.bg_colour_children h2.control {
+    background-position: 139px center;
+}
+
+.tech_support_expandable.bg_colour_primary h2.control {
+    background-position: 146px center;
+}
+
+.tech_support_expandable.bg_colour_secondary h2.control {
+    background-position: 165px center;
+}
+
+.tech_support_expandable.bg_colour_blue h2.control {
+    background-position: 175px center;
+}
+
+.tech_support_expandable .inset_text_block p {
+    margin: 14px 0px !important;
+}
+
+/*--------------------*/
+/* Keep updated table styles */
+
+table.keep_updated_links {
+    margin-bottom: 8px;
+    padding: 0px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.keep_updated_links td {
+    padding: 16px 0px 11px 0px;
+    vertical-align: top;
+    border-bottom: 1px solid #E2DEDC;
+}
+
+table.keep_updated_links tr:last-child td,
+table.keep_updated_links tr.last_row td {
+    border: none;
+}
+
+table.keep_updated_links tr td:first-child,
+table.keep_updated_links td.image_column {
+    padding-right: 13px;
+    width: 30px;
+}
+
+table.keep_updated_links tr td:last-child,
+table.keep_updated_links td.text_column {
+    padding-right: 80px;
+}
+
+table.keep_updated_links td h3,
+table.keep_updated_links td p {
+    margin: 0px !important;
+}
+
+table.keep_updated_links table {
+    margin: 10px 0px 6px 0px;
+}
+
+/* A fixed height is required for the expandable content blocks containing these tables to calculate their height correctly */
+table.keep_updated_links table td {
+    padding: 0px 8px 0px 0px;
+    height: 48px;
+    vertical-align: middle;
+    border: none;
+}
+
+/*--------------------*/
+/* Author's Frequently Asked Questions list, using custom 'expandable' jQuery plugin */
+
+.faq_expandable {
+    padding-bottom: 6px;
+    border-bottom: 2px solid #E2DEDC;
+}
+
+.faq_expandable hr.double_height {
+    margin: 0px 0px 11px 0px;
+}
+
+.faq_expandable .control_wrapper {
+    padding-left: 38px;
+    width: 494px;
+    background-image: url("../images/faq_expandable_bg_closed.gif");
+    background-repeat: no-repeat;
+}
+
+.faq_expandable .control_wrapper:hover {
+    cursor: pointer;
+}
+
+.faq_expandable .selected {
+    background-image: url("../images/faq_expandable_bg_open.gif");
+}
+
+.faq_expandable h2 {
+    margin: 0px 0px 8px 0px;
+    font-weight: normal;
+}
+
+.faq_expandable p {
+    margin: 0px;
+    padding: 0px 0px 8px 0px;
+}
+
+.faq_expandable .question_answer p:first-child {
+    padding-top: 8px;
+}
+
+/*--------------------*/
+/* Default content block list styles including overrides for B3, B5 and B6 */
+
+.content_block ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.content_block ul li {
+    margin: 0px;
+    padding: 0px 0px 5px 16px;
+    background-image: url("../images/list_bullet_grey.gif");
+    background-repeat: no-repeat;
+    background-position: 0px 6px;
+}
+
+.full_width .image_text_single ul li,
+.half_width .image_text_single ul li,
+.half_width .text_only_single ul li {
+    padding: 0px 0px 0px 12px;
+    background-image: url("../images/list_bullet_blue.gif");
+    background-position: 0px 7px;
+}
+
+/*
+//see change below for productDetailsPage review list
+.review_list ul li {
+    padding-left: 0px !important;
+    padding-bottom: 5px !important;
+    background-image: none !important;
+}  
+//changed again to get review list in highlight panels to work
+.review_list ul li{
+	background-image:none;
+	list-style:none;
+	margin-left:0px;
+	padding-left:0px;
+	width:100%;
+}  */
+
+.review_list ul li{
+    background-image:none!important;
+    list-style:none;
+    margin-left:0px;
+    padding-left:0px!important;
+    width:100%;
+}
+
+.full_width .image_text_single ul li h3,
+.half_width .image_text_single ul li h3 {
+    margin: 0px;
+    line-height: 1.6em;
+}
+
+.full_width .image_text_single ul li p,
+.half_width .image_text_single ul li p,
+.half_width .text_only_single ul li p {
+    margin: 0px 0px 6px 0px;
+}
+
+/*--------------------*/
+/* 'Look inside' lists in content (see later for column width block version)  */
+
+h3.look_inside_heading {
+    margin-top: 0px;
+    height: 25px;
+    font-size: 1.3em;
+    line-height: 22px;
+    background-image: url("../images/look_inside_arrow.gif");
+    background-repeat: no-repeat;
+    background-position: 88px center;
+}
+
+ul.look_inside_list li {
+    padding-left: 0px;
+    padding-bottom: 10px;
+    background-image: none;
+}
+
+/*--------------------*/
+/* Width adjustments for form tables in half-width content blocks */
+/* E.g. 'Ask the Author' block on 'Our Authors and Illustrators' page */
+/* It is assumed that there will only be space for a value column, so an option to show error messages in this column is also provided for. */
+
+.half_width .inner_block table.form_table {
+    margin: 10px 0px 0px 0px;
+}
+
+.half_width .inner_block table.form_table td.value {
+    padding: 0px 0px 8px 0px;
+    width: 229px;
+    min-width: 229px;
+    max-width: 229px;
+    text-align: center;
+}
+
+.half_width .inner_block table.form_table td.value input,
+.half_width .inner_block table.form_table td.value textarea {
+    width: 215px;
+}
+
+.half_width .inner_block table.form_table td.value select {
+    width: 229px;
+}
+
+.half_width .inner_block table.form_table td.value input[type=submit] {
+    display: inline-block;
+    float: none;
+    width: 130px;
+}
+
+.half_width .inner_block table.form_table td div.error span {
+    text-align: left;
+}
+
+.half_width .inner_block table.form_table td div.error span.message {
+    width: 220px;
+}
+
+/*--------------------*/
+/* Links with arrows, and indented variant  */
+
+.arrow_link_right,
+.arrow_link_up,
+.arrow_link_down,
+.indented_link_right,
+.indented_link_up,
+.indented_link_down {
+    display: inline-block;
+    padding: 12px 12px 12px 0px;
+    background-repeat: no-repeat;
+}
+
+.indented_link_right,
+.indented_link_up,
+.indented_link_down {
+    padding-left: 16px;
+}
+
+.review_list .indented_link_up,
+.review_list .indented_link_down {
+    padding: 3px 15px 8px 0px !important;
+    background-position: right 9px;
+}
+
+.arrow_link_right,
+.indented_link_right {
+    background-image: url("../images/arrow_link_right.gif");
+    background-position: right 15px;
+}
+
+.arrow_link_up,
+.arrow_link_down,
+.indented_link_up,
+.indented_link_down {
+    padding-right: 15px;
+    background-position: right 17px;
+}
+
+.arrow_link_up,
+.indented_link_up {
+    background-image: url("../images/arrow_link_up.gif");
+}
+
+.arrow_link_down,
+.indented_link_down {
+    background-image: url("../images/arrow_link_down.gif");
+}
+
+.arrow_link_float_right {
+    float: right;
+}
+
+/*--------------------*/
+/* Shaded orange 'Add to basket' and 'Evaluate' buttons in product details, and link equivalent for 'Order or evaluate' on subject pages */
+
+input.add_evaluate,
+a.order_evaluate,
+table.form_table td.value input[type="submit"].primary,
+input.form_submit.primary {
+    display: block !important;
+    margin-bottom: 14px !important;
+    padding: 4px 6px !important;
+    color: #221306 !important;
+    text-align: center;
+    text-decoration: none !important;
+    font-size: 1.25em;
+    background: #FCB034 !important; /* Old browsers */
+    background: -moz-linear-gradient(top, #FCB034 0%, #F79F2A 50%, #F08B1E 100%) !important; /* FF 3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FCB034), color-stop(50%, #F79F2A), color-stop(100%, #F08B1E)) !important; /* Chrome, Safari 4+ */
+    background: -webkit-linear-gradient(top, #FCB034 0%, #F79F2A 50%, #F08B1E 100%) !important; /* Chrome 10+, Safari 5.1+ */
+    background: -o-linear-gradient(top, #FCB034 0%, #F79F2A 50%, #F08B1E 100%) !important; /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #FCB034 0%, #F79F2A 50%, #F08B1E 100%) !important; /* IE 10+ */
+    background: linear-gradient(top, #FCB034 0%, #F79F2A 50%, #F08B1E 100%) !important; /* W3C */
+    border: 2px solid #FCB034 !important;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+}
+
+a.order_evaluate{
+	clear:both;
+}
+
+input.add_evaluate_small{
+   //display: block !important;
+    margin-bottom: 14px !important;
+    padding: 4px 6px !important;
+    color: #221306 !important;
+    text-align: center;
+    text-decoration: none !important;
+    font-size: 1.25em;
+    background: #FCB034 !important; /* Old browsers */
+    background: -moz-linear-gradient(top, #FCB034 0%, #F79F2A 50%, #F08B1E 100%) !important; /* FF 3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FCB034), color-stop(50%, #F79F2A), color-stop(100%, #F08B1E)) !important; /* Chrome, Safari 4+ */
+    background: -webkit-linear-gradient(top, #FCB034 0%, #F79F2A 50%, #F08B1E 100%) !important; /* Chrome 10+, Safari 5.1+ */
+    background: -o-linear-gradient(top, #FCB034 0%, #F79F2A 50%, #F08B1E 100%) !important; /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #FCB034 0%, #F79F2A 50%, #F08B1E 100%) !important; /* IE 10+ */
+    background: linear-gradient(top, #FCB034 0%, #F79F2A 50%, #F08B1E 100%) !important; /* W3C */
+    border: 2px solid #FCB034 !important;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+}
+
+table.form_table td.value input[type="submit"].primary,
+input.form_submit.primary {
+    font-size: 1.2em;
+}
+
+input.add_evaluate {
+    width: 230px !important;
+    font-weight: bold !important;
+    line-height: 19px !important;
+	white-space: normal;
+}
+
+input.add_evaluate_small {
+    width: 190px !important;
+    font-weight: bold !important;
+    line-height: 19px !important;
+}
+
+/* This can be used if there is a link next to a button, and the link size and line-height needs to be fixed so that they match */
+a.mimic_add_evaluate {
+    width: 214px;
+    line-height: 19px;
+}
+
+input.add_evaluate_small:hover,
+input.add_evaluate:hover,
+a.order_evaluate:hover,
+table.form_table td.value input[type="submit"].primary:hover,
+input.form_submit.primary:hover {
+    cursor: pointer;
+    background: #FFB63A !important; /* Old browsers */
+    background: -moz-linear-gradient(top, #FFB93D 0%, #FDA530 50%, #F38E21 100%) !important; /* FF 3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FFB93D), color-stop(50%, #FDA530), color-stop(100%, #F38E21)) !important; /* Chrome, Safari 4+ */
+    background: -webkit-linear-gradient(top, #FFB93D 0%, #FDA530 50%, #F38E21 100%) !important; /* Chrome 10+, Safari 5.1+ */
+    background: -o-linear-gradient(top, #FFB93D 0%, #FDA530 50%, #F38E21 100%) !important; /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #FFB93D 0%, #FDA530 50%, #F38E21 100%) !important; /* IE 10+ */
+    background: linear-gradient(top, #FFB93D 0%, #FDA530 50%, #F38E21 100%) !important; /* W3C */
+    border: 2px solid #FFB93D !important;
+}
+
+/* Variant for buttons which appear in search results */
+input.search_result_action,
+a.search_result_action {
+    float: right;
+    margin-top: 0px !important;
+    margin-bottom: 8px !important;
+    font-size: 1em;
+    line-height: 14px !important;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+
+input.search_result_action {
+    width: 132px !important;
+}
+
+a.search_result_action {
+    width: 116px !important;
+}
+
+/* Variant for buttons with blue/grey gradient background */
+input.bg_gradient_blue,
+a.bg_gradient_blue {
+    background: #CFD0E9 !important; /* Old browsers */
+    background: -moz-linear-gradient(top, #CFD0E9 0%, #B9BADD 50%, #9E9ECC 100%) !important; /* FF 3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #CFD0E9), color-stop(50%, #B9BADD), color-stop(100%, #9E9ECC)) !important; /* Chrome, Safari 4+ */
+    background: -webkit-linear-gradient(top, #CFD0E9 0%, #B9BADD 50%, #9E9ECC 100%) !important; /* Chrome 10+, Safari 5.1+ */
+    background: -o-linear-gradient(top, #CFD0E9 0%, #B9BADD 50%, #9E9ECC 100%) !important; /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #CFD0E9 0%, #B9BADD 50%, #9E9ECC 100%) !important; /* IE 10+ */
+    background: linear-gradient(top, #CFD0E9 0%, #B9BADD 50%, #9E9ECC 100%) !important; /* W3C */
+    border-color: #B6B7DC !important;
+}
+
+input.bg_gradient_blue:hover,
+a.bg_gradient_blue:hover {
+    background: #D5D6EF !important; /* Old browsers */
+    background: -moz-linear-gradient(top, #D5D6EF 0%, #BFC0E3 50%, #A4A4D2 100%) !important; /* FF 3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #D5D6EF), color-stop(50%, #BFC0E3), color-stop(100%, #A4A4D2)) !important; /* Chrome, Safari 4+ */
+    background: -webkit-linear-gradient(top, #D5D6EF 0%, #BFC0E3 50%, #A4A4D2 100%) !important; /* Chrome 10+, Safari 5.1+ */
+    background: -o-linear-gradient(top, #D5D6EF 0%, #BFC0E3 50%, #A4A4D2 100%) !important; /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #D5D6EF 0%, #BFC0E3 50%, #A4A4D2 100%) !important; /* IE 10+ */
+    background: linear-gradient(top, #D5D6EF 0%, #BFC0E3 50%, #A4A4D2 100%) !important; /* W3C */
+    border-color: #B9BADF !important;
+}
+
+/*--------------------*/
+/* Shaded blue 'Show all resources...' button on subject pages */
+
+a.show_all_resources {
+    display: block;
+    margin: 0px;
+    padding: 6px 6px 9px 14px;
+    text-decoration: none !important;
+    font-weight: bold;
+    font-size: 1.3em;
+    line-height: 1.3em;
+    background: #1F68A5 !important; /* Old browsers */
+    background: -moz-linear-gradient(top, #1F68A5 0%, #154B8C 50%, #042A6B 100%) !important; /* FF 3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1F68A5), color-stop(50%, #154B8C), color-stop(100%, #042A6B)) !important; /* Chrome, Safari 4+ */
+    background: -webkit-linear-gradient(top, #1F68A5 0%, #154B8C 50%, #042A6B 100%) !important; /* Chrome 10+, Safari 5.1+ */
+    background: -o-linear-gradient(top, #1F68A5 0%, #154B8C 50%, #042A6B 100%) !important; /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #1F68A5 0%, #154B8C 50%, #042A6B 100%) !important; /* IE 10+ */
+    background: linear-gradient(top, #1F68A5 0%, #154B8C 50%, #042A6B 100%) !important; /* W3C */
+    border: 1px solid #042A6B;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+}
+a.expert {
+    padding: 6px 6px 22px 14px;
+}
+
+a.show_all_resources:hover {
+    background: #2F78B5 !important; /* Old browsers */
+    background: -moz-linear-gradient(top, #2F78B5 0%, #255B9C 50%, #143A7B 100%) !important; /* FF 3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2F78B5), color-stop(50%, #255B9C), color-stop(100%, #143A7B)) !important; /* Chrome, Safari 4+ */
+    background: -webkit-linear-gradient(top, #2F78B5 0%, #255B9C 50%, #143A7B 100%) !important; /* Chrome 10+, Safari 5.1+ */
+    background: -o-linear-gradient(top, #2F78B5 0%, #255B9C 50%, #143A7B 100%) !important; /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #2F78B5 0%, #255B9C 50%, #143A7B 100%) !important; /* IE 10+ */
+    background: linear-gradient(top, #2F78B5  0%, #255B9C 50%, #143A7B 100%) !important; /* W3C */
+}
+
+a.show_all_resources img {
+    float: right;
+    margin-top: 2px;
+}
+
+/*--------------------*/
+/* Link buttons with grey line borders and blue arrow */
+
+a.bordered_link_button {
+    display: inline-block;
+    margin: 7px 0px;
+    padding: 6px 40px 6px 14px;
+    width: 189px;
+    text-decoration: none !important;
+    background-image: url("../images/bordered_link_button_arrow.gif");
+    background-repeat: no-repeat;
+    background-position: right center;
+    border: 1px solid #E2DEDC;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+}
+
+.inset_text_block a.bordered_link_button {
+    width: auto;
+}
+
+/*------------------------------------------*/
+/* Search results block */
+
+.search_results h2 {
+    margin: 0px 0px 5px 0px;
+    padding: 0px 6px;
+    height: 28px;
+    font-weight: normal;
+    line-height: 20px;
+    font-size: 1.2em;
+}
+
+.search_results .filters {
+    padding: 6px 12px;
+    text-align: center;
+    border: 2px solid #E2DEDC;
+}
+
+.search_results .filters span,
+.search_results .filters a {
+    padding-bottom: 3px;
+}
+
+.search_results .filters .previous_link {
+    float: left;
+}
+
+.search_results .filters .next_link {
+    float: right;
+}
+
+.search_results .filters .sort_by_container {
+    padding-left: 10px;
+    float: left;
+}
+
+.search_results .filters .results_per_page_container {
+    padding-right: 20px;
+    float: right;
+}
+
+.search_results .filters .current_page_container {
+    float: right;
+}
+
+.search_results .filters .submit_button_container {
+    padding-left: 10px;
+    float: right;
+}
+
+.search_results .filters .submit_button_container .submit_button,
+.narrow_search .filters .submit_button {
+    margin: 2px 0px;
+    padding: 2px 5px 3px 5px;
+    width: 60px;
+    font-size: 1em;
+    background: #1F68A5 !important; /* Old browsers */
+    background: -moz-linear-gradient(top, #1F68A5 0%, #154B8C 50%, #042A6B 100%) !important; /* FF 3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1F68A5), color-stop(50%, #154B8C), color-stop(100%, #042A6B)) !important; /* Chrome, Safari 4+ */
+    background: -webkit-linear-gradient(top, #1F68A5 0%, #154B8C 50%, #042A6B 100%) !important; /* Chrome 10+, Safari 5.1+ */
+    background: -o-linear-gradient(top, #1F68A5 0%, #154B8C 50%, #042A6B 100%) !important; /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #1F68A5 0%, #154B8C 50%, #042A6B 100%) !important; /* IE 10+ */
+    background: linear-gradient(top, #1F68A5 0%, #154B8C 50%, #042A6B 100%) !important; /* W3C */
+    border: 1px solid #042A6B;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.narrow_search .filters .submit_button {
+    margin-bottom: 6px;
+}
+
+.search_results .filters .submit_button_container .submit_button:hover,
+.narrow_search .filters .submit_button:hover {
+    cursor: pointer;
+    background: #2F78B5 !important; /* Old browsers */
+    background: -moz-linear-gradient(top, #2F78B5 0%, #255B9C 50%, #143A7B 100%) !important; /* FF 3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2F78B5), color-stop(50%, #255B9C), color-stop(100%, #143A7B)) !important; /* Chrome, Safari 4+ */
+    background: -webkit-linear-gradient(top, #2F78B5 0%, #255B9C 50%, #143A7B 100%) !important; /* Chrome 10+, Safari 5.1+ */
+    background: -o-linear-gradient(top, #2F78B5 0%, #255B9C 50%, #143A7B 100%) !important; /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #2F78B5 0%, #255B9C 50%, #143A7B 100%) !important; /* IE 10+ */
+    background: linear-gradient(top, #2F78B5  0%, #255B9C 50%, #143A7B 100%) !important; /* W3C */
+}
+
+.search_results .filters select {
+    margin: 2px 0px;
+}
+
+.search_results table {
+    margin: 2px 0px 14px 0px;
+    padding: 0px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.search_results table td {
+    position: relative;
+    padding: 12px 0px;
+    vertical-align: top;
+    border-bottom: 1px solid #6C6869;
+}
+
+.search_results table td p.category,
+.search_results table td p.category_zone {
+    margin: 0px 28px 4px 0px;
+    padding: 2px 0px 8px 6px;
+    width: 128px;
+    font-weight: bold;
+}
+
+.search_results table tr td:first-child img {
+    margin-right: 28px;
+	display:block;
+	width:134px;
+	height:auto;
+	min-height:40px;
+}
+
+.search_results table td h3 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.search_results table td p {
+    margin: 5px 0px 0px 0px;
+}
+
+.search_results table td a.arrow_link_right,
+.search_results table td a.arrow_link_down {
+    margin-top: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-position: right 3px;
+}
+
+.search_results table td span.marker {
+    display: block;
+    float: right;
+    margin: 0px 6px;
+    padding: 1px 4px 3px 4px;
+    font-weight: bold;
+}
+
+.search_results table td div.button_container,
+.search_results table td div.button_container_bottom {
+    float: right;
+    padding-top: 15px;
+    width: 187px;
+}
+
+.search_results table td div.button_container_bottom {
+    padding-top: 65px;
+}
+
+.search_results table td div.button_container label,
+.search_results table td div.button_container_bottom label {
+    font-size: 0.8em;
+}
+
+.search_results table td div.button_container .search_result_quantity,
+.search_results table td div.button_container_bottom .search_result_quantity {
+    float: left;
+    width: 24px;
+}
+
+.search_results div.video{
+	margin:0px;
+	border:0px;
+	width:auto;
+}
+
+/* Containers for 'Add to basket' button jQuery functionality */
+
+div.action_container div.action_container,
+div.action_container div.action_trigger,
+div.action_container div.action_result {
+    width: 100%;
+}
+
+div.action_container div.action_response,
+div.action_container div.action_result {
+    display: none;
+    margin-bottom: 14px;
+}
+
+div.action_container div.action_response {
+    float: right;
+    padding-top: 12px;
+    width: 132px;
+    height: 24px;
+    text-align: center;
+}
+
+div.right_column div.action_container div.action_response {
+    float: left;
+    padding-top: 5px;
+    width: 230px;
+}
+
+div.action_container div.action_result {
+    padding-left: 10px;
+    font-size: 1.1em;
+    line-height: 18px;
+}
+
+div.action_container div.action_result img {
+    float: left;
+}
+
+div.action_container div.action_result span,
+div.action_container div.action_result a {
+    padding-left: 8px;
+}
+
+/*------------------------------------------*/
+/* Row of letter buttons on 'See all Authors and Illustrators */
+
+.select_letter {
+    padding-top: 10px;
+    height: 20px;
+}
+
+.select_letter a {
+    display: block;
+    float: left;
+    margin-right: 1px;
+    width: 19px;
+    height: 20px;
+    text-align: center;
+    text-decoration: none !important;
+    font-weight: bold;
+    font-size: 1.3em;
+    line-height: 21px;
+    background-color: #E2DEDC;
+}
+
+a.empty {    
+    font-weight: lighter;
+}
+
+.select_letter a:hover {
+    background-color: #F2EEEC;
+}
+
+/*------------------------------------------*/
+/* Results when searching for author by letter on 'See all Authors and Illustrators' */
+
+.author_listing .column {
+    float: left;
+    margin-top: 4px;
+    margin-right: 20px;
+    width: 157px;
+}
+
+.author_listing .column p {
+    margin: 5px 0px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+/*------------------------------------------*/
+/* Business division page content blocks */
+
+/*--------------------*/
+/* Hero panel */
+
+#hero_panel {
+    margin-bottom: 6px;
+    padding: 6px 6px 2px 6px;
+    width: 514px;
+    min-height: 215px;
+    border: 3px solid #E3DFDD;
+}
+
+#hero_panel_container {
+    position: relative;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    width: 345px;
+}
+
+#hero_panel .banner {
+    width: 345px;
+    height: 215px;
+    overflow: hidden;
+}
+
+#hero_panel_pager {
+    float: right;
+    width: 164px;
+}
+
+#hero_panel_pager a {
+    display: block;
+    margin-bottom: 4px;
+}
+
+#hero_panel_pager a img.pager_clear {
+    display: block;
+}
+
+#hero_panel_pager a img.pager_hover {
+    display: none;
+}
+
+#hero_panel_pager a.activeSlide img.pager_clear {
+    display: none;
+}
+
+#hero_panel_pager a.activeSlide img.pager_hover {
+    display: block;
+}
+
+/*--------------------*/
+/* Default paragraph styles for enclosed content blocks */
+
+.enclosed .image_text_columns p,
+.enclosed .image_text_grid p,
+.enclosed .image_text_single p,
+.enclosed .text_only_columns p,
+.enclosed .text_only_single p {
+    margin: 6px 0px;
+}
+
+/*--------------------*/
+/* B1 - Full width, title, three images with text underneath */
+/* B4 - Full width, title, three text columns */
+/* Column width, title, images with text underneath ('Related items' on product details pages) */
+
+.column_width .image_text_columns {
+    position: relative;
+}
+
+.full_width .image_text_columns ul,
+.full_width .text_only_columns ul,
+.column_width .image_text_columns ul {
+    display: block;
+    margin: 0px;
+    padding: 2px;
+    list-style-type: none;
+}
+
+.full_width .image_text_columns ul,
+.full_width .text_only_columns ul {
+    width: 522px;
+}
+
+.column_width .image_text_columns ul {
+    float: left;
+    width: 127px;
+}
+
+.column_width .image_text_columns ul.related {
+    float: left;
+    width: 167px;
+}
+
+.full_width .image_text_columns li,
+.full_width .text_only_columns li,
+.column_width .image_text_columns li {
+    display: block;
+    margin: 0px;
+    overflow: hidden;
+    background-image: none;
+}
+
+.full_width .image_text_columns li,
+.full_width .text_only_columns li {
+    float: left;
+    padding: 8px;
+    width: 158px;
+}
+
+.column_width .image_text_columns li {
+    clear: both;
+    padding: 0px 0px 6px 0px;
+    width: 127px;
+    height: 65px;
+}
+
+.column_width .image_text_columns li.rl {
+    clear: both;
+    padding: 0px 0px 6px 0px;
+    width: 127px;
+    height: 45px;
+}
+
+.column_width .image_text_columns li.related {
+    clear: both;
+    padding: 0px 0px 6px 0px;
+    width: 157px;
+    height: 85px;
+}
+
+.full_width .image_text_columns li .image,
+.full_width .image_text_columns li .centred {
+    text-align: center;
+}
+
+.full_width .image_text_columns li .image img {
+    max-width: 100%;
+}
+
+.column_width .image_text_columns li .image {
+    float: left;
+    padding-left: 6px;
+    width: 55px;
+}
+
+.column_width .image_text_columns li .text {
+    float: right;
+    width: 60px;
+    height: 65px;
+    overflow: hidden;
+}
+
+.column_width .image_text_columns li .text_rl {
+    float: right;
+    width: 120px;
+    height: 45px;
+    overflow: hidden;
+}
+
+.column_width .image_text_columns li .text_ri {
+    float: right;
+    width: 80px;
+    height: 65px;
+    overflow: hidden;
+}
+
+.full_width .image_text_columns li h3 {
+    margin-bottom: 0px;
+}
+
+.column_width .image_text_columns li h3 {
+    margin: 0px;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+/* Pager for carousel (if block contains more than 3 items) */
+.full_width .carousel_pager {
+    padding-top: 4px;
+    padding-bottom: 16px;
+    width: 100%;
+    height: 17px;
+    text-align: center;
+}
+
+.column_width .carousel_pager {
+    position: absolute;
+    top: 40%;
+    right: 8px;
+    width: 17px;
+}
+
+.carousel_pager a {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background-image: url("../images/carousel_pager_clear.gif");
+    background-repeat: no-repeat;
+}
+
+.full_width .carousel_pager a {
+    padding: 0px 2px;
+}
+
+.column_width .carousel_pager a {
+    padding: 2px 0px;
+}
+
+.carousel_pager a.selected {
+    background-image: url("../images/carousel_pager_selected.gif");
+}
+
+.carousel_pager a span {
+    display: none;
+}
+
+/*--------------------*/
+/* B2 - Full width, title, three images, text aligned to side */
+
+.full_width .image_text_grid ul {
+    display: block;
+    margin: 0px;
+    padding: 2px;
+    width: 522px;
+    list-style-type: none;
+}
+
+.full_width .image_text_grid li {
+    display: block;
+    float: left;
+    margin: 0px;
+    padding: 6px;
+    width: 162px;
+    overflow: hidden;
+    background-image: none;
+}
+
+.full_width .image_text_grid img {
+    float: left;
+}
+
+.full_width .image_text_grid .text {
+    float: right;
+    width: 90px;
+}
+
+.full_width .image_text_grid h3 {
+    margin: 0px;
+    font-size: 1em;
+}
+
+.full_width .image_text_grid p {
+    margin-top: 0px;
+}
+
+/*--------------------*/
+/* B3 - Full width, title, one image, text aligned to side */
+/* B5 - Half width, title, one image, text aligned to side */
+
+.full_width .image_text_single,
+.half_width .image_text_single {
+    padding: 8px;
+}
+
+.full_width .image_text_single img,
+.half_width .image_text_single img {
+    float: left;
+}
+
+.full_width .image_text_single .text,
+.half_width .image_text_single .text {
+    float: right;
+}
+
+.full_width .image_text_single .text {
+    width: 341px;
+}
+
+.half_width .image_text_single .text {
+    width: 115px;
+}
+
+.full_width .image_text_single h3,
+.half_width .image_text_single h3 {
+    margin-top: 0px;
+}
+
+/*--------------------*/
+/* B6 - Half width, title, text only */
+/* Full width, title, text only */
+
+.text_only_single {
+    padding: 10px;
+    line-height: 1.6em;
+}
+
+.text_only_single h3 {
+    margin: 0px;
+    line-height: 1.6em;
+}
+
+.text_only_single input.search_text {
+    width: 150px;
+}
+
+.text_only_single .float_left {
+    float: left;
+    margin-right: 10px;
+}
+
+.text_only_single .float_right {
+    float: right;
+    margin-left: 10px;
+}
+
+/*--------------------*/
+/* Optional 'Find out more'/'See all' top-right link */
+
+.content_block .find_out_more {
+    display: block;
+    float: right;
+    padding-right: 23px;
+    height: 31px;
+    line-height: 31px;
+    background-image: url("../images/find_out_more_arrow_grey.gif");
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.bg_colour_blue .find_out_more,
+.bg_colour_zone .find_out_more,
+.bg_colour_primary .find_out_more,
+.bg_colour_secondary .find_out_more,
+.bg_colour_dictionaries .find_out_more,
+.bg_colour_children .find_out_more {
+    background-image: url("../images/find_out_more_arrow_white.png");
+}
+
+/*------------------------------------------*/
+/* Column width and sidebar blocks */
+
+/*--------------------*/
+/* 'Narrow search by...' left-hand filters */
+
+.narrow_search {
+    margin-top: 11px;
+    margin-bottom: 0px;
+}
+
+#search_navigation .narrow_search {
+    margin-top: 0px;
+}
+
+.narrow_search h2 {
+    margin: 0px;
+    padding: 0px 9px;
+    height: 28px;
+    line-height: 20px;
+    font-size: 1.2em;
+}
+
+.narrow_search  .filters {
+    margin-top: 7px;
+    padding: 6px 6px 0px 6px;
+}
+
+.narrow_search .filters div {
+    padding-bottom: 16px;
+}
+
+.narrow_search .filters div.clearer {
+    padding-bottom: 0px;
+}
+
+.narrow_search .filters h3 {
+    margin: 0px 0px 5px 0px;
+    padding: 0px 0px 9px 0px;
+    border-bottom: 1px dotted #666162;
+}
+
+.narrow_search .filters p {
+    clear: both;
+    margin: 0px;
+    padding: 4px 0px;
+}
+
+/* used for subfaceted nav */
+.narrow_search .filters span {
+    float: right;
+    clear: both;
+    padding: 4px 0px;
+}
+
+.narrow_search .filters input {
+    display: block;
+    float: left;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.narrow_search .filters label {
+    display: block;
+    float: right;
+    padding-top: 1px;
+    width: 138px;
+}
+
+/* USed fro subfacet nav*/
+.narrow_search .filters span label {
+    display: block;
+    float: right;
+    padding-left: 4px;
+    width: 118px;
+} 
+/*--------------------*/
+/* Product thumbnail images */
+
+.product_image {
+    margin-top: 8px;
+}
+
+.product_image p {
+    margin: 0px;
+    text-align: center;
+}
+
+/*--------------------*/
+/* Product and listing thumbnail shadows */
+
+.product_image_shadow {
+    width: 160px;
+    /*height: 180px;
+    background-image: url("../images/product_image_shadow_bg.gif");*/
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.product_image_shadow  img{
+	width:134px;
+}
+
+.listing_image_shadow {
+    width: 121px;
+    height: 111px;
+    background-image: url("../images/listing_image_shadow_bg.gif");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+/*--------------------*/
+/* Product details 'Look inside' */
+
+div.look_inside {
+    padding: 8px 15px 22px 15px;
+    width: 140px;
+    font-weight: bold;
+}
+
+div.look_inside p {
+    margin: 0px;
+    width: 108px;
+    height: 25px;
+    font-size: 1.3em;
+    line-height: 25px;
+    background-image: url(../images/look_inside_arrow.gif);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+div.look_inside ul {
+    margin: 4px 0px 0px 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+div.look_inside ul li {
+    margin: 0px;
+    padding: 2px 0px 0px 0px;
+    background-image: none;
+}
+
+/*--------------------*/
+/* Blocks with grey border line and rounded corners */
+
+.line_border {
+    width: 168px;
+    background-image: url("../images/line_border_middle.gif");
+    background-repeat: repeat-y;
+}
+
+.line_border .block_top,
+.line_border .block_bottom {
+    width: 100%;
+    height: 10px;
+    background-repeat: no-repeat;
+}
+
+.line_border .block_top {
+    background-image: url("../images/line_border_top.gif");
+}
+
+.line_border .block_bottom {
+    background-image: url("../images/line_border_bottom.gif");
+}
+
+.line_border .inner_block {
+    padding: 1px;
+}
+
+/*--------------------*/
+/* 'Keep updated' block */
+
+.keep_updated {
+    margin-top: -2px;
+    width: 100%;
+    background-image: url("../images/keep_updated_bg.gif");
+    background-repeat: repeat-x;
+    background-color: #FFFFFF;
+}
+
+.keep_updated h2 {
+    margin: 0px;
+    padding: 3px 0px 6px 5px;
+    color: #FFFFFF;
+    font-size: 1.2em;
+    line-height: 24px;
+    background-image: url("../images/keep_updated_arrow.jpg");
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.keep_updated p {
+    margin: 4px 0px 10px 0px;
+    padding-left: 5px;
+    font-size: 1.1em;
+    line-height: 1.3em;
+}
+
+.keep_updated .keep_updated_icon {
+    display: inline-block;
+    margin: 1px 0px 12px 7px;
+    float: left;
+    height: 21px;
+    line-height: 21px;
+}
+
+.keep_updated .news_icon {
+    margin-top: 0px;
+    margin-left: 5px;
+    height: 25px;
+    line-height: 25px;
+}
+
+/*--------------------*/
+/* Links for 'How to order', 'Find your educational consultant' etc. */
+
+.help_support {
+    margin-bottom: 11px;
+    border-top: 2px solid #F1EEED;
+    border-bottom: 1px solid #F1EEED;
+}
+
+.help_support a {
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid #F1EEED;
+}
+
+.help_support a:last-child {
+    padding-bottom: 10px;
+}
+
+/*--------------------*/
+/* Dictionary Help */
+
+.dictionary_help {
+    padding: 8px 0px 11px 11px;
+    width: 159px;
+}
+
+.dictionary_help h2 {
+    margin: 0px;
+    font-size: 2.75em;
+    line-height: 1em;
+}
+
+.dictionary_help p {
+    margin: 6px 0px 8px 0px;
+    font-weight: bold;
+    font-size: 1.8em;
+    line-height: 1.1em;
+}
+
+.dictionary_help img {
+    margin-bottom: 4px;
+}
+
+/*--------------------*/
+/* Coloured Link Buttons (with white right-hand arrow graphic) */
+
+.link_button_list {
+    margin-bottom: 5px;
+}
+
+
+.link_button_list a {
+    background-image: url("../images/link_button_arrow_white.png");
+    background-position: 145px center;
+    background-repeat: no-repeat;
+    display: block;
+    font-size: 1.25em;
+    font-weight: bold;
+    line-height: 19px;
+    margin-bottom: 6px;
+    padding: 8px 21px 8px 8px;
+    text-decoration: none;
+    width: 141px;
+}
+/* counld need t use this code instead of above
+.link_button_list a {
+    display: block;
+    margin-bottom: 6px;
+    padding: 8px 18px 8px 6px;
+    width: 150px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.25em;
+    line-height: 19px;
+    background-image: url("../images/link_button_arrow_white.png");
+    background-repeat: no-repeat;
+    background-position: 151px center;
+   
+}*/
+
+/*--------------------*/
+/* 'Ask an Editor' and 'Ask an Expert (e.g. 'Ask Debbie Hepplewhite' and 'Ask Ruth Miskin') forms */
+
+.ask_an_expert,
+.ask_an_editor {
+    padding: 0px 8px;
+    width: 154px;
+    background-color: #E2DEDC;
+}
+
+.ask_an_expert {
+    margin-top: 10px;
+}
+
+.ask_an_expert h2,
+.ask_an_editor h2 {
+    display: block;
+    margin: 0px;
+    width: 100%;
+}
+
+.ask_an_expert h2 {
+    position: relative;
+    padding: 10px 0px;
+    font-size: 1.3em;
+}
+
+.ask_an_editor h2 {
+    padding: 14px 0px;
+    font-size: 1.4em;
+}
+
+.ask_an_expert h2 img {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.ask_an_expert select,
+.ask_an_editor select {
+    margin-left: 0px;
+    margin-bottom: 8px;
+    width: 152px;
+}
+
+.ask_an_expert input,
+.ask_an_expert textarea,
+.ask_an_editor input,
+.ask_an_editor textarea {
+    margin-top: 0px;
+    margin-bottom: 8px;
+    width: 140px;
+}
+
+.ask_an_expert #ask_submit,
+.ask_an_editor #ask_submit {
+    margin: 0px 0px 12px 10px;
+    padding: 2px 0px 3px 0px;
+    width: 134px;
+    font-size: 1.2em;
+    background: #1F68A5 !important; /* Old browsers */
+    background: -moz-linear-gradient(top, #1F68A5 0%, #154B8C 50%, #042A6B 100%) !important; /* FF 3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1F68A5), color-stop(50%, #154B8C), color-stop(100%, #042A6B)) !important; /* Chrome, Safari 4+ */
+    background: -webkit-linear-gradient(top, #1F68A5 0%, #154B8C 50%, #042A6B 100%) !important; /* Chrome 10+, Safari 5.1+ */
+    background: -o-linear-gradient(top, #1F68A5 0%, #154B8C 50%, #042A6B 100%) !important; /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #1F68A5 0%, #154B8C 50%, #042A6B 100%) !important; /* IE 10+ */
+    background: linear-gradient(top, #1F68A5 0%, #154B8C 50%, #042A6B 100%) !important; /* W3C */
+    border: 1px solid #042A6B;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.ask_an_expert #ask_submit:hover,
+.ask_an_editor #ask_submit:hover {
+    cursor: pointer;
+    background: #2F78B5 !important; /* Old browsers */
+    background: -moz-linear-gradient(top, #2F78B5 0%, #255B9C 50%, #143A7B 100%) !important; /* FF 3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2F78B5), color-stop(50%, #255B9C), color-stop(100%, #143A7B)) !important; /* Chrome, Safari 4+ */
+    background: -webkit-linear-gradient(top, #2F78B5 0%, #255B9C 50%, #143A7B 100%) !important; /* Chrome 10+, Safari 5.1+ */
+    background: -o-linear-gradient(top, #2F78B5 0%, #255B9C 50%, #143A7B 100%) !important; /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #2F78B5 0%, #255B9C 50%, #143A7B 100%) !important; /* IE 10+ */
+    background: linear-gradient(top, #2F78B5  0%, #255B9C 50%, #143A7B 100%) !important; /* W3C */
+}
+
+.ask_an_expert p,
+.ask_an_editor p {
+    margin-top: 0px;
+    text-align: center;
+}
+
+/*--------------------*/
+/* Blog listing blocks */
+
+.blog_listing {
+    background-color: #99CA3C;
+}
+
+.blog_listing .listing_block {
+    margin: 0px 10px 18px 10px;
+    padding: 2px 4px 14px 4px;
+    width: 142px;
+    background-color: #FFFFFF;
+}
+
+.blog_listing .listing_block p {
+    margin: 0px;
+    padding: 4px 0px;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/* Site-wide footer */
+
+#footer {
+    width: 100%;
+}
+
+#footer ul {
+    display: block;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+#footer ul li {
+    display: block;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*------------------------------------------*/
+/* Left-hand column */
+
+#footer #footer_sidebar {
+    float: left;
+    padding: 0px 20px 0px 14px;
+    width: 147px;
+}
+
+#footer #footer_sidebar a.back_to_top {
+    display: block;
+    margin-bottom: 25px;
+    padding: 4px 0px;
+    font-weight: bold;
+    font-size: 0.9em;
+    border-bottom: 1px solid #E8E5E4;
+    background-image: url("../images/footer_top_arrow.gif");
+    background-repeat: no-repeat;
+    background-position: 70px center;
+}
+
+#footer #footer_sidebar ul li {
+    padding-bottom: 8px;
+    width: 100%;
+}
+
+#footer #footer_sidebar ul li span {
+    display: block;
+    margin: 9px 0px 4px 0px;
+    padding-bottom: 4px;
+    font-weight: bold;
+    border-bottom: 1px solid #E8E5E4;
+}
+
+#footer #footer_sidebar ul ul li {
+    padding: 0px;
+}
+
+#footer #footer_sidebar ul ul li a {
+    display: block;
+    padding-bottom: 7px;
+}
+
+/*------------------------------------------*/
+/* Sitemap navigation */
+
+ul#sitemap {
+    width: 713px;
+    background-image: url("../images/footer_sitemap_bg.gif");
+    background-repeat: repeat-y;
+}
+
+/*--------------------*/
+/* First tier (section/column headings) */
+
+ul#sitemap li {
+    width: 181px;
+}
+
+ul#sitemap li.last {
+    width: 170px;
+}
+
+ul#sitemap li div {
+    width: 100%;
+    min-height: 50px;
+}
+
+ul#sitemap li div a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 3px 6px;
+    width: 158px;
+    min-height: 34px;
+    color: #FFFFFF !important;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/*--------------------*/
+/* Second tier (subject headings) */
+
+ul#sitemap ul {
+    padding-bottom: 24px;
+}
+
+ul#sitemap ul li {
+    padding-left: 6px;
+    padding-bottom: 8px;
+    width: 150px;
+}
+
+ul#sitemap ul li span {
+    display: block;
+    margin: 9px 0px 4px 0px;
+    padding-bottom: 4px;
+    width: 150px;
+    font-weight: bold;
+    border-bottom: 1px solid #E8E5E4;
+}
+
+/*--------------------*/
+/* Third tier (links) */
+
+ul#sitemap ul ul {
+    padding-bottom: 0px;
+}
+
+ul#sitemap ul ul li {
+    padding: 0px;
+}
+
+ul#sitemap ul ul li a {
+    display: block;
+    padding-bottom: 7px;
+}
+
+/*------------------------------------------*/
+/* Terms and conditions text */
+
+#footer #terms {
+    float: right;
+    padding: 6px 6px 12px 6px;
+    width: 701px;
+    text-align: center;
+}
+
+#footer #terms p {
+    margin: 4px 0px;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/* Copyright notice and links to legal pages */
+
+#legal {
+    float: right;
+    width: 713px;
+    text-align: center;
+}
+
+#legal p {
+    margin: 10px 0px;
+}
+
+#legal p a {
+    text-decoration: underline;
+}
+
+.full_width form p {    
+	margin-bottom: 4px; 
+	margin-left: 0px;
+}
+
+#page_content .did_you_mean {
+	padding-left: 11px;
+}
+
+#suggestion.hidesuggestion {
+	display: none;
+	width: 233px; 
+	top: 77px; 
+	left: 62px; 
+	position: absolute; 
+	text-align: left; 
+	z-index: 2000; 
+	background: none repeat scroll 0pt 0pt rgb(255, 255, 255); 
+	margin-top: 20px; 
+	border-style: solid; 
+	border-width: 1px;
+}
+
+#suggestion.diplaysuggestion {
+	display: block;
+	width: 233px; 
+	top: 77px;
+	left: 62px;	
+	position: absolute; 
+	text-align: left; 
+	z-index: 2000; 
+	background: none repeat scroll 0pt 0pt rgb(255, 255, 255); 	
+	margin-top: 20px; 
+	border-style: solid; 
+	border-width: 1px;	
+}
+
+#suggestion ul {
+	border-top-width: 0px; 
+	margin-top: 2px; 
+	margin-bottom: 2px;
+}
+
+#suggestion ul li {
+	padding: 0px; 
+	list-style-type: none; 
+	margin: 0pt 0pt 0pt -32px;
+}
+
+#suggestion div {
+	padding-left:5px; 
+	padding-right:5px;
+}
+
+#suggestion div h2{
+	border-bottom: 2px solid;
+	color: #6C6869;
+}
+
+#suggestion div p{
+	border-top: 1px solid;
+}
+
+#suggestion ul li.highlight{
+	background: none repeat scroll 0 0 #DADADA;
+    border: 1px solid #999999;
+    color: #212121;
+	margin-right:5px;
+	cursor: pointer;
+}
+
+.viewlarger{
+    z-index:9999; 
+    padding:20px;
+}
+
+.viewlarger img{
+    border:8px solid #FFF;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}   
+
+.viewlarger a.close {
+    background:url("../images/close.png") no-repeat;
+    position:absolute;
+    top:2px;
+    right:5px; 
+    width:35px;
+    height:35px;
+    cursor:pointer;
+}
+
+/* root element for accordion. decorated with rounded borders and gradient background image */
+#accordion {
+    background:#333 url(../../media/img/gradient/h300.html) 0 0;
+    width: 300px;
+    border:1px solid #333;
+    -background:#666;
+    margin: 0 auto;
+}
+
+/* accordion header */
+#accordion h2 {
+    background:#ccc;
+    line-height: 14px;
+    margin:0;
+    padding:5px 15px;
+    font-size:14px;
+    font-weight:normal;
+    border:1px solid #fff;
+    border-bottom:1px solid #ddd;
+    cursor:pointer;
+}
+
+/* currently active header */
+#accordion h2.current {
+    cursor:default;
+    background-color:#fff;
+}
+
+/* accordion pane */
+#accordion .pane {
+    border:1px solid #fff;
+    border-width:0 2px;
+    display:none;
+    height:180px;
+    padding:15px;
+    color:#fff;
+    font-size:12px;
+}
+
+/* a title inside pane */
+#accordion .pane h3 {
+    font-weight:normal;
+    margin:0;
+    font-size:16px;
+    color:#999;
+}

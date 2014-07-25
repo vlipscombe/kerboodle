@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <step>
+	<contextInfo>
+		<title>Add Students or Teachers to a Teaching Group</title>
+		<id>addusers</id>
+		<parent>groups</parent>
+		<previousTitle></previousTitle>
+		<previousLink></previousLink>
+		<nextTitle>Create a New Test</nextTitle>
+		<nextLink>createTest</nextLink>
+	</contextInfo>
+	<content>
+		<code><![CDATA[
+			<p>You may need to add additional Teachers or Students to a Teaching Group.</p>
+			<ol>
+				<li>Select your Group from the list on the left hand side of the screen.</li>
+				<li>Click the drop down arrow next to the name of your group (at the top of the right hand panel)</b>.</li>
+				<li>Select <b>Add Teachers or Students to this Teaching Group</b>.</li>
+				<li>Use the filter or search option to find the student(s) or teacher(s).</li>
+				<li>Tick the box next to an individual name to add them to the teaching group.</li>
+				<li>Click the <b>Add</b> button.</li>
+			</ol>
+		]]></code>
+	</content>
+</step>

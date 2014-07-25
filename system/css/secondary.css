@@ -1,0 +1,56 @@
+﻿
+#primary_nav ul li.secondary a {
+    z-index: 1001;
+    height: 26px;
+    margin: 0px -1px 4px -2px;
+    color: #6C6869;
+    line-height: 26px;
+    background-color: #FFFFFF;
+    background-image: url("../images/primary_nav_arrow_hover.gif");
+    background-position: right 9px;
+    border: 2px solid #6C6869;
+}
+
+ul#lower_nav li a.selected,
+.select_letter a.selected {
+    color: #FFFFFF !important;
+}
+
+ul#lower_nav li a.selected,
+.select_letter a.selected,
+.bg_colour_zone,
+.bg_colour_zone input.submit,
+.search_results p.category_zone {
+    background-color: #D11B6D;
+}
+
+.bg_colour_zone input[type=submit] {
+    border-color:  #D11B6D;
+    background-color: #D11B6D;
+}
+
+ul#lower_nav li a.selected:hover,
+.select_letter a.selected:hover,
+.bg_colour_zone input.submit:hover:hover {
+    background-color: #E12B7D;
+}
+
+.bg_colour_zone input[type=submit]:hover {
+    border-color:  #E12B7D;
+    background-color: #E12B7D;
+}
+
+/* Specified here rather than in global CSS so that it doesn't need to be re-overridden */
+ul#lower_nav ul li span.selected,
+ul#lower_nav ul li a.selected {
+    color: #1F68A5 !important;
+    background-color: transparent !important;
+}
+
+ul#lower_nav ul li a.selected:hover {
+    color: #3F98D5 !important;
+}
+
+h1.zone_title {
+    color: #D11B6D;
+}

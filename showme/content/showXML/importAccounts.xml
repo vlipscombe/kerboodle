@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <topic>
+	<topicTitle>Importing Multiple Accounts</topicTitle>
+	<topicDialog><![CDATA[<p>To make setting up your Student and Teacher accounts as easy as possible, you can import the data as a batch to Kerboodle.</p><p>There are three options for importing accounts - please choose the option which best applies to your School or College, depending on whether you use SIMS or Facility as your Management Information System.</p>]]></topicDialog>
+	<steps>
+		<step>
+			<stepTitle>Switch to Admin Mode</stepTitle>
+			<stepTextTip><![CDATA[Once logged into Kerboodle, click on the <b>Switch to Admin mode</b> button at the top of the page and re-enter your password to enter the Admin area. ]]></stepTextTip>
+			<stepScreen>content/showImages/admin/AdminImport1.png</stepScreen>
+			<stepHotspot>334,14,417,27</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Click Import Accounts</stepTitle>
+			<stepTextTip><![CDATA[Click on the <b>Import Accounts</b> button.]]></stepTextTip>
+			<stepScreen>content/showImages/admin/AdminImport2.png</stepScreen>
+			<stepHotspot>102,130,166,139</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Download Templates</stepTitle>
+			<stepTextTip><![CDATA[<p>Follow the steps in the Import Wizard to import your student accounts. There are 3 options:</p><ul><li>Import using the SIMS report</li><li>Import using the Facility report</li><li>Import using a blank template.</li>]]></stepTextTip>
+			<stepScreen>content/showImages/admin/AdminImport3.png</stepScreen>
+			<stepHotspot>40,318,392,337</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Accounts Created</stepTitle>
+			<stepTextTip><![CDATA[The Import Wizard will take you through the process step-by-step until you have successfully imported your student accounts.]]></stepTextTip>
+			<stepScreen>content/showImages/admin/AdminImport4.png</stepScreen>
+			<stepHotspot>412,34,512,78</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Accounts Created</stepTitle>
+			<stepTextTip><![CDATA[<p>The new accounts will then appear in the <b>Students / Teachers</b> list.</p><p>In order to assign courses and books to your students, the next step is to create a Teaching Group.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/admin/AdminImport5.png</stepScreen>
+			<stepHotspot></stepHotspot>
+		</step>
+	</steps>	
+ </topic>

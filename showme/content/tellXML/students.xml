@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <tellMeHow>
+	<pageDetails>
+		<pageTitle></pageTitle>
+		<pageLink>showMeHow.html?students</pageLink>
+		<linkText>Click here for the Show Me How tutorials</linkText>
+	</pageDetails>
+	<topics>
+		<topic>
+			<topicTitle>Welcome to Kerboodle</topicTitle>
+			<topicShort>Welcome</topicShort>
+			<topicFile>students/welcome</topicFile>	
+		</topic>
+		<topic>
+			<topicTitle>Join a Teaching Group</topicTitle>
+			<topicShort>Join</topicShort>
+			<topicFile>students/joinGroup</topicFile>	
+		</topic>
+		<topic>
+			<topicTitle>Explore the Content</topicTitle>
+			<topicShort>explore</topicShort>
+			<topicFile>students/exploreContent</topicFile>	
+		</topic>
+		<topic>
+			<topicTitle>Complete your Assignments</topicTitle>
+			<topicShort>assign</topicShort>
+			<topicFile>students/completeAssignments</topicFile>	
+		</topic>
+		<topic>
+			<topicTitle>View your Results</topicTitle>
+			<topicShort>results</topicShort>
+			<topicFile>students/viewResults</topicFile>	
+		</topic>
+	</topics>
+ </tellMeHow>

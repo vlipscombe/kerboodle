@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <step>
+	<contextInfo>
+		<title>How to Delete a Message</title>
+		<id>deleteMessage</id>
+		<parent>messages</parent>
+		<previousTitle>Overview of the Events Tab</previousTitle>
+		<previousLink>eventTab</previousLink>
+		<nextTitle></nextTitle>
+		<nextLink></nextLink>
+	</contextInfo>
+	<content>
+		<code><![CDATA[
+				<ol>
+					<li>Add a tick to the box next to the name of the Message that you wish to Delete.</li>
+					<li>Click the <b>Delete</b> button</li>
+				</ol>
+				<p><font color='#39A4DD'>You can select more than one message at a time to delete.</font></p>
+		]]></code>
+	</content>
+</step>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <topic>
+	<topicTitle>Assigning a Test Yourself</topicTitle>
+	<topicDialog><![CDATA[The Test Yourself activities do not appear in the student's Library as they are automatically marked by Kerboodle and can be used for Test and Assessment purposes.]]></topicDialog>
+	<steps>
+		<step>
+			<stepTitle>Title</stepTitle>
+			<stepTextTip><![CDATA[Once logged into Kerboodle, access the course from which you'd like to assign the Test Yourself.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/AssignTest1.png</stepScreen>
+			<stepHotspot>12,122,94,133</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Title</stepTitle>
+			<stepTextTip><![CDATA[Click on the <b>Tests</b> bar.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/AssignTest2.png</stepScreen>
+			<stepHotspot>150,269,544,287</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Title</stepTitle>
+			<stepTextTip><![CDATA[Use the action drop-down arrow next to the Test Yourself title and select <b>Assign this test to your Teaching Groups</b>.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/AssignTest3.png</stepScreen>
+			<stepHotspot>390,175,546,187</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Title</stepTitle>
+			<stepTextTip><![CDATA[In the pop up window, give the Test a <b>Name</b> and <b>Description</b>.</p><p>Tick the box next to the <b>Teaching Group</b>, or expand the list of Students and tick individual names to allocate the Test to them.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/AssignTest4.png</stepScreen>
+			<stepHotspot>165,42,489,133</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Title</stepTitle>
+			<stepTextTip><![CDATA[Choose a Start Date and End Date for the Test and once completed, click <b>OK</b>.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/AssignTest5.png</stepScreen>
+			<stepHotspot>168,314,254,395</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Title</stepTitle>
+			<stepTextTip><![CDATA[Your test will then appear in your <b>Assignments</b> panel on the Course page.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/AssignTest6.png</stepScreen>
+			<stepHotspot></stepHotspot>	
+		</step>
+	</steps>	
+ </topic>

@@ -1,0 +1,127 @@
+
+/* This is the default 'Tango' skin for jCarousel modified for use with 'image_text_columns' page content blocks, and with unused CSS removed */
+
+.jcarousel-skin-tango {
+    padding: 2px 0px;
+}
+
+.column_width .jcarousel-skin-tango {
+    padding: 0px;
+}
+
+.jcarousel-skin-tango .jcarousel-container-horizontal {
+    padding: 0px;
+    width: 526px;
+}
+
+.jcarousel-skin-tango .jcarousel-container-vertical {
+    padding: 30px 0px;
+    width: 127px;
+}
+
+.jcarousel-skin-tango .jcarousel-clip {
+    overflow: hidden;
+}
+
+.jcarousel-skin-tango .jcarousel-clip-horizontal {
+    margin: 0px 23px;
+    width:  480px;
+}
+
+.jcarousel-skin-tango .jcarousel-clip-vertical {
+    width:  127px;
+    height: 284px;
+}
+
+.jcarousel-skin-tango .jcarousel-item-horizontal {
+	margin-left: 0;
+    margin-right: 10px;
+}
+
+.jcarousel-skin-tango .jcarousel-item-vertical {
+
+}
+
+.jcarousel-skin-tango .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+
+/**
+ *  Horizontal Buttons
+ */
+.jcarousel-skin-tango .jcarousel-next-horizontal {
+    position: absolute;
+    top: 34px;
+    right: 0px;
+    width: 18px;
+    height: 34px;
+    cursor: pointer;
+    background: transparent url("../images/carousel_horizontal_next.gif") no-repeat 0 0;
+}
+
+.jcarousel-skin-tango .jcarousel-next-disabled-horizontal,
+.jcarousel-skin-tango .jcarousel-next-disabled-horizontal:hover,
+.jcarousel-skin-tango .jcarousel-next-disabled-horizontal:focus,
+.jcarousel-skin-tango .jcarousel-next-disabled-horizontal:active {
+    cursor: default;
+    background: transparent url("../images/carousel_horizontal_next_disabled.gif") no-repeat 0 0;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-horizontal {
+    position: absolute;
+    top: 34px;
+    left: 0px;
+    width: 18px;
+    height: 34px;
+    cursor: pointer;
+    background: transparent url("../images/carousel_horizontal_previous.gif") no-repeat 0 0;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-disabled-horizontal,
+.jcarousel-skin-tango .jcarousel-prev-disabled-horizontal:hover,
+.jcarousel-skin-tango .jcarousel-prev-disabled-horizontal:focus,
+.jcarousel-skin-tango .jcarousel-prev-disabled-horizontal:active {
+    cursor: default;
+    background: transparent url("../images/carousel_horizontal_previous_disabled.gif") no-repeat 0 0;
+}
+
+/**
+ *  Vertical Buttons
+ */
+.jcarousel-skin-tango .jcarousel-next-vertical {
+    position: absolute;
+    bottom: 0px;
+    left: 68px;
+    width: 33px;
+    height: 18px;
+    cursor: pointer;
+    background: transparent url("../images/carousel_vertical_next.gif") no-repeat 0 0;
+}
+
+.jcarousel-skin-tango .jcarousel-next-disabled-vertical,
+.jcarousel-skin-tango .jcarousel-next-disabled-vertical:hover,
+.jcarousel-skin-tango .jcarousel-next-disabled-vertical:focus,
+.jcarousel-skin-tango .jcarousel-next-disabled-vertical:active {
+    cursor: default;
+    background: transparent url("../images/carousel_vertical_next_disabled.gif") no-repeat 0 0;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-vertical {
+    position: absolute;
+    top: 0px;
+    left: 68px;
+    width: 33px;
+    height: 18px;
+    cursor: pointer;
+    background: transparent url("../images/carousel_vertical_previous.gif") no-repeat 0 0;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-disabled-vertical,
+.jcarousel-skin-tango .jcarousel-prev-disabled-vertical:hover,
+.jcarousel-skin-tango .jcarousel-prev-disabled-vertical:focus,
+.jcarousel-skin-tango .jcarousel-prev-disabled-vertical:active {
+    cursor: default;
+    background: transparent url("../images/carousel_vertical_previous_disabled.gif") no-repeat 0 0;
+}
+

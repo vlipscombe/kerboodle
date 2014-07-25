@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <step>
+	<contextInfo>
+		<title>Copy a Test</title>
+		<id>copyTest</id>
+		<parent>tests</parent>
+		<previousTitle>Assign a Test</previousTitle>
+		<previousLink>assignTest</previousLink>
+		<nextTitle></nextTitle>
+		<nextLink></nextLink>
+	</contextInfo>
+	<content>
+		<code><![CDATA[
+			<ol>
+				<li>Click the <b>Copy</b> button against the name of your test.</li>
+				<li>Give your new Test a name.</li>
+				<li>Click <b>Copy</b>.</li>
+			</ol>
+		]]></code>
+	</content>
+</step>

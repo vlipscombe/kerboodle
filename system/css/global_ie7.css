@@ -1,0 +1,29 @@
+﻿
+/* Global CSS adjustments for IE7 */
+
+input[type=submit],
+#header #right_column #search_button {
+    padding-bottom: 2px;
+    border-width: 0px !important;
+}
+
+input.add_evaluate,
+a.order_evaluate,
+table.form_table td.value input[type="submit"].primary,
+input.form_submit.primary {
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
+    border-width: 2px !important;
+}
+
+/* Clearing div disabled as not working properly (works correctly without it) */
+#primary_nav .clearer {
+    clear: none;
+}
+
+/* Alternative way of positioning main page titles, as was cut off at top when using negative top margin */
+.full_width h1 {
+    position: relative;
+    top: -6px;
+    margin-bottom: -6px;
+}

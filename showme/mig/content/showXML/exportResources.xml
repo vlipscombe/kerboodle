@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <topic>
+	<topicTitle>Saving your own resources</topicTitle>
+	<topicDialog><![CDATA[You may wish to save your resources out of Kerboodle.]]></topicDialog>
+	<steps>
+		<step>
+			<stepTitle>Access the Course</stepTitle>
+			<stepTextTip><![CDATA[<p>Once logged into Kerboodle, access your course by clicking the <b>course name</b> on your homepage or via the <b>Manage Courses</b> page.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/ResourceExport_01.png</stepScreen>
+			<stepHotspot>10,135,133,148</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>My Resources</stepTitle>
+			<stepTextTip><![CDATA[Click on the <b>My Resources</b> bar]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/ResourceExport_02.png</stepScreen>
+			<stepHotspot>145,203,546,225</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Select a Resource</stepTitle>
+			<stepTextTip><![CDATA[Click on the link to launch the resource.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/ResourceExport_03.png</stepScreen>
+			<stepHotspot>150,203,500,215</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Save</stepTitle>
+			<stepTextTip><![CDATA[<p>In the pop-up, select <b>Save File</b> then click <b>OK</b>.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/ResourceExport_04.png</stepScreen>
+			<stepHotspot>175,161,215,176</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Save</stepTitle>
+			<stepTextTip><![CDATA[<p>For images you will have to <b>Right-click</b> then select <b>Save Image As...</b></p> <p>For PDFs you will have the option to <b>Save a copy</b> or to <b>Download</b> the file.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/ResourceExport_05.png</stepScreen>
+			<stepHotspot>214,342,315,352</stepHotspot>
+		</step>
+	</steps>	
+ </topic>

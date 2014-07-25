@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <topic>
+	<topicTitle>Creating Lessons</topicTitle>
+	<topicDialog><![CDATA[<p>Lessons are brilliant for front of class teaching as it means you don't have to locate each resource in the library; they will all be together on one screen.</p><p>The lesson can then be assigned to students for revision or as a catch-up tool for those who may have missed a class.</p>]]></topicDialog>
+	<steps>
+		<step>
+			<stepTitle>Access the Course</stepTitle>
+			<stepTextTip><![CDATA[Once logged into Kerboodle, access the course from which you'd like to create the Lesson.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/CreateLessons1.png</stepScreen>
+			<stepHotspot>10,121,97,134</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Click Lessons</stepTitle>
+			<stepTextTip><![CDATA[Click on the <b>Lessons</b> bar.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/CreateLessons2.png</stepScreen>
+			<stepHotspot>148,324,545,341</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Create a New Lesson</stepTitle>
+			<stepTextTip><![CDATA[Click on the <b>Create a new lesson</b> button.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/CreateLessons3.png</stepScreen>
+			<stepHotspot>357,185,427,196</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Lesson Name</stepTitle>
+			<stepTextTip><![CDATA[Enter a <b>Name</b> and <b>Description</b> for your Lesson.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/CreateLessons4.png</stepScreen>
+			<stepHotspot>160,52,485,125</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Add Resources</stepTitle>
+			<stepTextTip><![CDATA[<p>Use the '+' icon to expand Chapter and Topic folders, and then select the resources you'd like to include in the Lesson.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/CreateLessons5.png</stepScreen>
+			<stepHotspot>451,180,461,192</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Click OK</stepTitle>
+			<stepTextTip><![CDATA[<p>Close the <b>My Course</b> section to add resources from the <b>My Resources</b> section.</p><p>Click <b>OK</b> to create the Lesson.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/CreateLessons6.png</stepScreen>
+			<stepHotspot>459,169,471,181</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Add Resources</stepTitle>
+			<stepTextTip><![CDATA[Your lesson will then appear in the <b>Lessons</b> section.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/CreateLessons7.png</stepScreen>
+			<stepHotspot></stepHotspot>
+		</step>
+	</steps>	
+ </topic>

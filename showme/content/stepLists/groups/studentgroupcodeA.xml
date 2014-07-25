@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <step>
+	<contextInfo>
+		<title>Students view of Group Code</title>
+		<id>studentgroupcodeA</id>
+		<parent>groups</parent>
+		<previousTitle></previousTitle>
+		<previousLink></previousLink>
+		<nextTitle>Create a New Test</nextTitle>
+		<nextLink>createTest</nextLink>
+	</contextInfo>
+	<content>
+		<code><![CDATA[
+			<p>Once you have created your Teaching Group and given it a Group Code, your students are ready to login and assign themselves to the Teaching Group.</p>
+			<p>These are the steps that the students will follow:</p>
+			<ol>
+				<li>Once logged into Kerboodle Secondary, click on the <b>Join a Teaching Group</b> button</li>
+				<li>Enter the <b>Group Code</b> you have been given by your Teacher</li>
+				<li>Click on the <b>Add to Group</b> button.</li>
+			</ol>
+			<p><a href="showMeHow.html?admins??studentGroupA" onclick="window.open(this.href,'_blank','width=800,height=600,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes');return false;"><font color='#39A4DD'><b>Prefer to see it in action?</b> Show me how...</font></a></p>
+			<p><a href="tellMeHow.html?admins" onclick="window.open(this.href,'_blank','width=800,height=600,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes');return false;"><font color='#39A4DD'><b>Need more detail?</b> Tell me how...</font></a></p>
+		]]></code>
+	</content>
+</step>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <topic>
+	<topicTitle>Assigning Lessons to Students</topicTitle>
+	<topicDialog><![CDATA[If a student has missed a lesson, you can always assign the lesson to them for homework or assign it at the end of the year for revision.]]></topicDialog>
+	<steps>
+		<step>
+			<stepTitle>Click Lessons Bar</stepTitle>
+			<stepTextTip><![CDATA[Once logged into Kerboodle, access the course in which you created the lesson and click on the <b>Lessons</b> bar.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/AssignLesson1.png</stepScreen>
+			<stepHotspot>149,185,545,204</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Assign Lesson</stepTitle>
+			<stepTextTip><![CDATA[Use the action drop-down arrow next to the Lesson title to select <b>Assign this lesson to your Teaching Groups</b>.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/AssignLesson2.png</stepScreen>
+			<stepHotspot>383,238,536,249</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Enter Name</stepTitle>
+			<stepTextTip><![CDATA[<p>In the pop up window, give your assignment a <b>Name</b> and <b>Description</b>.</p><p>Tick the box next to the Teaching Group, or expand the list of Students and tick individual names to allocate the Assignment to them.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/AssignLesson3.png</stepScreen>
+			<stepHotspot>159,26,485,118</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Click OK</stepTitle>
+			<stepTextTip><![CDATA[Choose a Start Date and End Date for the Assignment and once completed, click <b>OK</b>.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/AssignLesson4.png</stepScreen>
+			<stepHotspot>162,296,251,380</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Assignment Appears</stepTitle>
+			<stepTextTip><![CDATA[Your assignment will then appear in your <b>Assignments</b> panel on the Course page.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/AssignLesson5.png</stepScreen>
+			<stepHotspot></stepHotspot>	
+		</step>		
+	</steps>	
+ </topic>

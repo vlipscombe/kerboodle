@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <topic>
+	<topicTitle>Viewing your Marks on Kerboodle</topicTitle>
+	<topicDialog><![CDATA[<p>Once you've submitted work to your teacher for marking, you can use Kerboodle to view their overall marks and comments.</p>]]></topicDialog>
+	<steps>
+		<step>
+			<stepTitle>Access course</stepTitle>
+			<stepTextTip><![CDATA[<p>Once logged into Kerboodle, access the course from which the assignment was set.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/students/ViewMarks1.png</stepScreen>
+			<stepHotspot>11,153,94,166</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Results panel</stepTitle>
+			<stepTextTip><![CDATA[<p>A summary will appear in the <b>Results</b> panel on the course page, this will show your overall mark for the assignment.</p><p>Click on the assignment title for more information.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/students/ViewMarks2.png</stepScreen>
+			<stepHotspot>12,246,134,271</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Results panel</stepTitle>
+			<stepTextTip><![CDATA[<p>The assignment window will then open and any comments your teacher has made will appear in the comments section.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/students/ViewMarks3.png</stepScreen>
+			<stepHotspot>31,248,110,273</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Results panel</stepTitle>
+			<stepTextTip><![CDATA[<p>If you've completed a Test Yourself activity as part of the assignment, use the Menu bar to access the test.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/students/ViewMarks4.png</stepScreen>
+			<stepHotspot>5,68,555,79</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Click browse</stepTitle>
+			<stepTextTip><![CDATA[<p>A full report screen will then appear showing your Test Yourself results.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/students/ViewMarks5.png</stepScreen>
+			<stepHotspot></stepHotspot>
+		</step>
+	</steps>	
+ </topic>

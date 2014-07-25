@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <step>
+	<contextInfo>
+		<title>Join a Teaching Group</title>
+		<id>joinGroup</id>
+		<parent>home</parent>
+		<previousTitle></previousTitle>
+		<previousLink></previousLink>
+		<nextTitle></nextTitle>
+		<nextLink></nextLink>
+	</contextInfo>
+	<content>
+		<code><![CDATA[
+			<p>If your teacher has given you a Group Code to use, follow these steps to add yourself to the Teaching Group.</p>
+			<ol>
+				<li>Click on the <b>Join a Teaching Group</b> button.</li>
+				<li>Enter the <b>Group Code</b> you have been given.</li>
+				<li>Click <b>Add to Group</b>.</li>
+			</ol>
+		]]></code>
+	</content>
+</step>

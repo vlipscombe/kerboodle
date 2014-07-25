@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <step>
+	<contextInfo>
+		<title>Assignments</title>
+		<id>takeassignment</id>
+		<parent>course</parent>
+		<previousTitle></previousTitle>
+		<previousLink></previousLink>
+		<nextTitle></nextTitle>
+		<nextLink></nextLink>
+	</contextInfo>
+	<content>
+		<code><![CDATA[
+			<p>Your teachers might use Kerboodle to set assignments for you. To access an assignment:</p>
+			<ol>
+				<li>In the Assignments panel, click on the assignment title to open your assignment.</li>
+				<li>Click on the <b>Menu</b> bar to get started.</li>
+				<li>Click on the title of the resource to open it in the assignment window.</li>
+				<li>Use the menu bar to move through the rest of the resources and complete the assignment.</li>
+			</ol>
+			<p>If your teacher has asked for you to return a document as part of the assignment, please have a look at the online tutorial called <b>Returning work as part of an Assignment</b>.</p>
+			<p><font color='#39A4DD'><b>Prefer to see it in action?</b></font></p>
+			<a href="http://www.kerboodle.com/help/secondary/showMeHow.html?students??accessAssignments" onclick="window.open(this.href,'_blank','width=800,height=600,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes');return false;">Accessing your Assignments</a></p>
+			<a href="http://www.kerboodle.com/help/secondary/showMeHow.html?students??returnWork" onclick="window.open(this.href,'_blank','width=800,height=600,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes');return false;">Returning work as part of an Assignment</a></p>
+			]]></code>
+	</content>
+</step>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <onThisPage>
+	<topicInfo>
+		<title>Teaching Groups</title>
+		<intro><![CDATA[
+			<p>When students are set up on Kerboodle, they are not given access to a Kerboodle Book or Course automatically; they need to be assigned.</p>
+			<p>Teaching Groups are what Kerboodle uses to determine which books and courses each student is able to access.</p>
+		]]></intro>
+	</topicInfo>
+	<content>
+		<accPath>groups</accPath>
+		<accContent>
+			<steps>creategroupA</steps>
+		</accContent>
+		<accContent>
+			<steps>studentgroupcodeA</steps>
+		</accContent>
+		<accContent>
+			<steps>editgroupA</steps>
+		</accContent>
+	</content>
+</onThisPage>

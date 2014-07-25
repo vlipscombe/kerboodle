@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <topic>
+	<topicTitle>Uploading your own resources</topicTitle>
+	<topicDialog><![CDATA[As well as the Nelson Thornes content that is available on Kerboodle, you can also add your own resources so that all your teaching material is in one place.]]></topicDialog>
+	<steps>
+		<step>
+			<stepTitle>Access the Course</stepTitle>
+			<stepTextTip><![CDATA[<p>Once logged into Kerboodle, access your course by clicking on the <b>course name</b> on your homepage or via the <b>Manage Courses</b> page.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/UploadResources1.png</stepScreen>
+			<stepHotspot>12,121,96,133</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>My Resources</stepTitle>
+			<stepTextTip><![CDATA[Click on the <b>My Resources</b> bar.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/UploadResources2.png</stepScreen>
+			<stepHotspot>148,301,546,321</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Upload a Resource</stepTitle>
+			<stepTextTip><![CDATA[Click on the <b>Upload a resource</b> button.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/UploadResources3.png</stepScreen>
+			<stepHotspot>360,170,427,182</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Click Browse</stepTitle>
+			<stepTextTip><![CDATA[<p>In the pop-up, <b>Browse</b> for your file and enter a <b>Name</b>.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/UploadResources4.png</stepScreen>
+			<stepHotspot>248,95,420,124</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Click Upload</stepTitle>
+			<stepTextTip><![CDATA[<p>Enter a <b>Description</b> and <b>Keywords</b>: keywords will be included when using the Search feature in the Library.</p><p>Then click on the <b>Upload</b> button.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/UploadResources5.png</stepScreen>
+			<stepHotspot>255,337,291,348</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Appear My Resources</stepTitle>
+			<stepTextTip><![CDATA[Your resource will then appear in the <b>My Resources</b> section.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/UploadResources6.png</stepScreen>
+			<stepHotspot></stepHotspot>
+		</step>
+	</steps>	
+ </topic>

@@ -1,0 +1,642 @@
+/*============================================
+Filename: helpBase.css
+Description: Base CSS file for kerboodle Help
+============================================*/
+
+/*=============FONTS========================*/
+body {
+    font-family: Tahoma;
+    font-size: 0.75em;
+    margin: 0px;
+    padding: 0px;
+	color:#595959;
+}
+p 	{margin:0 0 1em 0;padding:0}
+h1 {
+	font-family: Tahoma;
+	font-size: 1.5em;
+	margin: 0px;
+	padding: 0px;
+	color:#595959
+}
+h2,h3 {
+    font-family: Tahoma;
+	font-size: 1.125em;
+	margin: 0px;
+    padding: 0px;
+	color:#595959
+}
+h4 {
+	font-family: Tahoma;
+	font-size: 1em;
+	margin: 0px;
+	padding: 0px;
+	color:#C3005E;
+	text-align: right;
+}
+h5 {
+	font-family: Tahoma;
+	font-size: 0.75em;
+	font-weight:normal;
+	margin: 0em;
+	padding: 0.2em;
+	color:#111111;
+	text-align: left;
+}
+h6 {
+	font-family: Tahoma;
+	font-size: 1.5em;
+	margin: 0px;
+	padding: 0px;
+	color:#FFFFFF
+}
+
+/* ===================== LAYOUT - COMMON ============================= */
+.kerboodleHelp_head_left {
+	position: absolute;
+    width:10px;
+    height:10px;
+    left:0px;
+    top: 0px;
+    background-image: url(../images/common/borderTopLeft.png);
+}
+.kerboodleHelp_head {
+	position: absolute;
+    width:780px;
+    height:10px;
+    left:10px;
+    top: 0px;
+    background-image: url(../images/common/borderTop.png)
+}
+.kerboodleHelp_head_right {
+	position: absolute;
+    width:10px;
+    height:10px;
+    left:790px;
+    top: 0px;
+    background-image: url(../images/common/borderTopRight.png);
+}
+.kerboodleHelp_pattern {
+	position: absolute;
+	width: 475px;
+	height: 288px;
+	left: 321px;
+	top: 10px;
+	background-image: url(../images/common/KerboodleBG.png);	
+	background-position:right;
+}
+.kerboodleHelp_line {
+	position: absolute;
+	width: 780px;
+	height: 3px;
+	top: 80px;
+	left: 10px;
+	background-color: #39A4D1;
+}
+.kerboodleHelp_left {
+	position:absolute;
+	width:10px;
+	top: 10px;
+	left:0px;
+	height: 580px;
+	background-image: url(../images/common/borderLeft.png);
+}
+.kerboodleHelp_right {
+    position:absolute;
+    width:10px;
+    top: 10px;
+    left: 790px;
+	height: 580px;
+    background-image: url(../images/common/borderRight.png);
+}
+.kerboodleHelp_foot_left {
+    position: absolute;
+    width: 10px;
+	top: 590px;
+	height: 10px;
+	left: 0px;
+    background-image: url(../images/common/borderBottomLeft.png);
+}
+.kerboodleHelp_foot {
+    position: absolute;
+    width: 780px;
+	top: 590px;
+	height: 10px;
+	left: 10px;
+    background-image: url(../images/common/borderBottom.png);
+}
+.kerboodleHelp_foot_right {
+    position: absolute;
+    width: 10px;
+	top: 590px;
+	height: 10px;
+	left: 790px;
+    background-image: url(../images/common/borderBottomRight.png);
+}
+
+.kerboodleHelp_logo {
+	position: absolute;
+	width: 164px;
+	height: 74px;
+	left: 0px;
+	top: 2px;
+	background-image: url(../images/common/logo.png);
+}
+
+/* ===================== LAYOUT - TellMeHow ============================= */
+.tellMeHow_link {
+	position: absolute; 
+	width: 100px;
+	height: 50px;
+	left: 690px;
+	top: 8px;
+}
+.tellMeHow_pageTitle {
+	position: absolute;
+	width: 500px;
+	height: 10px;
+	top: 84px;
+	left: 10px;
+}
+.tellMeHow_main {
+    position: absolute;
+    width: 800px;
+    top: 94px;
+	bottom: 500px;
+}
+.tellMeHow_contentSlider {
+    position: absolute;
+    width: 780px;
+    top: 0px;
+    margin-left: 60px;
+	height: 160px;
+}
+
+/* ===================== LAYOUT - ShowMeHow ============================= */
+.showMeHow_Menu {
+	position: absolute;
+	width: 200px;
+	top: 97px;
+	height: 493px;
+	margin-left: 10px;
+}
+.showMeHow_Main {
+	position: absolute;
+	width: 560px;
+	top: 84px;
+	height: 506px;
+	margin-left: 228px;
+}
+.showMeHow_Title {
+	position: absolute;
+	width: 460px;
+	left: 0px;
+	top: 15px;
+	height: 22px;
+	text-align:left;
+	font-family: Tahoma;
+	font-size: 1.25em;
+	font-weight: bold;
+	color: #595959;
+}
+.showMeHow_Nav {
+	position: absolute;
+	width: 382px;
+	left: 89px;
+	top: 479px;
+	height: 17px;
+	text-align: center;
+	display: block;
+}
+.showMeHow_Screen {
+	position: absolute;
+	width: 560px;
+	top: 40px;
+	height: 424px;
+}
+.showMeHow_FootLeft {
+	position: absolute;
+	width: 88px;
+	top: 468px;
+	left: 0px;
+	height: 40px;
+}
+.showMeHow_FootRight {
+	position: absolute;
+	width: 88px;
+	top: 468px;
+	left: 472px;
+	height: 40px;
+}
+.showMeHow_welcomeScreen {
+	position: absolute;
+	width: 560px;
+	top: 40px;
+	left: 0px;
+	height: 424px;
+	background-image: url(../images/show/showMeHowStart.png);
+}
+.showMeHow_welcomeText {
+	position: absolute;
+	top: 120px;
+	left: 55px;
+	width: 425px;
+	height: 300px;
+}
+
+/* ======= LAYOUT - contextual Help Pages (onThisPage & showMeSteps ==== */
+.contextHelp_pattern {
+	float: right;
+	width: 100%;
+	height: 288px;
+	top: 4px;
+	margin-left: 164px;
+	background-image: url(../images/common/kerboodleTile.jpg);	
+	background-position:right;
+	background-repeat: no-repeat;
+}
+.contextHelp_line {
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	top: 80px;
+	background-color: #C3005E;
+}
+.contextHelp_wrapper {
+	position: absolute;
+	width: 100%;
+	top: 86px;
+}
+.contextHelp_main {
+	padding: 0px 10px;
+}
+.contextHelp_footLine {
+	width: 100%;
+	height: 3px;
+	background-color: #C3005E;
+}
+.contextHelp_footLineDark1 {
+	width: 100%;
+	height: 1px;
+	background-color: #000000;
+}
+.contextHelp_footLineDark2 {
+	width: 100%;
+	margin-top: 4px;
+	height: 1px;
+	background-color: #000000;
+}
+.contextHelp_spacer {
+	position: relative;
+	width: 100%;
+	height: 30px;
+}
+.contextHelp_foot { 
+	position: absolute;
+	width: 100%;
+	background-color: #EFEFEF;
+	height: 40px;
+}
+.contextHelp_footText {
+	margin-top: 3px;
+	text-align: center;
+	color: #000000;
+	white-space: nowrap;
+	background-color: #EFEFEF;
+}
+
+/* ===================== LAYOUT - onThisPage ========================= */
+.onThisPage_topicIntro {
+	width: 100%;
+}
+.onThisPage_topicTitle {
+	position: absolute;
+	padding-top: 5px;
+}
+.onThisPage_topicInfo {
+	padding-top: 40px;
+}
+.onThisPage_content {
+	width: 100%;
+}
+.onThisPage_list {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #979797;
+}
+
+/* ===================== LAYOUT - showMeSteps ========================= */
+.showMeSteps_wrapper {
+	position: absolute;
+	width: 400px;
+	top: 85px;
+	height: 300px;
+	overflow: auto;
+	overflow-x: hidden;
+}
+.showMeSteps_main {
+	position: absolute;
+	top: 0px;
+	width: 370px;
+	height: 300px;
+	left: 6px;
+	margin-right: 10px;
+}
+.showMeSteps_title {
+	position: absolute;
+	top: 5px;
+}
+.showMeSteps_content {
+	position: absolute;
+	top: 40px;
+	margin-left: 10px;
+	margin-right: 20px;
+}
+.showMeSteps_content ol {
+	margin-bottom: 20px;
+}
+.showMeSteps_content ol li {
+	margin-top: 10px;
+	margin-left: 22px;
+}
+.showMeSteps_foot {
+	position: absolute;
+	width: 400px;
+	top: 387px;
+	height: 63px;
+	clear: both;
+}
+.showMeSteps_foot table {
+	width: 400px;
+	height: 60px;
+	background-color: #EFEFEF;
+	overflow: hidden;
+}
+.showMeSteps_backButton {
+	position: relative;
+	top: 3px;
+	left: 0px;
+	width: 50px;
+	height: 50px;
+}
+.showMeSteps_nextButton {
+	position: relative;
+	top: 3px;
+	right: 0px;
+	width: 50px;
+	height: 50px;
+}
+.showMeSteps_prevText {
+	position: relative;
+	margin-left: 60px;
+	top: -41px;
+	text-align: left;
+}
+.showMeSteps_nextText {
+	position: relative;
+	top: -41px;
+	margin-right: 60px;
+	text-align: right;
+}
+
+/* ===================== LAYOUT - Error Page ========================= */
+.kerboodleError {
+	position: absolute;
+	width: 680px;
+	top: 94px;
+	left: 10px;
+	height: 490px;
+}
+
+/* ===================== ShowMeHow - Dynamic ========================= */
+.showMeHow_textTipOn {
+	width: 30px;
+	height: 32px;
+	background-image: url(../images/show/textTipToggle_on.png);	
+	background-position: 0px 1px;
+	background-repeat: no-repeat;
+}
+.showMeHow_textTipOn:hover {
+	background-position: 0px -33px;
+}
+.showMeHow_textTipOff{
+	width: 30px;
+	height: 32px;
+	background-image: url(../images/show/textTipToggle_off.png);	
+	background-position: 0px 1px;
+	background-repeat: no-repeat;
+}
+.showMeHow_textTipOff:hover {
+	background-position: 0px -33px;
+}
+.showMeHow_textTipToggle {
+	position: absolute;
+	top: 3px;
+	left: 490px;
+	width: 30px;
+	height: 33px;
+	cursor: pointer;
+}
+.showMeHow_TextTip {
+	position: absolute;
+	width: 260px;
+}
+.showMeHow_TextTipArrowUp {
+	position: relative;
+	height: 32px;
+	width: 30px;
+	left: 115px;
+	background: transparent url(../images/show/tipArrowUp.png) no-repeat top;
+}
+.showMeHow_TextTipTop {
+	height: 16px;
+	background: transparent url(../images/show/tipTop.png) no-repeat;
+}	
+.showMeHow_TextTipMid {
+	background: transparent url(../images/show/tipMid.png) repeat-y;
+	padding: 10px 25px 20px;
+	color:#595959;
+	word-wrap: break-word;
+	overflow: auto	
+}
+.showMeHow_TextTipBtm {
+	background: transparent url(../images/show/tipBtm.png) no-repeat;
+	height: 16px;
+}
+.showMeHow_TextTipArrowDown {
+	position: relative;
+	height: 32px;
+	width: 30px;
+	left: 115px;
+	background: transparent url(../images/show/tipArrowDown.png) no-repeat;
+}
+.showMeHow_ShowMe {
+	position: absolute;
+	border: 4px solid #C3005E;
+	height: 20px;
+	width: 40px;
+	top: 0px;
+	left: 0px;
+	background: transparent url(../images/show/1px_trans.png)
+}
+
+/* ==================== ShowMeHow - Slideshow =========================== */
+.showMeHow_showOnButton {
+	width: 30px;
+	height: 32px;
+	background-image: url(../images/show/slide_showMode.png);	
+	background-position: 0px 1px;
+	background-repeat: no-repeat;
+}
+.showMeHow_showOnButton:hover {
+	background-position: 0px -33px;
+}
+.showMeHow_showOffButton {
+	width: 30px;
+	height: 32px;
+	background-image: url(../images/show/slide_interactiveMode.png);	
+	background-position: 0px 1px;
+	background-repeat: no-repeat;
+}
+.showMeHow_showOffButton:hover {
+	background-position: 0px -33px;
+}
+.showMeHow_slideshowToggle {
+	position: absolute;
+	top: 3px;
+	left: 530px;
+	width: 30px;
+	height: 33px;
+	cursor: pointer;
+}
+.showMeHow_showControls {
+	position: absolute;
+	width: 450px;
+	top: 464px;
+	left: 155px;
+	height: 45px;
+	display: none;
+}
+.showMeHow_controlsBack {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 46px;
+	height: 45px;
+	cursor: pointer;
+	background-image: url(../images/show/slide_rewind.png);	
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+}
+.showMeHow_controlsBack:hover {
+	background-position: 0px -44px;
+}
+.showMeHow_controlsPrev {
+	position: absolute;
+	top: 0px;
+	left: 52px;
+	width: 46px;
+	height: 45px;
+	cursor: pointer;
+	background-image: url(../images/show/slide_prev.png);	
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+}
+.showMeHow_controlsPrev:hover {
+	background-position: 0px -44px;
+}
+.showMeHow_controlsPlay {
+	position: absolute;
+	top: 0px;
+	left: 104px;
+	width: 46px;
+	height: 45px;
+	cursor: pointer;
+	background-image: url(../images/show/slide_play.png);	
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	display: block;
+}
+.showMeHow_controlsPlay:hover {
+	background-position: 0px -44px;
+}
+.showMeHow_controlsPause {
+	position: absolute;
+	top: 0px;
+	left: 104px;
+	width: 46px;
+	height: 45px;
+	cursor: pointer;
+	background-image: url(../images/show/slide_pause.png);	
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	display: none;
+}
+.showMeHow_controlsPause:hover {
+	background-position: 0px -44px;
+}
+.showMeHow_controlsNext {
+	position: absolute;
+	top: 0px;
+	left: 156px;
+	width: 46px;
+	height: 45px;
+	cursor: pointer;
+	background-image: url(../images/show/slide_next.png);	
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+}
+.showMeHow_controlsNext:hover {
+	background-position: 0px -44px;
+}
+.showMeHow_controlsEnd {
+	position: absolute;
+	top: 0px;
+	left: 208px;
+	width: 46px;
+	height: 45px;
+	cursor: pointer;
+	background-image: url(../images/show/slide_skipToEnd.png);	
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+}
+.showMeHow_controlsEnd:hover {
+	background-position: 0px -44px;
+}	
+.showMeHow_controlsSpeed {
+	position: absolute;
+	top: 2px;
+	left: 320px;
+	width: 80px;
+	height: 45px;
+	text-align: center;
+	z-index: 9999;
+}
+.showMeHow_speedDown {
+	position: absolute;
+	left: 15px;
+	top: 15px;
+	height: 20px;
+	width: 10px;
+	cursor: pointer;
+	background-image: url(../images/show/speedDown.png);
+	background-repeat: no-repeat;
+}
+.my_speedUp {
+	position: absolute;
+	left: 49px;
+	top: 15px;
+	height: 20px;
+	width: 10px;
+	cursor: pointer;
+	background-image: url(../images/show/speedUp.png);
+	background-repeat: no-repeat;
+}
+.showMeHow_speedo {
+	position: absolute;
+	left: 27px;
+	top: 17px;
+	height: 20px;
+	width: 20px;
+	text-align: center;
+}

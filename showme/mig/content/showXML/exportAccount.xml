@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <topic>
+	<topicTitle>Exporting Accounts</topicTitle>
+	<topicDialog><![CDATA[You can export accounts that are currently in your organisation.]]></topicDialog>
+	<steps>
+		<step>
+			<stepTitle>Switch to Admin Mode</stepTitle>
+			<stepTextTip><![CDATA[Once logged into Kerboodle Secondary, click on the <b>Switch to Admin mode</b> toggle at the top of the screen and re-enter your password to access the Admin area.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/AdminEditImport1.png</stepScreen>
+			<stepHotspot>332,12,417,28</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Export Accounts</stepTitle>
+			<stepTextTip><![CDATA[Click on the <b>Export Accounts</b> button.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/AdminEditImport2.png</stepScreen>
+			<stepHotspot>171,128,237,141</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Save Export</stepTitle>
+			<stepTextTip><![CDATA[Click <b>Ok</b>, choose the destination then click <b>Save</b>]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/exportUsers2.png</stepScreen>
+			<stepHotspot>297,263,337,274</stepHotspot>
+		</step>
+	</steps>	
+ </topic>

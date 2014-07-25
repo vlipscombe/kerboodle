@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <topic>
+	<topicTitle>Front of Class Teaching with the Book</topicTitle>
+	<topicDialog><![CDATA[<p>The Kerboodle Books are a useful tool for Front of Class teaching.</p><p>This tutorial will show you some of the options available.</p> ]]></topicDialog>
+	<steps>
+		<step>
+			<stepTitle>Access Bookshelf</stepTitle>
+			<stepTextTip><![CDATA[<p><b>Search:</b> Use the search tool to quickly find all of the pages in the book that contain a certain word.</p><p>Click on the <b>Search</b> button in the main toolbar.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/BookFront1.png</stepScreen>
+			<stepHotspot>208,371,224,387</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Annotate Book</stepTitle>
+			<stepTextTip><![CDATA[<p>Enter your search term and click <b>Search</b>.</p><p>The results will appear below as book pages, just click on the image of the page to launch it. Your search term will then be highlighted on the page.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/BookFront2.png</stepScreen>
+			<stepHotspot>206,205,247,253</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Click Settings</stepTitle>
+			<stepTextTip><![CDATA[<p><b>Bookmarks:</b> You can bookmark pages to use in future lessons and planning.</p><p>Click on the <b>Bookmark</b> button in the main toolbar.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/BookFront3.png</stepScreen>
+			<stepHotspot>185,373,200,389</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Add Notes</stepTitle>
+			<stepTextTip><![CDATA[Enter a name for your bookmark and click <b>Add a bookmark</b>.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/BookFront4.png</stepScreen>
+			<stepHotspot>139,265,399,277</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Click Save</stepTitle>
+			<stepTextTip><![CDATA[<p>Your bookmarks will then appear as a list any time you click on the Bookmark button in the toolbar.</p><p>To access your bookmarks, just click on the title and then the <b>Go to the selected bookmark</b> button.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/BookFront5.png</stepScreen>
+			<stepHotspot>272,280,397,289</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Click Save</stepTitle>
+			<stepTextTip><![CDATA[<p><b>Zoom Tools:</b> There are several view and zoom tools available but the <b>Zoom to Explain</b> tool is ideal for front of class teaching.</p><p>Click on the <b>Zoom to Explain</b> option in the toolbar.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/BookFront6.png</stepScreen>
+			<stepHotspot>513,156,524,169</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Click Save</stepTitle>
+			<stepTextTip><![CDATA[Use your cursor to select the area of the page that you would like enlarged.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/BookFront7.png</stepScreen>
+			<stepHotspot>88,74,268,156</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Click Save</stepTitle>
+			<stepTextTip><![CDATA[This selection will then appear full screen to present to your class.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/BookFront8.png</stepScreen>
+			<stepHotspot></stepHotspot>	
+		</step>
+	</steps>	
+ </topic>

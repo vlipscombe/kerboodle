@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <onThisPage>
+	<topicInfo>
+		<title>My Course</title>
+		<intro><![CDATA[
+			<p>Your course page contains everything you need to learn using Kerboodle.</p>]]></intro>
+	</topicInfo>
+	<content>
+		<accPath>course</accPath>
+		<accContent>
+			<steps>findresourceST</steps>
+		</accContent>
+		<accContent>
+			<steps>addresourceStudent</steps>
+		</accContent>
+		<accContent>
+			<steps>takeassignment</steps>
+		</accContent>
+		<accContent>
+			<steps>results</steps>
+		</accContent>
+		<mainContent></mainContent>
+		<related></related>
+	</content>
+</onThisPage>

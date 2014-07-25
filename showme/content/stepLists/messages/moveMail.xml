@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <step>
+	<contextInfo>
+		<title>How to Move a Message to a Folder</title>
+		<id>moveMail</id>
+		<parent>messages</parent>
+		<previousTitle>Overview of the Events Tab</previousTitle>
+		<previousLink>eventTab</previousLink>
+		<nextTitle></nextTitle>
+		<nextLink></nextLink>
+	</contextInfo>
+	<content>
+		<code><![CDATA[
+				<ol>
+					<li>Add a tick to the box next to the name of the message that you wish to move.</li>
+					<li>Click the <b>Move to</b> drop down menu and then select a Folder.</li>
+					<li>Click <b>Move</b>.</li>
+				</ol>
+				<p><font color='#39A4DD'>You can select more than one message at a time to move.</font></p>
+		]]></code>
+	</content>
+</step>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <topic>
+	<topicTitle>Accessing your Assignments</topicTitle>
+	<topicDialog><![CDATA[<p>Your teachers might use Kerboodle to set assignments for you. These assignments can be used to set homework and track your progress. Follow these steps to access your assignments.</p>]]></topicDialog>
+	<steps>
+		<step>
+			<stepTitle>Access Assignment</stepTitle>
+			<stepTextTip><![CDATA[<p>Once logged into Kerboodle, access your course by clicking on the <b>course name</b> on your homepage.</p><p><b>Tip:</b> any current assignments can also be accessed from the <b>Today's Events</b> panel.</p>
+]]></stepTextTip>
+			<stepScreen>content/showImages/students/AccessAssignments1.png</stepScreen>
+			<stepHotspot>10,153,96,165</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Click Menu Bar</stepTitle>
+			<stepTextTip><![CDATA[<p>Your assignments will be listed in the <b>Assignments</b> panel on your course page. Just click on the title to launch the assignment.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/students/AccessAssignments2.png</stepScreen>
+			<stepHotspot>13,234,127,246</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Click Title</stepTitle>
+			<stepTextTip><![CDATA[<p>Your assignment will open in a new window with the introduction page showing any instructions your teacher has added.</p><p>Click on the <b>Menu</b> bar to get started.</p></p>]]></stepTextTip>
+			<stepScreen>content/showImages/students/AccessAssignments3.png</stepScreen>
+			<stepHotspot>5,37,557,47</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Click Title</stepTitle>
+			<stepTextTip><![CDATA[<p>The Menu will list all of the resources within the assignment, click on the title of the resource to open it in the assignment window.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/students/AccessAssignments4.png</stepScreen>
+			<stepHotspot>4,77,557,87</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Use Menu Bar</stepTitle>
+			<stepTextTip><![CDATA[<p>Use the menu bar to move through the rest of the resources and complete the assignment.</p><p>If your teacher has asked for you to return a document as part of the assignment, please have a look at the tutorial called <b>Returning Work as part of an Assignment</b>.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/students/AccessAssignments5.png</stepScreen>
+			<stepHotspot></stepHotspot>
+		</step>
+	</steps>	
+ </topic>

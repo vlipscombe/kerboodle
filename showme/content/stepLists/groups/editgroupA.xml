@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <step>
+	<contextInfo>
+		<title>Updating and Editing Teaching Groups</title>
+		<id>editgroupA</id>
+		<parent>groups</parent>
+		<previousTitle></previousTitle>
+		<previousLink></previousLink>
+		<nextTitle>Create a New Test</nextTitle>
+		<nextLink>createTest</nextLink>
+	</contextInfo>
+	<content>
+		<code><![CDATA[
+			<p>If a new student needs to be added to a Teaching Group, or the group require access to an additional course or book, you can update the Teaching Group on-screen.</p>
+			<p>To update or edit a Teaching Group:</p>
+			<ol>
+				<li>Click on the <b>Teaching Groups</b> tab and click on the name of the group you'd like to edit.</li>
+				<li>Click the drop down arrow next to the name of your group (at the top of the right hand panel).</li>
+				<li>You are then given the following options:</li>
+			</ol>
+			<ul>
+			<li><b>Edit this Teaching Group</b> - this is useful for changing the name.</li>
+			<li><b>Delete this Teaching Group</b>.</li>
+			<li><b>Add Student or a Teacher to this Teaching Group</b>.</li>
+			<li><b>Add a Course to this Teaching Group</b> - use this option to add another Kerboodle Book or Course to the group.</li>
+			</ul>
+			<p><a href="showMeHow.html?admins??editGroupA" onclick="window.open(this.href,'_blank','width=800,height=600,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes');return false;"><font color='#39A4DD'><b>Prefer to see it in action?</b> Show me how...</font></a></p>
+			<p><a href="tellMeHow.html?admins" onclick="window.open(this.href,'_blank','width=800,height=600,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes');return false;"><font color='#39A4DD'><b>Need more detail?</b> Tell me how...</font></a></p>
+		]]></code>
+	</content>
+</step>

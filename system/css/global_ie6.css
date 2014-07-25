@@ -1,0 +1,197 @@
+﻿
+/* Global CSS adjustments for IE6 */
+
+/* Replacements for ignored attribute selector rules (classes attached using jQuery) */
+input.text,
+input.email,
+input.password {
+    padding: 3px 6px;
+    border-top: 1px solid #A4A2A3;
+    border-left: 1px solid #6F6D6D;
+    border-bottom: 1px solid #DFDEDE;
+    border-right: 1px solid #DFDEDE;
+}
+
+input.submit {
+    padding: 3px 5px 2px 5px;
+    color: #FFFFFF;
+    font-weight: bold;
+    background: #072563;
+    border: none;
+}
+
+input.submit:hover {
+    cursor: pointer;
+    background: #274583;
+}
+
+
+table.form_table td.value input.submit,
+input.form_submit {
+    display: block;
+    float: right;
+    padding: 1px 6px 2px 6px;
+    width: 130px;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 16px;
+    background: #1F68A5 !important;
+    border: 1px solid #042A6B !important;
+}
+
+input.form_submit {
+    width: 200px;
+}
+
+input.form_submit.flexible_size {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: auto;
+}
+
+table.form_table td.value input.submit:hover,
+input.form_submit:hover {
+    background: #2F78B5 !important;
+    border-color: #143A7B !important;
+}
+
+table.form_table td.value input.primary,
+input.form_submit.primary {
+    background: #FCB034 !important;
+    border: 1px solid #FFB93D !important;
+    color: #000000;
+}
+
+table.form_table td.value input.primary:hover,
+input.form_submit.primary:hover {
+    background: #FFB63A !important;
+}
+
+input.submit_disabled {
+    color: #BCBABB !important;
+    background: #7FA8B5 !important;
+    border: 1px solid #042A6B !important;
+}
+
+input.primary_submit_disabled {
+    border: 1px solid #C2AF93!important;
+    color: #967B50 !important;
+    background: #e3ba79 !important;
+}
+
+.half_width .inner_block td.value input.submit {
+    display: inline-block !important;
+    float: none !important;
+    width: 130px !important;
+}
+
+.faq_expandable .question_answer p.first {
+    padding-top: 8px;
+}
+
+/* Fixes margin bug */
+.content_block,
+.hero_panel,
+.floating_content {
+    display: inline;
+}
+
+/* Replacement for min-height */
+.hero_panel {
+    height: 215px;
+}
+
+/* Replacement for min-height */
+#header {
+    height: 113px;
+}
+
+/* Replacement for min-height */
+#header #right_column {
+    height: 93px;
+}
+
+#header #right_column #search_button {
+    padding-bottom: 2px;
+    border: none;
+}
+
+/* Replacement for min-height */
+#primary_nav {
+    height: 34px;
+}
+
+/* Restated CSS rules to fix problem with order of precedence */
+#primary_nav ul li.three_column:hover a,
+#primary_nav ul li.four_column:hover a,
+#primary_nav ul li.menu_tab_hover a,
+#primary_nav ul li.menu_tab_focus a {
+    margin-bottom: 0px;
+    z-index: 1010;
+    height: 32px;
+    line-height: 26px;
+    border-bottom: none;
+}
+
+/* Clearing div disabled as not working properly (works correctly without it) */
+#primary_nav .clearer {
+    clear: none;
+}
+
+/* Replacement for min-height */
+ul#lower_nav li a {
+    height: 28px;
+}
+
+/* Alternative way of positioning main page titles, as was cut off at top when using negative top margin */
+.full_width h1 {
+    position: relative;
+    top: -6px;
+    margin-bottom: -6px;
+}
+
+/* Fixes unusual problem where certain character in text (&#37) caused inner block to expand and overflow */
+.half_width .text_only_single {
+    width: 229px;
+    overflow: hidden;
+}
+
+/* Replacement for min-height */
+ul#sitemap li div {
+    height: 50px;
+}
+
+/* Replacement for min-height */
+ul#sitemap li div a {
+    height: 34px;
+}
+
+/* IE6 does not support fixed position, so use absolute instead */
+div.transparent_overlay,
+div.spinner {
+    position: absolute;
+}
+
+/* Use solid background colour instead of transparent one */
+div.transparent_overlay {
+    background-color: #888888;
+}
+
+/* Restatement of misinterpreted multiple-combined-class rules */
+
+.bg_colour_primary h2.control {
+    background-position: 76px center;
+}
+
+.bg_colour_secondary h2.control {
+    background-position: 148px center;
+}
+
+.tech_support_heading_primary {
+    background-position: 146px center !important;
+}
+
+.tech_support_heading_secondary {
+    background-position: 165px center !important;
+}

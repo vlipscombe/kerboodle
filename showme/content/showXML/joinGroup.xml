@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <topic>
+	<topicTitle>Joining your Teaching Group</topicTitle>
+	<topicDialog><![CDATA[<p>In order to view the Kerboodle Courses and Books, your teacher needs to assign them to you.</p><p>If your teacher has given you a Group Code to use, follow these steps to add yourself to the Teaching Group.</p>]]></topicDialog>
+	<steps>
+		<step>
+			<stepTitle>Join a group</stepTitle>
+			<stepTextTip><![CDATA[<p>Once logged into Kerboodle, click on the <b>Join a Teaching Group</b> button.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/students/joinGroup1.png</stepScreen>
+			<stepHotspot>334,48,417,61</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Enter Group Code</stepTitle>
+			<stepTextTip><![CDATA[<p>Enter the <b>Group Code</b> your teacher has provided.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/students/joinGroup2.png</stepScreen>
+			<stepHotspot>92,202,179,219</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Add to Group</stepTitle>
+			<stepTextTip><![CDATA[<p>Click <b>Add to group</b>.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/students/joinGroup3.png</stepScreen>
+			<stepHotspot>185,203,238,213</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Home Page</stepTitle>
+			<stepTextTip><![CDATA[<p>Your courses and books will then appear on your homepage.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/students/joinGroup4.png</stepScreen>
+			<stepHotspot></stepHotspot>	
+		</step>
+	</steps>	
+ </topic>

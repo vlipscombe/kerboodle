@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <step>
+	<contextInfo>
+		<title>Launch a Test</title>
+		<id>launchTest</id>
+		<parent>tests</parent>
+		<previousTitle></previousTitle>
+		<previousLink></previousLink>
+		<nextTitle>Create a New Test</nextTitle>
+		<nextLink>createTest</nextLink>
+	</contextInfo>
+	<content>
+		<code><![CDATA[
+			<p>Launch a Test to preview its contents.</p>
+			<ol>
+				<li>Find the test in the list within the <b>Tests</b> tab of your course.</li>
+				<li>Either click the name of the test or the <b>Launch</b> button next to its name.</li>
+				<li>Click <b>Start</b>.</li>
+			</ol>
+			<p><font color='#39A4DD'>Please note that launching a test in this way will not record your scores or those of your Students. You must assign a Test to enable this function.</font></p>
+		]]></code>
+	</content>
+</step>

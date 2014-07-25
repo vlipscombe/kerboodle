@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <onThisPage>
+	<topicInfo>
+		<title>Students and Teachers</title>
+		<intro><![CDATA[
+			<p>Use this page to view accounts and change student passwords.</p>
+			<p>As a teacher user, you're able to change student passwords, however if you need to create, edit or delete accounts, you need to switch to admin mode.</p>
+		]]></intro>
+	</topicInfo>
+	<content>
+		<accPath>users</accPath>
+		<accContent>
+			<steps>findaccountsT</steps>
+		</accContent>
+		<accContent>
+			<steps>editaccountsT</steps>
+		</accContent>
+		<mainContent></mainContent>
+	</content>
+</onThisPage>
