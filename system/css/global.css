@@ -3,12 +3,12 @@
 /* Site containers (with default text styles), clearing div and hr divider */
 
 body {
-    margin: 0px;
+   
     color: #6C6869;
     font-size: 0.7em;
     line-height: 1.4em;
     font-family: Verdana, Geneva, Arial, Helvetica, Tahoma, Sans-Serif;
-    background-color: #EAE6DF;
+    background-color: #99cc33;
 }
 
 div.clearer,
@@ -58,7 +58,7 @@ div.spinner {
 #wrapper {
     margin: 0px auto;
     padding: 0px 40px 20px 40px;
-    width: 894px;
+    width: 900px;
 }
 
 hr {
@@ -1460,6 +1460,8 @@ ul#lower_nav ul ul ul ul ul li a {
 /* On IE6 and IE7 this is achieved using relative position and negative top (with negative bottom margin) instead */
 .full_width h1 {
     margin-top: 6px;
+    color:#428BCA;
+
 }
 
 .half_width {
