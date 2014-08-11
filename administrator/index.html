@@ -9,167 +9,99 @@
         <meta name="author" content="Paul Kent" />
         <link rel="shortcut icon" href="../system/images/kerboodle_favicon_32x32.png" type="image/x-icon" />
         <link rel="stylesheet" type="text/css" href="../system/css/global.css" />
-        <link rel="stylesheet" type="text/css" href="../system/css/ecommerce.css" />
-        <link rel="stylesheet" type="text/css" href="../system/css/dev.css" />  
-		<link rel="stylesheet" type="text/css" href="../system/css/secondary.css" />   
-		<link rel="stylesheet" type="text/css" href="../system/css/modal_window.css" />
-        <link rel="stylesheet" type="text/css" href="../system/css/jcarousel.css" />
-		 <!--[if IE 9]>
-            <link rel="stylesheet" type="text/css" href="../system/css/global_ie9.css" />
-        <![endif]-->
-        <!--[if lte IE 8]>
-            <link rel="stylesheet" type="text/css" href="../system/css/global_ie6-8.css" />
-        <![endif]-->
-        <!--[if IE 7]>
-            <link rel="stylesheet" type="text/css" href="../system/css/global_ie7.css" />
-        <![endif]-->
-        <!--[if IE 6]>
-            <link rel="stylesheet" type="text/css" href="../system/css/global_ie6.css" />
-        <![endif]-->
-		<link rel="stylesheet" href="../system/css/overlay.css" type="text/css" media="screen" /> 
-		
-		<style>
-.half_width {
-    width: 244px;
-}
-
-.teachers-button{
-	margin-bottom: 30px !important;
-}
-
-.students-button{
-	margin-bottom: 20px !important;
-}
-
-.admin-button{
-	margin-bottom: 20px !important;
-}
-
-.teachers-text{
-    margin-bottom: 10px;
-    margin-top: 0;
-}
-
-.students-text{
-margin-top: 17px;
-}
-
-.admin-text{
-margin-top: 46px;
-}
-.technical-text{
-margin-top: 58px;
-}
-</style>
-
+        <link rel="stylesheet" type="text/css" href="../system/css/bootstrap.css" />
 </head>		
 		
 	<body>
-		<script type="text/javascript" src="../system/js/jquery-1.7.1.min.js"></script>
-<script type="text/javascript" src="../system/js/jquery-ui-1.8.18.custom.min.js"></script>
-<script type="text/javascript" src="../system/js/jquery.tools.min.js"></script>
-<script type="text/javascript" src="../system/js/jquery.jcarousel.min.js"></script>
-<script type="text/javascript" src="../system/js/jquery.cycle.all.js"></script>
-<script type="text/javascript" src="../system/js/jquery.expandable.js"></script>
-<script type="text/javascript" src="../system/js/oup-oxed-ecommerce.js"></script>
-<script type="text/javascript" src="../system/js/oup-extras-scripts.js"></script>
-<script type="text/javascript" src="../system/js/scripts.js"></script>
-<script type="text/javascript" src="../system/js/carousels_hero_panels.js"></script>
-<script type="text/javascript" src="../system/js/expandable_blocks.js"></script>
-<script type="text/javascript">
-    $(document).ready(function () { documentReady($); });
-    $(window).load(function () { windowLoaded($); });    
-</script>
-<script type="text/javascript" src="../system/js/flowplayer-3.2.4.min.js"></script>
-<script type="text/javascript" src="http://releases.flowplayer.org/js/flowplayer.ipad-3.2.10.min.js"  ></script>
-<script type="text/javascript">window.basePath = 'http://appedt.uat.oup.com:8580//';</script>
 		<div id="wrapper">
+
+			<!-- Header --> 
 			<div id="header">
-    <div id="left_column">
-        <a href="http://global.oup.com/" title="OUP " accesskey="1"><img src="../system/images/logo.gif" alt="OUP " /></a>
-        <a id="skip_to_content" href="#content" accesskey="2">Skip to main content</a>
-    </div>
-    <div class="clearer"></div>
-</div>
+   				<div id="left_column">
+        			<a href="http://global.oup.com/" title="OUP " accesskey="1"><img src="../system/images/logo.gif" alt="OUP " /></a>
+        			<a id="skip_to_content" href="#content" accesskey="2">Skip to main content</a>
+    			</div>
+    		<div class="clearer"></div>
+			</div>
 
-<div id="page_top_banner">
-<img alt="TopBannerAltText" src="../system/images/tech_support_oxbox_header.jpg"></div>
- 
+			<div id="page_top_banner">
+				<img alt="TopBannerAltText" src="../system/images/tech_support_oxbox_header.jpg">
+			</div>
+			<div class="clearer"></div>
+			<!-- End of header --> 
 
-		<div class="clearer"></div>
+			<!-- Left Nav --> 
 			<div id="page_navigation">
-			<ul id="lower_nav">
-				<li>	            	
-		       		<ul>
-		<ul> 
-		
-		
-		
-		
-		
-			<!--------------------- Left Nav ------------------------->   		
-		
-       <li><span><a href="../index.html"><strong>Kerboodle Support</strong></a></span>
-		<ul>
-			<li><a href="../students">Students</a></li>
-			<li><a href="../teachers">Teachers</a></li>
-			<li><span class="selected">Administrator</span></li>
-			<li><span><a href="../administrator/gettingstarted">- Getting Started</a></span></li>
-			<li><a href="../technical">Technical</a></li>
-			<li><a href="../nextgen">Next generation Kerboodle</a></li>
-          </ul>
-      </li>
-   </ul>
-   
-			<!--------------------- Left Nav Ends! ------------------------->   
-			
-			
-			
-			
-</ul>
-		          	</ul>
-		       	</li>
-		    </ul>
+				<ul id="lower_nav">
+					<li>	            	
+			       		<ul>
+							<ul> 
+								<li><span><a href="../index.html"><strong>Kerboodle Support</strong></a></span>
+								<ul>
+									<li><a href="../students">Students</a></li>
+									<li><a href="../teachers">Teachers</a></li>
+									<li><span class="selected">Administrator</span></li>
+									<li><span><a href="../administrator/gettingstarted">- Getting Started</a></span></li>
+									<li><a href="../technical">Technical</a></li>
+									<li><a href="../nextgen">Next generation Kerboodle</a></li>
+								  </ul>
+								</li>
+	   						</ul>
+	   					</ul>
+			       	</li>
+			    </ul>
 		   </div>
+		   <!-- End of Left Nav --> 
 		   
 		   
+			<!-- Central content -->  
 		   
-			<!--------------------- Central Content ------------------------->   
-		   
-							<div id="page_content">
-					<div class="content_block full_width">
+			<div id="page_content">
+				<div class="content_block full_width">
 						<h1>Administrator</h1>
-						
-								<div class="content_block full_width single_column">
-										<h2>What is the Administrator for?</h2>
+						<div class="content_block full_width single_column">
+						<h2>What is the Administrator for?</h2>
+							<p><strong>Multiple departments</strong> using different courses can all purchase access to products at <a href="http://kerboodle.oxfordsecondary.co.uk">http://kerboodle.oxfordsecondary.co.uk</a>. Having one administrative user ensures that each student and teacher only has <strong>one set of login details</strong> to get to all of their courses.</p>
 
-									<p><strong>Multiple departments</strong> using different courses can all purchase access to products at <a href="http://kerboodle.oxfordsecondary.co.uk">http://kerboodle.oxfordsecondary.co.uk</a>. Having one administrative user ensures that each student and teacher only has <strong>one set of login details</strong> to get to all of their courses.</p>
+							<p>The Administrator does not have access to the content of courses - their only responsibility is <strong>creating user accounts</strong> and global groups (groups that exist across the whole institution).</p>
 
-									<p>The Administrator does not have access to the content of courses - their only responsibility is <strong>creating user accounts</strong> and global groups (groups that exist across the whole institution).</p>
+							<p>The Administrator should not purchase products for the institution. Ideally, teachers should purchase products to be used within their department, but where this isn’t possible, the Administrator should purchase products using a different email address to that which has been used to set up their Administrator account. Please note that doing this will create a new Teacher account.</p>
 
-									<p>The Administrator should not purchase products for the institution. Ideally, teachers should purchase products to be used within their department, but where this isn’t possible, the Administrator should purchase products using a different email address to that which has been used to set up their Administrator account. Please note that doing this will create a new Teacher account.</p>
+							<p>Your Administrator should be someone who is <strong>familiar with your School Management System</strong>, so that they can easily export student data and create student logins in your online product.</p>
 
-									<p>Your Administrator should be someone who is <strong>familiar with your School Management System</strong>, so that they can easily export student data and create student logins in your online product.</p>
+							<a href="gettingstarted" class="btn btn-primary btn-lg btn-block">
+								<span class="glyphicon glyphicon-star"></span> Getting Started
+							</a>
+							<a href="planning" class="btn btn-primary btn-lg btn-block">
+								<span class="glyphicon glyphicon-user"></span> Administrator Role 
+							</a>
+							<a href="resources" class="btn btn-primary btn-lg btn-block">
+								<span class="glyphicon glyphicon-plus-sign"></span> Creating and uploading users
+							</a>
+							<a href="assignments" class="btn btn-primary btn-lg btn-block">
+								<span class="glyphicon glyphicon-list-alt"></span> Creating groups
+							</a>
 
-									<h2>Need help logging in?</h2>
+							<a href="assignments" class="btn btn-primary btn-lg btn-block">
+								<span class="glyphicon glyphicon-exclamation-sign"></span> Archiving users
+							</a>
 
-           						    <p>For help with logging in, visit our dedicated <a href="../technical/login">Logging in support page</a></p>
+							<br/>
+				
+							<h2>Need help logging in?</h2>
 
-            						<h2>Need advice on which browser to use?</h2>
-            						<p>For help with browsers, visit our dedicated <a href="../technical/browsers">Browsers support page</a></p>
+   						    <p>For help with logging in, visit our dedicated <a href="../technical/login">Logging in support page</a></p>
+
+    						<h2>Need advice on which browser to use?</h2>
+    						<p>For help with browsers, visit our dedicated <a href="../technical/browsers">Browsers support page</a></p>
+						</div>
+						<div class="clearer"></div>
+					<div class="content_block full_width line_border"></div>
+				</div> <!--end of block content --> 
+			</div><!--end of page content --> 
 
 
-								</div>
-								<div class="clearer"></div>
-							<div class="content_block full_width line_border">
-								<!--<div class="block_top"></div>
-									 <div class="inner_block">
-										<p>
-				<P>&nbsp;</P>
-				<P>Put the installation guides information etc here</P></p>
-									</div>
-								 <div class="block_bottom"></div>   --> 		
-							</div>
+<!-- FAQS that need to be re-used
 		<hr class="double_height full_width" />
 				<h2>FAQs</h2>
 							<div class="content_block full_width faq_expandable" id="Q1_1" >
@@ -616,24 +548,25 @@ Teachers are responsible for giving their students access to courses. They do th
 		             			</div>
 							</div>
 
+						--> 
 
-			</div></div>
 
-			<!--------------------- Central Content Ends! ------------------------->   
-			
+		
+
+		
 			
 						 
 
 
 
-			<!--------------------- Right Nav ------------------------->   
+
 
 <div id="page_sidebar">
 	     <div class="content_block column_width help_support">
 <A title="Login page" href="http://www.kerboodle.com" target="_blank">Login page</A><A href="https://global.oup.com/education/help/technical-support/helpdesk-platform" target="_blank">Contact us</A>
 	     </div>
 		 
-		 <!--------------------- Right Nav Ends! ------------------------->   
+	   
 		 
 		 
 		 
@@ -646,6 +579,26 @@ Teachers are responsible for giving their students access to courses. They do th
             </div>
             <div class="clearer"></div>
 		</div>
+
+
+				<script type="text/javascript" src="../system/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="../system/js/jquery-ui-1.8.18.custom.min.js"></script>
+<script type="text/javascript" src="../system/js/jquery.tools.min.js"></script>
+<script type="text/javascript" src="../system/js/jquery.jcarousel.min.js"></script>
+<script type="text/javascript" src="../system/js/jquery.cycle.all.js"></script>
+<script type="text/javascript" src="../system/js/jquery.expandable.js"></script>
+<script type="text/javascript" src="../system/js/oup-oxed-ecommerce.js"></script>
+<script type="text/javascript" src="../system/js/oup-extras-scripts.js"></script>
+<script type="text/javascript" src="../system/js/scripts.js"></script>
+<script type="text/javascript" src="../system/js/carousels_hero_panels.js"></script>
+<script type="text/javascript" src="../system/js/expandable_blocks.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () { documentReady($); });
+    $(window).load(function () { windowLoaded($); });    
+</script>
+<script type="text/javascript" src="../system/js/flowplayer-3.2.4.min.js"></script>
+<script type="text/javascript" src="http://releases.flowplayer.org/js/flowplayer.ipad-3.2.10.min.js"  ></script>
+<script type="text/javascript">window.basePath = 'http://appedt.uat.oup.com:8580//';</script>
 
 	</body>
 </html>
