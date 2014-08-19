@@ -8,7 +8,7 @@ body {
     font-size: 0.7em;
     line-height: 1.4em;
     font-family: Verdana, Geneva, Arial, Helvetica, Tahoma, Sans-Serif;
-    background-color: #99cc33;
+    background-color: #92C030;
 }
 
 div.clearer,
@@ -69,6 +69,17 @@ hr {
     line-height: 1px;
     background-color: #E2DEDC;
     border: none;
+}
+
+hr.navrule {
+    margin: 5px 0px 10px 0px;
+    padding: 0px;
+    height: 1px;
+    color: #E2DEDC;
+    line-height: 1px;
+    background-color: #E2DEDC;
+    border: none;
+
 }
 
 hr.double_height {
