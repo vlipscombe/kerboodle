@@ -185,6 +185,7 @@ th {
 }
 .glyphicon {
   position: relative;
+  padding: 3px;
   top: 1px;
   display: inline-block;
   font-family: 'Glyphicons Halflings';
@@ -1211,6 +1212,15 @@ fieldset[disabled] .btn-link:focus {
   line-height: 1.33;
   border-radius: 6px;
 }
+.btn-xlg,
+.btn-group-lg > .btn {
+  margin: 0 auto;
+  width: 400px;
+  height: 100px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
 .btn-sm,
 .btn-group-sm > .btn {
   padding: 5px 10px;
@@ -2160,4 +2170,3 @@ button.close {
     display: none !important;
   }
 }
-
