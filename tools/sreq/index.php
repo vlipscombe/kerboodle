@@ -593,7 +593,7 @@ function sendMail() {
 	MessageBody = MessageBody + " %0d%0A   ***********************************";
 	MessageBody = MessageBody + " %0d%0A   Please add any other details:";
 	//MessageBody = MessageBody + "</pre>";
-    var link = "mailto:edtechsupport@oup.com"
+    var link = "mailto:support@kerboodle.com"
              + "?cc=paul.kent@oup.com"
              + "&subject=" + "Computer Configuration"
              + "&body= " + MessageBody ;

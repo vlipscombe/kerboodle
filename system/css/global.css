@@ -1,4 +1,4 @@
-﻿
+
 /*-----------------------------------------------------------------------------------------*/
 /* Site containers (with default text styles), clearing div and hr divider */
 
@@ -8,7 +8,7 @@ body {
     font-size: 0.7em;
     line-height: 1.4em;
     font-family: Verdana, Geneva, Arial, Helvetica, Tahoma, Sans-Serif;
-    background-color: #92C030;
+    background-color: #acd037;
 }
 
 div.clearer,
@@ -56,9 +56,13 @@ div.spinner {
 }
 
 #wrapper {
+
     margin: 0px auto;
-    padding: 0px 20px 20px 20px;
-    width: 900px;
+    padding: 0px 25px 20px 25px;
+    max-width: 900px;
+    min-width: 854px;
+
+
 }
 
 hr {
@@ -99,10 +103,10 @@ hr.double_height {
 /* Default headings */
 
 h1 {
-    margin: 0px;
+    margin: 5px;
     padding: 0px;
     font-weight: normal;
-    font-size: 4.3em;
+    font-size: 3.5em;
     line-height: 1em;
 }
 
@@ -1236,8 +1240,8 @@ a.bg_colour_children:hover {
 /* Page content outer containers */
 
 #page_top_banner {
-    margin-bottom: 18px;
     width: 100%;
+    margin: 5px 0px 30px -20px;
 }
 
 #page_navigation,
@@ -1251,17 +1255,19 @@ a.bg_colour_children:hover {
 #title_content,
 #search_content {
     float: left;
-    width: 554px;
+    width: 610px;
+    min-height: 400px;
+
 }
 
 #page_sidebar {
     float: right;
-    width: 170px;
+    width: 100px;
 	margin-top:5px;
 }
 
 #page_bottom_banner {
-    margin-bottom: 6px;
+    margin: 30px 0px 6px -20px;
     width: 100%;
 }
 
@@ -1465,7 +1471,7 @@ ul#lower_nav ul ul ul ul ul li a {
 }
 
 .full_width {
-    width: 532px;
+    width: 580px;
 }
 
 /* On IE6 and IE7 this is achieved using relative position and negative top (with negative bottom margin) instead */
@@ -1475,12 +1481,17 @@ ul#lower_nav ul ul ul ul ul li a {
 
 }
 
+.full_width img {
+    margin-bottom: 10px;
+
+}
+
 .half_width {
     width: 255px;
 }
 
 .column_width {
-    width: 170px;
+    width: 100px;
 }
 
 /*------------------------------------------*/
@@ -1518,7 +1529,7 @@ ul#lower_nav ul ul ul ul ul li a {
 /* General purpose page content blocks */
 
 /*--------------------*/
-/* Padded area of text, inside an enclosed block (such as full-width product description blocks) */
+/* Padded area of text, inside an enclosed block (such as ffull_width product description blocks) */
 .inset_text_block,
 .clipped_text_block {
     padding: 10px;
@@ -1766,6 +1777,7 @@ table.keep_updated_links table td {
 .faq_expandable {
     padding-bottom: 6px;
     border-bottom: 2px solid #E2DEDC;
+
 }
 
 .faq_expandable hr.double_height {
