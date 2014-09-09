@@ -60,7 +60,7 @@ div.spinner {
     margin: 0px auto;
     padding: 0px 25px 20px 25px;
     max-width: 900px;
-    min-width: 854px;
+    min-width: 900px;
 
 
 }
@@ -1248,7 +1248,7 @@ a.bg_colour_children:hover {
 #search_navigation {
     float: left;
     margin-bottom: 11px;
-    width: 170px;
+    width: 175px;
 }
 
 #page_content,
@@ -1482,7 +1482,7 @@ ul#lower_nav ul ul ul ul ul li a {
 }
 
 .full_width img {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 
 }
 

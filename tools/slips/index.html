@@ -1,13 +1,14 @@
 <html>
 <head>
- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />  
+<meta http-equiv="Content-Type" content="text/html"; charset="UTF-8" />  
     <title>Student Account Slips</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/custom.css" rel="stylesheet" media="screen">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
-    <script src="js/bootstrap.js"></script>
+ <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jspdf/0.9.0rc1/jspdf.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+ <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1-rc2/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>   
 </head>
 <body>
   <div class="page">
@@ -19,157 +20,474 @@
           <h4 id="headings">Step 1:</h4>
             <form class="form-inline">
               <label>Please enter institution code:</label>
-             <input type="text" name="Inst" placeholder="code">
+              <input type="text" name="Inst" placeholder="code">
             </form> 
             <h4 id="headings">Step 2:</h4>
             <div id="alert"></div>
-          <div id="drop_zone">Please Drag and Drop the .csv file here</div>
-          <script type="text/javascript" >
-          var URLadd = "kerboodle.oxfordsecondary.co.uk";
-          var OutString = [];
-          var TestFunc = [];
-          function handleFileSelect(evt) { // function 1 bracket
-              evt.stopPropagation();
-              evt.preventDefault();
-              var files = evt.dataTransfer.files; // FileList object.
-              // files is a FileList of File objects. List some properties.
-              var output = []; 
-              oForm = document.forms[0]; 
-              oText = oForm.elements["Inst"];
-              var InstCode = oText.value;
-             if (InstCode == "")
+            <div id="holder"></div>                                      
+            <div id="buttons"></div>
+            <div id="results"></div>
+            
+<script >
+ var URLadd = "www.kerboodle.com"; 
+  // 1 SET UP LISTENERS AND EVENT HANDLERS (AT END)
+  // 2 DETECT BROWSER TYPE AND OUTPUT PAGE ACCORDINGLY (NO DND FOR IE)
+  // 3 UPON DND OR FILE SELECT
+  //    A. CHECK FOR INST CODE
+  //    B. CHECK FOR VALID FILE LAYOUT (IS A CSV FILE)
+  // 4. output in 3 strings - 1 for word, 1 for browser print, 1 for pdf
+  
+   // *********************** BROWSER DETECT SECTION - START *********************   
+var N=navigator.appName, ua=navigator.userAgent, tem;
+var M=ua.match(/(opera|chrome|safari|firefox|msie)\/?\s*(\.?\d+(\.\d+)*)/i);
+if(M && (tem= ua.match(/version\/([\.\d]+)/i))!= null) M[2]= tem[1];
+    M=M? [M[1], M[2]]: [N, navigator.appVersion, '-?'];
+
+var browser = M[0];
+var browser_version = M[1];
+var isIE = false;
+var TestFunc = []; 
+var pdfstring;
+var pdfInst;
+switch (browser)
+{
+case 'MSIE':
+     if(browser_version < 10)
+	{
+	$('#alert').addClass( "alert alert-error"); // adds the alert class to div id alert
+	document.getElementById('alert').innerHTML = "You are running Internet Explorer 9 or below. Please use this utility in a different browser.";	
+	} else {
+	document.getElementById('buttons').innerHTML = "You are running Internet Explorer 10. Please upload the file using the button provided<br><input type='file' onChange='getFileContents(this)'>";		
+        }
+        isIE = true;
+   break;
+case 'Netscape':
+	document.getElementById('buttons').innerHTML = "You are running Internt Explorer 11. Please upload the file using the button provided<br><input type='file' onChange='getFileContents(this)'>"; 	
+	isIE = true;	
+  break; 
+default:
+	document.getElementById('holder').innerHTML = "<div id='drop_zone'>Please Drag and Drop the .csv file here'</div>";	
+	document.getElementById('buttons').innerHTML ="<input type='file' id='Loadfiles' name='files[]' multiple /><br>";
+	
+}
+    // *********************** BROWSER DETECT SECTION - END ********************* 
+    
+   // *********************** MAIN GUTS - START ****************************************
+  function ProcData(files, InstCode) {        
+   pdfInst = InstCode;
+   var OutString = [];
+   var FirstnameTest;
+   var SecondnameTest;
+   var LoginIDtest;
+   var Errchkstring;
+   var output = [];  
+   var ErrorBool = false; 
+      if (InstCode == "")
              {
-                  var alert ='<button type="button" class="close" data-dismiss="alert">&times;</button><strong>Error: Please enter in your institution code</strong>';
+             var alert ='<button type="button" class="close" data-dismiss="alert">&times;</button><strong>Error: Please enter in your institution code</strong>';
                      $('#alert').addClass( "alert alert-error"); // adds the alert class to div id alert
                      $("#alert").html(alert); // output the alert variable to the div
-                   }
-
-               else {
-
-              for (var i = 0, f; f = files[i]; i++) { // loop 1
-                if (f.name.match('\.csv')) { // if 1
-                // this part is for when a csv file is drag n dropped
+                    
+                    if (isIE)
+			{
+			document.getElementById('buttons').innerHTML = "<input type='file' onChange='getFileContents(this)'>";					
+			} else {			
+				document.getElementById('holder').innerHTML = "<div id='drop_zone'>Please Drag and Drop the .csv file here'</div>";	
+				document.getElementById('buttons').innerHTML ="<input type='file' id='Loadfiles' name='files[]' multiple /><br>";
+	    dropZone = document.getElementById('drop_zone');
+            dropZone.addEventListener('dragover', handleDragOver, false);
+            dropZone.addEventListener('drop', handleFileSelect, false);
+            document.getElementById('Loadfiles').addEventListener('change', handleFileSelect, false);	
+			}             
+                   } else {         
+      for (var i = 0, f; f = files[i]; i++) { // loop 1
+     		
+            if (f.name.match('\.csv')) { // if 2
                   var Filename = decodeURI(escape(f.name));
                   var reader = new FileReader();
                   // when the file loads, the function beneath is run   
                   reader.onload = (function(theFile) { // function 2
-                  $( "#alert").remove(); //get rid of any alert messages when a successful file is uploaded
-                     // this function is executed before it is returned, by the last parenthesis (f)         
+                 
+                   $( "#holder").remove();
+                     // this function is executed before it is returned, by the last parenthesis (f)  
+                            
                   return function(e) { //function 3            
                   var contents = e.target.result;
                   var FileLines = contents.split( "\n" );
                   var LineCount = FileLines.length;
-                  OutString = '<table id="mytab" border="1" width="100%"><tr>';
+                    pdfstring = contents;
+                  OutString = '<div id="tables"><table id="mytab" border="1" width="95%"><tr>';
                   var ColCount = 1;
-
-
-                  for (var i=1; i<LineCount; ++i)
+		  var RowCount = 1;
+                  for (var i=1; i< LineCount ; ++i)
                   { // loop 2
                   	
+          	    
           	     if (ColCount>4)
-          	        {ColCount=0;}
-          	     if(ColCount==0)
-          	       { // if 2
-          	          OutString += '</tr><tr>';
-          	          ColCount = 1;
-          	       } // close if 2
+          	        { // when there are 4 columns on the page, start a new row
+          	        ColCount=1;
+          	        RowCount += 1;
+          	        if (RowCount>4)
+		            {
+		             OutString += '</tr></table><br clear=all style="mso-special-character:line-break;page-break-before:always"><table id="mytab" border="1" width="95%" ><tr>';
+		            RowCount = 1;
+		            } else {
+		               OutString += '</tr><tr>';		            
+		            }          	        
+          	        }          	               	       
           	     OutString += '<td width=25%>';
           	     var CommaSplit = FileLines[i].split(",");
           	     var CommaCount = CommaSplit.length;
-          	     	              if (CommaCount == 5)
-          	              { // if 3
-          	                  OutString += "<strong> " + CommaSplit[0] + " " + CommaSplit[1] + "</strong><br>";
-          	                  OutString += "Username: " + CommaSplit[3] + "<br>Password: " + CommaSplit[3];
-          	                  OutString += "<br>Institution: " + InstCode + "<br><br>"  + URLadd;                 
-          	                  ColCount += 1;
-          	                           
-          	              } else { // else of if 3
-          	                 for (var j= 0; j<CommaCount; ++j)
-          	                 { // loop 3
-          	                     OutString +=   CommaSplit[j] + '<br>';
-          	                     ColCount += 1;
-          	                 } // close loop 3
-          	            } //close if 3
-          	              OutString += '</td>';
+          	     if (CommaCount == 5)
+          	     { // if 3
+          	       	FirstnameTest = CommaSplit[0];
+			SecondnameTest = CommaSplit[1];
+   			LoginIDtest = CommaSplit[3];
+   			
+          	     	if(FirstnameTest.length > 25)
+          	     	{ // the first name is too long for OSP
+          	     	Errchkstring = "<strong><font color='red'>First name: '" + CommaSplit[0] + "' is LONGER THAN 25 Charaters!! </font></strong><br>";  
+          	     	ErrorBool = true;        	     	
+          	     	} else {          	     	
+          	     	Errchkstring = "<strong> " + CommaSplit[0] + " ";
+         	     	}
+         	     	
+          	     	if(SecondnameTest.length > 40)
+          	     	{ // the first name is too long for OSP
+	          	     
+	          	Errchkstring += "<br><strong><font color='red'>Last name: '" + CommaSplit[1] + "' is LONGER THAN 40 Charaters!! </font></strong><br>";
+	          	 ErrorBool = true;     	    	     	
+          	     	} else {
+          	     	Errchkstring += CommaSplit[1] + "</strong><br>";
+          	     	
+         	     	}
+          	           OutString += Errchkstring; 
+          	        if(LoginIDtest.length > 50)
+          	     	{ // the first name is too long for OSP
+          	     	OutString += "<br><strong><font color='red'>Username: " + CommaSplit[3] + " is LONGER THAN 50 Charaters!! </font></strong><br>";  
+          	     	ErrorBool = true;        	     	
+          	     	} else {          
+          	           OutString += "Username: " + CommaSplit[3] + "<br>Password: " + CommaSplit[3];
+          	         }  
+          	          OutString += "<br>Institution: " + InstCode + "<br><br>"  + URLadd; 
+          	          
+          	           ColCount += 1;
+          	       
+          	     } else { // else of if 3
+          	          for (var j= 0; j < CommaCount ; ++j)
+          	          { // loop 3
+          	              OutString +=   CommaSplit[j] + '<br>';
+          	              ColCount += 1;
+          	          } // close loop 3
+          	     } //close if 3
+          	      OutString += '</td>';
                       
                   } // close loop 2
-                  OutString += '</tr></table>';
+                  
+                  if(ColCount == 1) 
+                  {
+                  OutString += '<td width=25%><br></td><td width=25%><br></td><td width=25%><br></td><td width=25%><br></td>';
+                  }
+                  if(ColCount == 2) 
+                  {
+                  OutString += '<td width=25%><br></td><td width=25%><br></td><td width=25%><br><td>';
+                  }
+                  if(ColCount == 3) 
+                  {
+                  OutString += '<td width=25%><br></td><td width=25%><br></td>';
+                  }
+                  
+                  
+                  OutString += '</tr></table></div>';
                   TestFunc = '<html xmlns:v="urn:schemas-microsoft-com:vml" ';
-                      TestFunc += 'xmlns:o="urn:schemas-microsoft-com:office:office" ';
-                      TestFunc += 'xmlns:w="urn:schemas-microsoft-com:office:word" ';
-                      TestFunc += 'xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" ';
-                      TestFunc += 'xmlns="http://www.w3.org/TR/REC-html40">';
-                      TestFunc += '<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>';
-                      TestFunc += '<title>Passwords Doc</title>';
-                      TestFunc += '<style>v\:* {behavior:url(#default#VML);}o\:* {behavior:url(#default#VML);}w\:* {behavior:url(#default#VML);}.shape behavior:url(#default#VML);}</style>';
-                      TestFunc += '<style>@page{mso-page-orientation: landscape; size:29.7cm 21cm; margin:0cm 0cm 0cm 0cm;}';
-                      TestFunc += '@page Section1 {mso-header-margin:0in; mso-footer-margin:0in; mso-header: h1; mso-footer: f1; }';
-                      TestFunc += ' div.Section1 { page:Section1; }';
-                      TestFunc += 'table#mytab{ margin: 0.2in 0.2in 0.2in 0.2in; width:0px; height:0px; overflow:hidden; text-align: center; vertical-align: middle;}';
+                  TestFunc += 'xmlns:o="urn:schemas-microsoft-com:office:office" ';
+                  TestFunc += 'xmlns:w="urn:schemas-microsoft-com:office:word" ';
+                  TestFunc += 'xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" ';
+                  TestFunc += 'xmlns="http://www.w3.org/TR/REC-html40">';
+                  TestFunc += '<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>';
+                  TestFunc += '<title>Password Slips</title>';                  
+                  TestFunc += '<style>v\:* {behavior:url(#default#VML);}o\:* {behavior:url(#default#VML);}'; 
+                  TestFunc += 'w\:*{behavior:url(#default#VML);}.shape {behavior:url(#default#VML);}</style>';
+                  TestFunc += '<style>@page{mso-page-orientation: landscape; size:29.7cm 21cm; margin:0.5cm 0cm 0cm 0cm;}';
+                  TestFunc += '@page Section1 {mso-header-margin:0in; mso-footer-margin:0in; mso-header: h1; mso-footer: f1; }';
+                  TestFunc += ' div.Section1 { page:Section1; }';
+                  TestFunc += 'table#mytab{ margin: 0.2in 0.2in 0.2in 0.2in; width:0px; height:0px; overflow:hidden; text-align: center; vertical-align: middle;  }';
                       
-                      TestFunc += '</style><xml><w:WordDocument><w:View>Print</w:View><w:Zoom>100</w:Zoom><w:DoNotOptimizeForBrowser/>';
-                      TestFunc += '</w:WordDocument></xml></head><body><div class="Section1">';
-                      TestFunc += OutString;
-                      TestFunc += '</div></body></html>';
-                      var OutPutLine = '<a href="data:application/msword;charset=UTF-8, ' + encodeURIComponent(TestFunc) + '" download="' + decodeURIComponent(escape('Login Slips.doc')) + '" ><input id="Button1" type="button" class="btn btn-success" value="Download Slips" /></a><button class="btn btn-danger" type="button" onClick="window.location.reload()">Reload CSV</button>';
-                      $('#drop_zone').html(OutPutLine); //outputs the CSV data
-                      $('#drop_zone').addClass( "downloadbtn"); //adds the buttons 
-                      $('#drop_zone').removeAttr('id'); //remove the drops zones
-                      $( ".form-inline" ).remove(); // remove the inst form
-                      $( "#headings" ).remove(); //remove the step 1 heading
-                      $("#headings").html("Step 3"); // renames the Step 2 heading to Step 3
-                      document.getElementById('list').innerHTML = '<ul>' + output.join('') + '</ul>';    
+                  TestFunc += '</style><xml><w:WordDocument><w:View></w:View><w:Zoom></w:Zoom>';
+                  TestFunc += '</w:WordDocument></xml></head><body><div class="Section1">';
+                  TestFunc += OutString;
+                  TestFunc += '</div></body></html>';
+                  var OutPutLine;
+                  if (ErrorBool)
+                  { // some entries are too long - error message and no buttons
+                     $('#alert').addClass( "alert alert-error"); // adds the alert class to div id alert
+                     document.getElementById('alert').innerHTML = "Your file has some <strong>over-length </strong>entires which need correcting before the slips will be generated, please see below for details!";	
+                   OutPutLine = ' <button class="btn btn-danger" type="button" onClick="window.location.reload()">Reload CSV</button>';
+                  } else {
+                  // eveythings fine, show buttons
+                   $( "#alert").remove(); //get rid of any alert messages when a successful file is uploaded
+                  if (isIE)
+                   {
+                   OutPutLine = '<button class="btn btn-success" type="button" onClick="printData()" >Print Slips</button><button class="btn btn-success" type="button" onClick="printPDF();" >Print as PDFs</button>';
+                    OutPutLine += ' <button class="btn btn-danger" type="button" onClick="window.location.reload()">Reload CSV</button>';
+                   
+                  } else {
+                   OutPutLine = '<a href="data:application/msword;charset=UTF-8, ' + encodeURIComponent(TestFunc) + '" download="' + decodeURIComponent(escape('Login Slips.doc')) + '" ><input id="Button1" type="button" class="btn btn-success" value="Download Slips as Word Doc" /></a>';
+                   OutPutLine += ' <button class="btn btn-success" type="button" onClick="printPDF();" >Print as PDFs</button>';
+                    OutPutLine += ' <button class="btn btn-danger" type="button" onClick="window.location.reload()">Reload CSV</button>';
+                   }
+                 
+                  }                   
+                    
+                 
+                  
+                   $('#buttons').html(OutPutLine); //outputs the CSV data
+                  // $('#buttons').addClass( "downloadbtn"); //adds the buttons 
+                  
+                   //$('#buttons').removeAttr('id'); //remove the drops zones
+                   $( ".form-inline" ).remove(); // remove the inst form
+                   $( "#headings" ).remove(); //remove the step 1 heading
+                   $("#headings").html("Step 3:"); // renames the Step 2 heading to Step 3
+                   document.getElementById('results').innerHTML = '<ul>' + output.join('') + '</ul>';    
                   var span = document.createElement('span');
                   span.innerHTML = [OutString].join('');
-                  document.getElementById('list').insertBefore(span, null);    
-                  
-                 }; // close function 3
-                 
-                  })(f); // close function 2
-                  reader.readAsText(f, "Windows-1252");         
-                   // this creates the button that opens the finished document    
-                  //var OutPutLine = "<a href='WordTemplate.doc' ><input id='Button1' type='button' value='Open printable sheet' /></a>";
-                        output.push(OutPutLine);   
-                       
-                } else { // else of if 1
+                  document.getElementById('results').insertBefore(span, null); 
+  
+                  }; // close function 3                 
+               })(f); // close function 2
+               reader.readAsText(f, "Windows-1252");                  
+           } else { // else of if 1
                  // this triggers if its not a csv file that drag n drops
+                 
                      var alert ='<button type="button" class="close" data-dismiss="alert">&times;</button><strong>Error: </strong>' + escape(f.name) + ' is not a comma seperated (.csv) file!!';
                      $('#alert').addClass( "alert alert-error"); // adds the alert class to div id alert
                      $("#alert").html(alert); // output the alert variable to the div
                 }     // close if 1          
-              } // close loop 1  
-            }//end of else
-              document.getElementById('list').innerHTML = '<ul>' + output.join('') + '</ul>';
-          } // close function 1
+              } // close loop 1             
+     }     // close if 1    
+      return output;   
+}   
 
+ // *********************** MAIN GUTS - END ****************************************
+  
+   // ***********************EVENT HANDLERS FOR DRAG & DROP - START ******************  
 
-
-            function handleDragOver(evt) { // function 4
-              evt.stopPropagation();
-              evt.preventDefault();
-              evt.dataTransfer.dropEffect = 'copy'; // Explicitly show this is a copy.
+ 
+	function printPDF()
+	{	
+		var doc = new jsPDF('l', 'mm', 'a4');	
+		//doc.setFont("courier", "normal");
+		doc.setFontSize(12);
+		// ypos is down, xpos is across
+			pdfstring
+		var pdfLines = pdfstring.split( "\n" );
+                var pdfLineCount = pdfLines.length;
+                var printarea = 30;
+                var truncstr;
+                var truncstr1;
+                var xpos = 12;
+		var ypos = 12;
+		var xmargin = 75;
+		var linedepth = 6;
+		var colxpos = xpos;
+		var rowypos = ypos;
+		var RowCt = 1;
+		var ColCt = 1;
+		var endoftable = 12;
+		var NameLine;
+		var Firstname;
+		var Lastname;
+		var Nameparts = [];
+		var namepartslen;
+		var nameHold;
+		var nameholdLen;
+		var Flen;		
+                  for (var i=1; i< pdfLineCount ; ++i)
+                  { // loop 2
+                  // this loops through the whole file - they are in lines and need to be split	
+	          var pdfSplit = pdfLines[i].split(",");
+	          var pdfSlipCount = pdfSplit.length;  
+	          var pdfBlankTest = pdfLines[i];
+	             if (pdfBlankTest.length > 0)
+	             {   
+	          	doc.setFontType("bold");
+	          	Firstname = pdfSplit[0];	          	   
+	          	   if (Firstname.length > 25)
+	          	   {          	
+	          	   truncstr = Firstname.substring(0,25);
+	          	   Firstname = truncstr;
+	          	   doc.text( colxpos, rowypos, Firstname);
+	          	   rowypos += linedepth;  
+	          	   Firstname = "";
+	          	   }
+	          	   
+	          	 Lastname = pdfSplit[1];
+	          	 if (Lastname.length > 40 )
+	          	   {
+	          	    truncstr = Lastname.substring(0,40);
+	          	    Lastname = truncstr;
+	          	    }  
+	          	    
+	          	NameLine = Firstname + " " + Lastname;
+	          	if(NameLine.length > printarea)
+	          	{
+	          	   Flen = Firstname.length;
+	          	   truncstr = Lastname.substring(0,(printarea - Flen));
+	          	   NameLine = Firstname + " " + truncstr;	          	
+	          	   doc.text( colxpos, rowypos, NameLine);
+	          	   rowypos += linedepth;  
+	          	   truncstr = "  -" + Lastname.substring((printarea - Flen),40);
+	          	    doc.text( colxpos, rowypos, truncstr);
+	          	   rowypos += linedepth;        	   
+	          	} else {
+	          	   doc.text( colxpos, rowypos, NameLine);
+	          	   rowypos += linedepth;	          	
+	          	}     	
+	          	
+	          	
+	               	doc.setFontType("normal");
+	          	
+	          	NameLine = pdfSplit[3];	          	   
+	          	if (NameLine.length > 50)
+	          	   {	          	   	
+	          	    truncstr = NameLine.substring(0,50);
+	          	    NameLine = truncstr;          	    	          	  
+	          	   }
+	          	   
+	          	Flen = NameLine.length;
+	          	if (Flen > (printarea - 10)) 
+	          	   {          	  
+	          	      truncstr = "Username: " + NameLine.substring(0,(printarea - 10));
+	          	      doc.text( colxpos, rowypos, truncstr);
+	          	      rowypos += linedepth;  
+	          	      truncstr1 = "  -" + NameLine.substring((printarea - 10),50);
+	          	      doc.text( colxpos, rowypos, truncstr1);
+	          	      rowypos += linedepth; 
+	          	      truncstr = "Password: " + NameLine.substring(0,(printarea - 10));
+	          	      doc.text( colxpos, rowypos, truncstr);
+	          	      rowypos += linedepth;  
+	          	      doc.text( colxpos, rowypos, truncstr1);
+	          	      rowypos += linedepth; 
+	          	  
+	          	   } else {
+	          	      doc.text( colxpos, rowypos,"Username: " + NameLine);
+	          	      rowypos += linedepth;
+		 	      doc.text( colxpos, rowypos,"Password: " + NameLine);		  	
+		  	      rowypos += linedepth;		          	   
+	          	   }  	  
+	         	
+		  	doc.text( colxpos, rowypos,"Institution: " + pdfInst);
+		  	rowypos += linedepth;	
+		  	doc.text( colxpos, rowypos, URLadd );
+		  	ColCt += 1;
+	          		          	
+	          	if (ColCt > 4)
+	                {
+		          // start new row
+	                 RowCt += 1;    
+	                 rowypos += linedepth * 2;
+	                 if (RowCt < 5)
+	                 {
+	                 doc.setLineWidth(0.5);
+	                 // begin x, begin y, end x, end y - this line goes across teh page
+			 doc.line(0, rowypos, (xmargin * 4), rowypos);
+			 rowypos += linedepth * 2;
+			 }
+	                 endoftable = rowypos;
+	                 colxpos = xpos;	                   
+	                 ColCt = 1; 
+	                 if (RowCt > 4)
+		          	{
+		          	// start a new page		          	
+		          	 doc.addPage();
+		          	 RowCt = 1; 
+		          	 ColCt = 1;  
+		          	 colxpos = xpos;
+			         rowypos = ypos;
+			         endoftable = ypos;
+			         ColCt = 1;
+		          	}  
+		        }  else {    
+	                 if (ColCt == 1)
+		         {//start of columns in row		                  
+		            colxpos = xpos;
+		            rowypos = ypos;
+		            endoftable = ypos;
+		            ColCt = 1;
+		          } else {
+		           // just another column record in teh row
+		           doc.setLineWidth(0.5);
+					
+		            colxpos += xmargin;		            
+		            rowypos = endoftable;
+		            // begin x, begin y, end x, end y - this line goes down the page			
+		            doc.line(colxpos-linedepth , 0, colxpos-linedepth, endoftable + (linedepth * 5));
+		          }	    
+	                 } 
+		     }
+                  } // close loop 2
+		
+		doc.save("slips.pdf");
+		}
+	
+// ********************************* EVENT HANDLERS START **************************
+  
+	function printData()
+	{
+		var divToPrint=TestFunc;
+		newWin= window.open('');
+		var PrintLine = '<html><head></head><body>' + TestFunc + '</body></html>';
+		newWin.document.write(PrintLine);
+		//newWin.print();
+		//newWin.close();
+	}
+           
+           
+            function handleDragOver(evt) { // function 1 for drag and drop upload
+              	evt.stopPropagation();
+              	evt.preventDefault();
+              	evt.dataTransfer.dropEffect = 'copy'; // Explic show this is a copy.                
             } // close function 4
-
+            
+            function handleFileSelect(evt) { // function for ubtton upload
+	        evt.stopPropagation();
+	        evt.preventDefault();
+	        var files = evt.target.files || evt.dataTransfer.files;            
+             	oForm = document.forms[0]; 
+              	oText = oForm.elements["Inst"];
+              	var InstCode = oText.value; 
+              	var output = ProcData(files, InstCode);
+              	document.getElementById('results').innerHTML = '<ul>' + output.join('') + '</ul>';               	
+               }  
+               
+               function getFileContents(input){ // function 2 for drag and drop upload
+        	var file = input.files[0],
+        	reader = new FileReader();
+         	oForm = document.forms[0]; 
+	 	oText = oForm.elements["Inst"];
+		var InstCode = oText.value;    
+        	reader.onload = function( event ){
+            		var files = event.target.result;                
+            		var inArray = [file];
+           		var output = ProcData(inArray, InstCode);      
+            		document.getElementById('results').innerHTML = '<ul>' + output.join('') + '</ul>';            		
+            		//document.write(output.toString());
+            		//processFileContents( files )            
+                	};
+        	reader.readAsText( file );
+        	}   
+        
             // Setup the dnd listeners.
+            if (!isIE) {
             var dropZone = document.getElementById('drop_zone');
             dropZone.addEventListener('dragover', handleDragOver, false);
             dropZone.addEventListener('drop', handleFileSelect, false);
-
-            function msieversion() {
-            var ua = window.navigator.userAgent;
-            var msie = ua.indexOf("MSIE ");
-            if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))      // If Internet Explorer, return version number
-              alert(parseInt(ua.substring(msie + 5, ua.indexOf(".", msie))));
-            else                 // If another browser, return 0
-              alert('otherbrowser');
-            return false;
+            document.getElementById('Loadfiles').addEventListener('change', handleFileSelect, false);
             }
-
-          </script>
-
-
-    <div class="output" id="list"></div>
-
+           
+	//************************EVENT HANDLERS FOR DRAG & DROP -END ***********************	
+ 	
+</script>
     <div class="row-fluid">
      <h4>Support</h4>
       <p>If you are having any issues using Kerboodle then please <a href="https://global.oup.com/education/help/technical-support/helpdesk-oxbox" target="_blank">contact us</a>. </p>
@@ -186,7 +504,6 @@
       <a href="http://www.oxfordsecondary.co.uk/oxbox-contact/">Contact |</a>
       <a href="http://global.oup.com/education/content/secondary/online-products/terms/">Terms and Conditions </a>
     </div>
-
   </div>
 </body>
 </html>
