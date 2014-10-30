@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <step>
+	<contextInfo>
+		<title>Create a New Test</title>
+		<id>createTest</id>
+		<parent>tests</parent>
+		<previousTitle>Launch a Test</previousTitle>
+		<previousLink>launchTest</previousLink>
+		<nextTitle>Edit a Test</nextTitle>
+		<nextLink>editTest</nextLink>
+	</contextInfo>
+	<content>
+		<code><![CDATA[
+			<p><font color='#39A4DD'>Please note that when you create a test you will choose from the questions already created by Nelson Thornes. You cannot create your own questions for a test.</font></p>
+			<ol>
+				<li>Click the <b>New Test</b> button.</li>
+				<li>Complete the <b>Name</b> and <b>Description</b> fields for your test. <i>(In your description add information which shows what you are testing and why.)</i></li>
+				<li>If you wish to shuffle the test questions so that students will not see the questions in the same order, tick the appropriate box.</li>
+				<li>You will need to select which questions you wish to include in your Test from the sets provided by Nelson Thornes.</li>
+				<li>Each test which is part of your course is shown in the Tests list. Click on the test title to view the questions in that test. To preview any question click the launch icon next to its name.</li>
+				<li>Add a tick in the box next to the name of each question you wish to include in your Test.</li>
+				<li>Click <b>Ok</b>.</li>
+			</ol>
+			<p> You will need to assign this Test to your Students so that they can take it (or include it within an Assignment).</p>
+		]]></code>
+	</content>
+</step>

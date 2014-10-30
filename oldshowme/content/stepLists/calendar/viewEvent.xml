@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <step>
+	<contextInfo>
+		<title>Viewing an Event</title>
+		<id>viewEvent</id>
+		<parent>calendar</parent>
+		<previousTitle></previousTitle>
+		<previousLink></previousLink>
+		<nextTitle>The Events Tab</nextTitle>
+		<nextLink>eventTab</nextLink>
+	</contextInfo>
+	<content>
+		<code><![CDATA[
+				<p>If your event is an <b>Assignment</b> or <b>Test</b>, click on its name to open it.</p>
+				<p>To view information about the event click the <b>information</b> icon next to its name.</p>
+		]]></code>
+	</content>
+</step>

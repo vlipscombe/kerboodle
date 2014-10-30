@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <topic>
+	<topicTitle>Annotating the Kerboodle Books</topicTitle>
+	<topicDialog><![CDATA[<p>Once you've accessed the Kerboodle Book, you can personalise it by adding notes and annotations.</p><p>This tutorial will take you through a few of the options available, for a full list of tools and their uses, please refer to the Kerboodle User Guide.</p>]]></topicDialog>
+	<steps>
+		<step>
+			<stepTitle>Annotate Book 1</stepTitle>
+			<stepTextTip><![CDATA[Access your Kerboodle Book and launch the page you'd like to annotate.]]></stepTextTip>
+			<stepScreen>content/showImages/students/AnnotateBook1.png</stepScreen>
+			<stepHotspot>180,236,414,247</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Annotate Book 2</stepTitle>
+			<stepTextTip><![CDATA[<p><b>Notes:</b></p><p>To add notes to your page, select one of the 'Note' options from the toolbar.</p><p>Click on the page to activate the tool and complete the pop-up.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/students/AnnotateBook2.png</stepScreen>
+			<stepHotspot>513,71,554,85</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Annotate Book 3</stepTitle>
+			<stepTextTip><![CDATA[<p>The note will then remain on the page and can be opened at any time by clicking on the icon.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/students/AnnotateBook3.png</stepScreen>
+			<stepHotspot>251,102,266,114</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Annotate Book 4</stepTitle>
+			<stepTextTip><![CDATA[<p><b>Links:</b></p><p>To add weblinks (or links to other pages) to your book, select one of the 'Link' options from the toolbar.</p><p>Click on the page to activate the tool and complete the pop-up.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/students/AnnotateBook4.png</stepScreen>
+			<stepHotspot>511,98,554,112</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Annotate Book 5</stepTitle>
+			<stepTextTip><![CDATA[<p>The link will then remain on the page and can be opened at any time by clicking on the icon.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/students/AnnotateBook5.png</stepScreen>
+			<stepHotspot>255,126,273,144</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Annotate Book 6</stepTitle>
+			<stepTextTip><![CDATA[<p><b>Draw:</b> A pen tool is available to draw on the book page, and there is also a really useful highlight tool.</p></p>To highlight text on the page, select the <b>Highlight Marker</b> and choose your colour.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/students/AnnotateBook6.png</stepScreen>
+			<stepHotspot>479,211,554,226</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Annotate Book 7</stepTitle>
+			<stepTextTip><![CDATA[<p>Click and drag the highlight marker over the text you would like to highlight.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/students/AnnotateBook7.png</stepScreen>
+			<stepHotspot>94,206,249,223</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Annotate Book 8</stepTitle>
+			<stepTextTip><![CDATA[<p>Once you've finished annotating the page, click on the <b>Save</b> button in the main toolbar to save your changes.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/students/AnnotateBook8.png</stepScreen>
+			<stepHotspot></stepHotspot>	
+		</step>
+	</steps>	
+ </topic>

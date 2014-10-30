@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <tellMeHow>
+	<pageDetails>
+		<pageTitle></pageTitle>
+		<pageLink>tellMeHow.html?admins</pageLink>
+		<linkText>Click here for the Admin guide</linkText>
+	</pageDetails>
+	<topics>
+		<topic>
+			<topicTitle>Welcome to Kerboodle</topicTitle>
+			<topicShort>Welcome</topicShort>
+			<topicFile>teachers/welcome</topicFile>	
+		</topic>
+		<topic>
+			<topicTitle>Explore the Content</topicTitle>
+			<topicShort>Explore</topicShort>
+			<topicFile>teachers/exploreCourses</topicFile>	
+		</topic>
+		<topic>
+			<topicTitle>Give your Students Access</topicTitle>
+			<topicShort>Group</topicShort>
+			<topicFile>teachers/createGroup</topicFile>	
+		</topic>
+		<topic>
+			<topicTitle>Teach with Kerboodle</topicTitle>
+			<topicShort>Teach</topicShort>
+			<topicFile>teachers/teachKerboodle</topicFile>	
+		</topic>
+		<topic>
+			<topicTitle>Mark Work and Reports</topicTitle>
+			<topicShort>Mark</topicShort>
+			<topicFile>teachers/markWork</topicFile>	
+		</topic>
+		<topic>
+			<topicTitle>Edit your Courses</topicTitle>
+			<topicShort>Edit</topicShort>
+			<topicFile>teachers/editCourses</topicFile>	
+		</topic>
+	</topics>
+ </tellMeHow>

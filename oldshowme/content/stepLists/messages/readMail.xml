@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <step>
+	<contextInfo>
+		<title>How to Read a Message within Kerboodle</title>
+		<id>readMail</id>
+		<parent>messages</parent>
+		<previousTitle>Overview of the Events Tab</previousTitle>
+		<previousLink>eventTab</previousLink>
+		<nextTitle></nextTitle>
+		<nextLink></nextLink>
+	</contextInfo>
+	<content>
+		<code><![CDATA[
+				<ul>
+					<li>Click on the name of your message to open it.</b></li>
+				</ul>
+				<p><font color='#39A4DD'>A note will appear on your Home page when you have new mail.</font></p>
+		]]></code>
+	</content>
+</step>

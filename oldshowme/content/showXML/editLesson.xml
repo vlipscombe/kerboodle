@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <topic>
+	<topicTitle>Editing Lessons</topicTitle>
+	<topicDialog><![CDATA[If you need to edit or delete one of your lessons, this can be done in the Lessons bar.]]></topicDialog>
+	<steps>
+		<step>
+			<stepTitle>Access the Course</stepTitle>
+			<stepTextTip><![CDATA[Once logged into Kerboodle, access the course in which you created the lesson.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/EditLesson1.png</stepScreen>
+			<stepHotspot>11,119,94,133</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Manage Assignments</stepTitle>
+			<stepTextTip><![CDATA[Click on the <b>Lessons</b> bar.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/EditLesson2.png</stepScreen>
+			<stepHotspot>149,313,545,331</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Edit Assignment</stepTitle>
+			<stepTextTip><![CDATA[<p>Use the drop down arrow next to your lesson and select <b>Edit this lesson</b>.</p><p>You also have the option to <b>Copy</b> and <b>Delete</b> the lesson from these options.</p> ]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/EditLesson3.png</stepScreen>
+			<stepHotspot>383,272,557,282</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Edit Assignment2</stepTitle>
+			<stepTextTip><![CDATA[Make the relevant changes to your Name and Description and click <b>OK</b>.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/EditLesson4.png</stepScreen>
+			<stepHotspot>163,49,487,124</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Assignment changed</stepTitle>
+			<stepTextTip><![CDATA[These changes will take place immediately.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/EditLesson5.png</stepScreen>
+			<stepHotspot></stepHotspot>	
+		</step>		
+	</steps>	
+ </topic>

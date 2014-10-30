@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <topic>
+	<topicTitle>Marking Assignments</topicTitle>
+	<topicDialog><![CDATA[<p>If you've asked that students are able to return a document to you through the assignment, then you will have the option to give a score for the work and add an overall comment.</p><p>Please note: All Test Yourself activities will be automatically marked by Kerboodle.</p>]]></topicDialog>
+	<steps>
+		<step>
+			<stepTitle>Access the Course</stepTitle>
+			<stepTextTip><![CDATA[Once logged into Kerboodle, access the course in which you created the assignment.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/MarkAssignments1.png</stepScreen>
+			<stepHotspot>9,117,96,131</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Report Icon</stepTitle>
+			<stepTextTip><![CDATA[Click on the <b>Marking</b> button.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/MarkAssignments2.png</stepScreen>
+			<stepHotspot>4,122,138,147</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Click Mark</stepTitle>
+			<stepTextTip><![CDATA[<p>A list of current assignments will appear, click on an assignment title to view the marking options.</p><p><b>Tip:</b> You can also launch an assignment for a reminder of the resources included by using the launch icon.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/MarkAssignments3.png</stepScreen>
+			<stepHotspot>10,125,213,139</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Submitted Work</stepTitle>
+			<stepTextTip><![CDATA[<p>The initial screen will show an overview of the students who were assigned the work and whether they have completed the assignment.</b><p>To view more details and give the work a mark, click on the <b>View details and score</b> button.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/MarkAssignments4.png</stepScreen>
+			<stepHotspot>457,369,547,383</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Add Mark</stepTitle>
+			<stepTextTip><![CDATA[<p>If the student has completed a Test Yourself as part of the assignment, then these marks will automatically appear. You can view the full test details by clicking on the reports icon.</p><p>If a student has returned a document for marking, this is denoted by the paperclip icon, you can click on this icon to open their returned document.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/MarkAssignments5.png</stepScreen>
+			<stepHotspot>202,141,245,156</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Add Mark</stepTitle>
+			<stepTextTip><![CDATA[<p>To add a score for the work returned and add an overall comment for the assignment, click on the <b>Add</b> button.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/MarkAssignments5.png</stepScreen>
+			<stepHotspot>519,145,544,156</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Click Save</stepTitle>
+			<stepTextTip><![CDATA[<p>Enter your score and comment and then click <b>Save</b>.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/MarkAssignments6.png</stepScreen>
+			<stepHotspot>481,154,510,164</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Marks Returned</stepTitle>
+			<stepTextTip><![CDATA[<p>If a Test Yourself activity was also completed as part of the assignment, the two results will create an overall average mark.</p><p>These marks and comments will then appear to the student.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/MarkAssignments7.png</stepScreen>
+			<stepHotspot></stepHotspot>	
+		</step>		
+	</steps>	
+ </topic>

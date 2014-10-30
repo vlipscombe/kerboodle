@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <step>
+	<contextInfo>
+		<title>My Kerboodle Books</title>
+		<id>kbooklist</id>
+		<parent>home</parent>
+		<previousTitle></previousTitle>
+		<previousLink></previousLink>
+		<nextTitle></nextTitle>
+		<nextLink></nextLink>
+	</contextInfo>
+	<content>
+		<code><![CDATA[
+			<p>To access a Kerboodle Book either:</p>
+			<ul>
+				<li>Click on the book title in the <b>My Courses</b> list</li>
+				<li>Click on the <b>Go to my Bookshelf</b> button</li>
+			</ul>]]>
+		</code>
+	</content>
+</step>

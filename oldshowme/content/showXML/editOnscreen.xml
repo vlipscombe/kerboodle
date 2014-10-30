@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <topic>
+	<topicTitle>Editing multiple accounts On-Screen</topicTitle>
+	<topicDialog><![CDATA[<p>Using the <b>Manage Accounts</b> option will allow you to edit multiple Students' registration years and classes, delete multiple accounts and set students as leavers on-screen through Kerboodle.</p><p>If you'd like to edit more specific details, such as the Username, Password, First Name, Last Name or Email Address, please have a look at the <b>Editing multiple accounts using the Import function</b> tutorial.</p>]]></topicDialog>
+	<steps>
+		<step>
+			<stepTitle>Access Admin</stepTitle>
+			<stepTextTip><![CDATA[<p>Once logged into Kerboodle, click on the <b>Switch to Admin mode</b> button at the top of the screen and re-enter your password to access the Admin area.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/admin/EditOnscreen1.png</stepScreen>
+			<stepHotspot>333,14,416,28</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Manage Accounts</stepTitle>
+			<stepTextTip><![CDATA[<p>Click on the <b>Manage Accounts</b> button.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/admin/EditOnscreen2.png</stepScreen>
+			<stepHotspot>241,130,313,140</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Filter Search</stepTitle>
+			<stepTextTip><![CDATA[<p>Use the <b>Filter</b> and <b>Search</b> options to find the students you would like to edit.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/admin/EditOnscreen3.png</stepScreen>
+			<stepHotspot>99,94,191,134</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Select Students</stepTitle>
+			<stepTextTip><![CDATA[<p>Use the tick boxes to select your students.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/admin/EditOnscreen4.png</stepScreen>
+			<stepHotspot>174,238,183,246</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Access Admin</stepTitle>
+			<stepTextTip><![CDATA[<p>You then have the option to:</p><p>1. Edit the Registration Year and Class</p><p>2. Set the students as Leavers</p><p>3. Delete the Accounts</p>]]></stepTextTip>
+			<stepScreen>content/showImages/admin/EditOnscreen5.png</stepScreen>
+			<stepHotspot>390,141,507,194</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Changes happen</stepTitle>
+			<stepTextTip><![CDATA[<p>The changes will then take place immediately.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/admin/EditOnscreen5.png</stepScreen>
+			<stepHotspot></stepHotspot>	
+		</step>
+	</steps>	
+ </topic>

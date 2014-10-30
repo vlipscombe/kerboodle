@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <onThisPage>
+	<topicInfo>
+		<title>Home</title>
+		<intro><![CDATA[
+			<p>Your home page contains links to the main features that you will use for your everyday learning.</p>]]></intro>
+	</topicInfo>
+	<content>
+		<accPath>home</accPath>
+		<accContent>
+			<steps>STUcourselist</steps>
+		</accContent>
+		<accContent>
+			<steps>kbooklist</steps>
+		</accContent>
+		<accContent>
+			<steps>messages</steps>
+		</accContent>
+		<accContent>
+			<steps>joinGroup</steps>
+		</accContent>
+		<accContent>
+			<steps>events</steps>
+		</accContent>
+		<mainContent></mainContent>
+		<related></related>
+	</content>
+</onThisPage>

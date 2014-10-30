@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <step>
+	<contextInfo>
+		<title>Where do I get a Group Code?</title>
+		<id>wherecode</id>
+		<parent>groups_code</parent>
+		<previousTitle></previousTitle>
+		<previousLink></previousLink>
+		<nextTitle></nextTitle>
+		<nextLink></nextLink>
+	</contextInfo>
+	<content>
+		<code><![CDATA[
+			<p>If your teacher has created a Teaching Group and enabled a Group Code, they will be able to give the code to you.
+			
+			<p>A valid Group Code will;</p>
+			<ol>
+				<li>Contain at least 6 characters</li>
+				<li>Contain only letters and/or numbers</li>
+			</ol>
+		]]></code>
+	</content>
+</step>

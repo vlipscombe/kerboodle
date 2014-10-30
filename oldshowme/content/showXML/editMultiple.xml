@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <topic>
+	<topicTitle>Editing multiple accounts using the Import function</topicTitle>
+	<topicDialog><![CDATA[<p>On Kerboodle, you can use the export and re-import feature to edit multiple Student and Teacher accounts, rather than editing them individually.</p><p>Using this option, you can edit the Username, Password, First Name, Last Name, Email Address, Year, Class, User Type and Enable or Disable the account (using the Active column).</p><p>If you'd like to delete multiple accounts or set multiple Students and Teachers as leavers or restore them, please have a look at the <b>Editing Multiple Accounts On-Screen</b> tutorial.</p>]]></topicDialog>
+	<steps>
+		<step>
+			<stepTitle>Switch to Admin Mode</stepTitle>
+			<stepTextTip><![CDATA[Once logged into Kerboodle, click on the <b>Switch to Admin mode</b> button at the top of the screen and re-enter your password to access the Admin area.]]></stepTextTip>
+			<stepScreen>content/showImages/admin/AdminEditImport1.png</stepScreen>
+			<stepHotspot>333,14,416,28</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Export Accounts</stepTitle>
+			<stepTextTip><![CDATA[Click on the <b>Import Accounts</b> button.]]></stepTextTip>
+			<stepScreen>content/showImages/admin/AdminEditImport2.png</stepScreen>
+			<stepHotspot>101,130,166,139</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Save Export</stepTitle>
+			<stepTextTip><![CDATA[Choose the option to <b>Export and Re-import</b>.]]></stepTextTip>
+			<stepScreen>content/showImages/admin/AdminEditImport3.png</stepScreen>
+			<stepHotspot>415,320,513,335</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Accounts Created</stepTitle>
+			<stepTextTip><![CDATA[The Import Wizard will take you through the process step-by-step until you have successfully edited your student accounts.]]></stepTextTip>
+			<stepScreen>content/showImages/admin/AdminEditImport4.png</stepScreen>
+			<stepHotspot>412,34,512,78</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Confirm Changes</stepTitle>
+			<stepTextTip><![CDATA[The changes will then be applied to the accounts immediately.]]></stepTextTip>
+			<stepScreen>content/showImages/admin/AdminEditImport5.png</stepScreen>
+			<stepHotspot></stepHotspot>
+		</step>
+	</steps>	
+ </topic>

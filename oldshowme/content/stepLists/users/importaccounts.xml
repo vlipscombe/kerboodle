@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <step>
+	<contextInfo>
+		<title>Importing Multiple Accounts</title>
+		<id>importaccounts</id>
+		<parent>users</parent>
+		<previousTitle></previousTitle>
+		<previousLink></previousLink>
+		<nextTitle>Create a New Test</nextTitle>
+		<nextLink>createTest</nextLink>
+	</contextInfo>
+	<content>
+		<code><![CDATA[
+			<p>To import multiple accounts:</p>
+			<ol>
+				<li>Click on the <b>Import Accounts</b> button.</li>
+				<li>Use the information within the Import Wizard to choose the best option for your school.</li>
+				<li>Complete all of the steps in the Import Wizard to import your accounts</li>
+			</ol>
+			<p><a href="showMeHow.html?admins??importAccounts" onclick="window.open(this.href,'_blank','width=800,height=600,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes');return false;"><font color='#39A4DD'><b>Prefer to see it in action?</b> Show me how...</font></a></p>
+			<p><a href="tellMeHow.html?admins" onclick="window.open(this.href,'_blank','width=800,height=600,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes');return false;"><font color='#39A4DD'><b>Need more detail?</b> Tell me how...</font></a></p>
+		]]></code>
+	</content>
+</step>

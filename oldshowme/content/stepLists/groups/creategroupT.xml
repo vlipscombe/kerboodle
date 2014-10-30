@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <step>
+	<contextInfo>
+		<title>Create a new Teaching Group</title>
+		<id>creategroup</id>
+		<parent>groups</parent>
+		<previousTitle></previousTitle>
+		<previousLink></previousLink>
+		<nextTitle></nextTitle>
+		<nextLink></nextLink>
+	</contextInfo>
+	<content>
+		<code><![CDATA[
+			<p>To create a new Teaching Group:</p>
+			<ol>
+				<li>Click on the <b>Create a new Teaching Group</b> button.</li>
+				<li>Give the group a name and choose which Kerboodle Books and Courses you'd like the group to access.</li>
+				<li>Use the Filter and/or Search facility to find the <b>Teachers</b> you want to add to the group and tick the boxes next to their names. Then click <b>Save</b>.</li>
+				<li>Enter a <b>Group Code</b> for your Teaching Group and then click <b>Finish</b>.</li>
+			</ol>
+			<p><font color='#39A4DD'><b>Prefer to see it in action?</b></font> <a href="showMeHow.html?teachers??createGroupT" onclick="window.open(this.href,'_blank','width=800,height=600,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes');return false;">Creating a Teaching Group</a></p>
+			<p><font color='#39A4DD'><b>Need more detail?</b></font> <a href="tellMeHow.html?teachers" onclick="window.open(this.href,'_blank','width=800,height=600,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes');return false;">Tell me how...</a></p>
+		]]></code>
+	</content>
+</step>

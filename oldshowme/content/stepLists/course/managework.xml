@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <step>
+	<contextInfo>
+		<title>Editing Assignments</title>
+		<id>managework</id>
+		<parent>course</parent>
+		<previousTitle></previousTitle>
+		<previousLink></previousLink>
+		<nextTitle></nextTitle>
+		<nextLink></nextLink>
+	</contextInfo>
+	<content>
+		<code><![CDATA[
+			<p>To edit, copy or delete assignments:</p>
+			<ol>
+				<li>Use the <b>Assignments</b> panel on the left hand side.</li>
+				<li>Select the <b>Actions</b> drop down arrow.</li>
+				<li>Select <b>Manage my assignments</b>.</li>
+				<li>You then have the option to edit, copy or delete the assignments.</li>
+			</ol>
+			<p><font color='#39A4DD'><b>Prefer to see it in action?</b></font> <a href="http://www.kerboodle.com/help/secondary/showMeHow.html?teachers??manageAssignments" onclick="window.open(this.href,'_blank','width=800,height=600,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes');return false;">Managing Assignments</a></p>
+			
+		]]></code>
+	</content>
+</step>

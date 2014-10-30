@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <topic>
+	<topicTitle>Sharing Annotations with your Teaching Group</topicTitle>
+	<topicDialog><![CDATA[Once you've assigned the Kerboodle Book to your students, you can then choose to share your annotations and notes with them.]]></topicDialog>
+	<steps>
+		<step>
+			<stepTitle>Access Bookshelf</stepTitle>
+			<stepTextTip><![CDATA[<p>Make your annotations using the toolbar available.</p><p><b><i>Before</i></b> you save your annotations, click on the <b>Settings</b> icon.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/ShareAnnotations1.png</stepScreen>
+			<stepHotspot>325,371,341,389</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Annotate Book</stepTitle>
+			<stepTextTip><![CDATA[<p>Use the <b>'Add new Notes to'</b> drop down option to select your Teaching Group and click <b>OK</b>.</p><p><i>In the future, if you want to add annotations that don't display to students, ensure you change this setting to <b>'My Notes'</b> before saving your annotations.</i></p>]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/ShareAnnotations2.png</stepScreen>
+			<stepHotspot>144,264,285,272</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Click Settings</stepTitle>
+			<stepTextTip><![CDATA[Click on the <b>Save</b> icon and confirm.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/ShareAnnotations3.png</stepScreen>
+			<stepHotspot>304,372,321,389</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Add Notes</stepTitle>
+			<stepTextTip><![CDATA[When a student in your Teaching Group next accesses the Kerboodle Book, the contents will give them the option to view <b>New Annotations</b>.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/ShareAnnotations4.png</stepScreen>
+			<stepHotspot>240,152,291,160</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Click Save</stepTitle>
+			<stepTextTip><![CDATA[Your annotations and notes will then appear on their bookpage for them to access.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/ShareAnnotations5.png</stepScreen>
+			<stepHotspot></stepHotspot>	
+		</step>
+	</steps>	
+ </topic>

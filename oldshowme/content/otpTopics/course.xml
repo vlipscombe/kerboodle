@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <onThisPage>
+	<topicInfo>
+		<title>Course</title>
+		<intro><![CDATA[
+			<p>A course contains the resources that your organisation has bought from Nelson Thornes related to either an exam board specification or subject scheme of work. In both your home page and the Courses list you may see links to courses for other subjects - don't worry, this just means that another subject department in your organisation has also purchased content for Kerboodle.</p>
+		]]></intro>
+	</topicInfo>
+	<content>
+		<accPath></accPath>
+		<accContent>
+			<steps></steps>
+		</accContent>
+		<mainContent><![CDATA[
+			<p>Use the following links to find out more about using a Course:</p>
+			<ul>
+				<li><a href="../Help/Course_Launch.htm">Launch a course</a><div class="onThisPage_list">Launch a course to browse and view its contents.</div></li>
+				<li><a href="../Help/MyLessons.htm#CreateLesson">Create a Lesson or Assignment</a><div class="onThisPage_list">You can create a lesson to group together a set of interactive resources that will teach a learning objective. This lesson can then be used in the classroom.  You can also use it to assign work to your students, which they can complete in school or at home.</div></li>
+				<li><a href="onThisPage.html?tests">Create a Test</a><div class="onThisPage_list">The tests in your course are collections of question sets provided by Nelson Thornes. These Tests can be used to assess the understanding and progress which your students are making. You can also create a new test that uses any combination of the question sets within your course.</div></li>
+				<li><a href="../Help/Course_Assign.htm">Assign a course</a><div class="onThisPage_list">By default no Kerboodle course is assigned to a student. If you wish them to view resources, or assign work, you must allocate them access to it.</div></li>
+				<li><a href="../Help/Course_MakeHide.htm">Show\Hide my course links</a><div class="onThisPage_list">All of the courses you have purchased from Nelson Thornes will appear in the quick link list on your home page - you can hide any courses that you do not wish to see in this list (for example, courses purchased by another subject department).</div></li>
+			</ul>
+			<p>Use these links to find out more about modifying a Course or collaborating with your colleagues:</p>
+			<ul>
+				<li><a href="../Help/Course_Copy.htm">Copy a course</a><div class="onThisPage_list">Any teacher user within your organisation can see all the courses that you have bought from Nelson Thornes. These courses are read-only, so you cannot make changes to their structure. To allow you to make changes to a course you can copy it; this will create an editable course that you adapt to suit your needs. Copied courses can only be seen by the teacher who copied them (unless the course is shared with other teachers)</div></li>
+				<li><a href="../Help/Course_Edit.htm">Edit a course</a><div class="onThisPage_list">You can edit a copied course to make it suitable for your teaching style and to best meet the needs of your students. For example, you can add to, delete, hide and re-order the resources.(These changes can only be made to a copied course.)</div></li>
+				<li><a href="../Help/Course_Delete.htm">Delete a course</a><div class="onThisPage_list">You can delete any copied course that you no longer wish to use in Kerboodle (Please note that deleting courses is irreversible).</div></li>
+				<li><a href="../Help/Course_Share.htm">Delete a course</a><div class="onThisPage_list">If you have copied and edited a course you may wish to share it with a colleague so that they can use it too.</div></li>
+			</ul>
+		]]></mainContent>		
+		<related><![CDATA[
+				<ul>
+					<li><a href="../Help/Group.htm">Creating Groups</a></li>
+					<li><a href="../Help/User.htm">Creating Users</a></li>
+					<li><a href="../Help/Report.htm">Reports</a></li>
+				</ul>
+			]]></related>
+	</content>
+</onThisPage>

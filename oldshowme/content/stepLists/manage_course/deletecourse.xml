@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <step>
+	<contextInfo>
+		<title>Delete a copy course</title>
+		<id>deletecourse</id>
+		<parent>manage_course</parent>
+		<previousTitle></previousTitle>
+		<previousLink></previousLink>
+		<nextTitle></nextTitle>
+		<nextLink></nextLink>
+	</contextInfo>
+	<content>
+		<code><![CDATA[
+			<p>To delete a copy course:</p>
+			<ol>
+				<li>Find the course in the list.</li>
+				<li>Tick the box next to your Course name.</li>
+				<li>Click on the <b>Delete</b> button.</li>
+			</ol>
+			<p><font color='#39A4DD'>Please note:</font> you can only delete a copy of a course (not the original).</p>
+		]]></code>
+	</content>
+</step>

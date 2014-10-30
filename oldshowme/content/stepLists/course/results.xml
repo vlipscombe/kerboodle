@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <step>
+	<contextInfo>
+		<title>Results</title>
+		<id>results</id>
+		<parent>course</parent>
+		<previousTitle></previousTitle>
+		<previousLink></previousLink>
+		<nextTitle></nextTitle>
+		<nextLink></nextLink>
+	</contextInfo>
+	<content>
+		<code><![CDATA[
+			<p>To find your results from an Assignment or Test:</p>
+			<ol>
+				<li>The <b>Results</b> panel will show a summary of your results.</li>
+				<li>Click on the name of an assignment to see more detail (including comments from your teacher).</li>
+			</ol>
+			<p><font color='#39A4DD'><b>Prefer to see it in action?</b></font> <a href="http://www.kerboodle.com/help/secondary/showMeHow.html?students??viewMarks" onclick="window.open(this.href,'_blank','width=800,height=600,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes');return false;">Viewing your Marks on Kerboodle</a></p>
+		]]></code>
+	</content>
+</step>
+

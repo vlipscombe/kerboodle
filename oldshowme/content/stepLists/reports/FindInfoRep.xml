@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <step>
+	<contextInfo>
+		<title>Information within Reports</title>
+		<id>FindInfoRep</id>
+		<parent>reports</parent>
+		<previousTitle>Edit a Test</previousTitle>
+		<previousLink>editTest</previousLink>
+		<nextTitle>Copy a Test</nextTitle>
+		<nextLink>copyTest</nextLink>
+	</contextInfo>
+	<content>
+		<code><![CDATA[
+			<ol>
+				<li>Click on the name of your report to open it.</li>
+				<li>Your Report will contain an initial information page</li>
+					<ul>
+						<li>If an Assignment has been allocated a mark by the Teacher, the mark (which will be a percentage) will display. </li>
+						<li>If a Test Yourself activity has been assigned the report will also contain further report pages for more in-depth information on the Test result - click on any underlined text (such as student names or question titles) to view them.</li>
+					</ul>
+			</ol>
+			<p><font color='#39A4DD'>You can export the information within a report to another format, such as a spreadsheet, by clicking the <b>Export</b> button.</font></p>
+		]]></code>
+	</content>
+</step>

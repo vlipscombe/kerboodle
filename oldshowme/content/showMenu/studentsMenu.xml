@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<menu>
+	<welcomeText>
+		<text><![CDATA[<h3><p>These step-by-step guides are designed to help you use Kerboodle as a Student.</p><p>Click on the menu options on the left to get started!</p></h3>]]></text>
+	</welcomeText>
+	<menuItem>
+		<menuTitle>Exploring your Courses</menuTitle>
+		<subMenuItem>
+			<subTitle>Joining your Teaching Group</subTitle>
+			<link>joinGroup.xml</link>
+		</subMenuItem>
+		<subMenuItem>
+			<subTitle>Viewing the Kerboodle Library resources</subTitle>
+			<link>viewLibraryS.xml</link>
+		</subMenuItem>
+		<subMenuItem>
+			<subTitle>Using the Search feature</subTitle>
+			<link>searchLibraryS.xml</link>
+		</subMenuItem>
+		<subMenuItem>
+			<subTitle>Uploading your own Resources</subTitle>
+			<link>uploadResourcesS.xml</link>
+		</subMenuItem>
+	</menuItem>
+	<menuItem>
+		<menuTitle>Using Kerboodle Books</menuTitle>
+		<subMenuItem>
+			<subTitle>Accessing the Kerboodle Books</subTitle>
+			<link>viewBooksS.xml</link>
+		</subMenuItem>
+		<subMenuItem>
+			<subTitle>Annotating the Kerboodle Books</subTitle>
+			<link>annotateBooksS.xml</link>
+		</subMenuItem>
+	</menuItem>
+	<menuItem>
+		<menuTitle>Learning with Kerboodle</menuTitle>
+		<subMenuItem>
+			<subTitle>Accessing your Assignments</subTitle>
+			<link>accessAssignments.xml</link>
+		</subMenuItem>
+		<subMenuItem>
+			<subTitle>Completing a Test Yourself</subTitle>
+			<link>takeTest.xml</link>
+		</subMenuItem>
+		<subMenuItem>
+			<subTitle>Returning Work as part of an Assignment</subTitle>
+			<link>returnWork.xml</link>
+		</subMenuItem>
+		<subMenuItem>
+			<subTitle>Viewing your Marks on Kerboodle</subTitle>
+			<link>viewMarks.xml</link>
+		</subMenuItem>
+	</menuItem>
+</menu>	
+		

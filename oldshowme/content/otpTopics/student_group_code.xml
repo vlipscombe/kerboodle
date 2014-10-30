@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <onThisPage>
+	<topicInfo>
+		<title>Group Code</title>
+		<intro><![CDATA[
+			<p>On this page you can join a Teaching Group using a Group Code.</p>
+		]]></intro>
+	</topicInfo>
+	<content>
+		<accPath>group_code</accPath>
+		<accContent>
+			<steps>whatgroupcode</steps>
+		</accContent>
+		<accContent>
+			<steps>wheregroupcode</steps>
+		</accContent>
+		<related></related>
+	</content>
+</onThisPage>

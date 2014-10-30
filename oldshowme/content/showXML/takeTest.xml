@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <topic>
+	<topicTitle>Completing a Test Yourself</topicTitle>
+	<topicDialog><![CDATA[<p>Your teachers might use Kerboodle to set Test Yourself activities for you to complete. These tests are automatically marked by Kerboodle so they can help with your revision and can be used to track your progress.</p><p>Follow these steps to access and complete the Tests.</p>]]></topicDialog>
+	<steps>
+		<step>
+			<stepTitle>Access Assignment</stepTitle>
+			<stepTextTip><![CDATA[<p>Once logged into Kerboodle, access your course by clicking on the <b>course name</b> on your homepage.</p><p><b>Tip:</b> any current assignments and tests can also be accessed from the <b>Today's Events</b> panel.</p>
+]]></stepTextTip>
+			<stepScreen>content/showImages/students/TakeTest1.png</stepScreen>
+			<stepHotspot>10,153,96,165</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Click Menu Bar</stepTitle>
+			<stepTextTip><![CDATA[<p>Tests will be listed in the <b>Assignments</b> panel on your course page.</p><p>Just click on the title to launch the test.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/students/TakeTest2.png</stepScreen>
+			<stepHotspot>11,219,127,230</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Click Title</stepTitle>
+			<stepTextTip><![CDATA[<p>The test will open in a new window, click on the <b>Start Test</b> button to get started.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/students/TakeTest3.png</stepScreen>
+			<stepHotspot>400,377,437,392</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Click Title</stepTitle>
+			<stepTextTip><![CDATA[<p>Select your answers to each question, and use the <b>Next Question</b> button to move through the test.</p><p>Once you've finished, click on the <b>Submit Test</b> button.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/students/TakeTest4.png</stepScreen>
+			<stepHotspot>454,378,501,393</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Click Title</stepTitle>
+			<stepTextTip><![CDATA[<p>Once submitted, you'll be given your results on-screen. For more indepth information, click on the <b>Question Feedback</b> button.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/students/TakeTest5.png</stepScreen>
+			<stepHotspot>339,371,411,386</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Click Title</stepTitle>
+			<stepTextTip><![CDATA[<p>The question feedback will explain the answer to you and where possible, refer you back to the relevant chapter / section of the course to revise.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/students/TakeTest6.png</stepScreen>
+			<stepHotspot></stepHotspot>
+		</step>
+	</steps>	
+ </topic>

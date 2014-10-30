@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <onThisPage>
+	<topicInfo>
+		<title>My Course</title>
+		<intro><![CDATA[
+			<p>Your Course page contains everything you need to teach using Kerboodle Secondary.</p>
+			<p>You can show resources to your students, assign them access to the whole course and assign specific resources as work to complete (assignments).</p>
+			<p>If you want to adapt this course, you can also copy and then edit it - see related topics below.</p>
+		]]></intro>
+	</topicInfo>
+	<content>
+		<accPath>course</accPath>
+		<accContent>
+			<steps>findresource</steps>
+		</accContent>
+		<accContent>
+			<steps>addresource</steps>
+		</accContent>
+		<accContent>
+			<steps>createlesson</steps>
+		</accContent>
+		<accContent>
+			<steps>createassignment</steps>
+		</accContent>
+		<accContent>
+			<steps>settest</steps>
+		</accContent>
+		<accContent>
+			<steps>addgroup</steps>
+		</accContent>
+		<accContent>
+			<steps>report</steps>
+		</accContent>
+		<accContent>
+			<steps>managework</steps>
+		</accContent>
+		<mainContent></mainContent>
+		<related><![CDATA[
+				<ul>
+					<li><a href="showMeHow.html?teachers?Adapting?" onclick="window.open(this.href,'_blank','width=800,height=600,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes');return false;">Show me how to adapt this Course to suit my teaching style</a></li>
+					<li><a href="showMeHow.html?teachers??changePassword" onclick="window.open(this.href,'_blank','width=800,height=600,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes');return false;">Show me how to change Student passwords</a></li>
+				</ul>
+			]]></related>
+	</content>
+</onThisPage>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <step>
+	<contextInfo>
+		<title>Edit a Test</title>
+		<id>editTest</id>
+		<parent>tests</parent>
+		<previousTitle>Create a New Test</previousTitle>
+		<previousLink>createTest</previousLink>
+		<nextTitle>Assign a Test</nextTitle>
+		<nextLink>assignTest</nextLink>
+	</contextInfo>
+	<content>
+		<code><![CDATA[
+			<ol>
+				<li>Click <b>Edit</b> against the name of your test.</li>
+				<li>Make any changes to the <b>Name</b> or <b>Description</b> of your Test.</li>
+				<li>When you have finished making changes, click <b>Ok</b>.</li>
+			</ol>
+		]]></code>
+	</content>
+</step>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <step>
+	<contextInfo>
+		<title>Hide courses from your home page</title>
+		<id>hideHP</id>
+		<parent>manage_course</parent>
+		<previousTitle></previousTitle>
+		<previousLink></previousLink>
+		<nextTitle></nextTitle>
+		<nextLink></nextLink>
+	</contextInfo>
+	<content>
+		<code><![CDATA[
+			<p>To hide courses from your home page:</p>
+			<ol>
+				<li>Find the course(s) in the list.</li>
+				<li>Tick the boxes next to your Course names.</li>
+				<li>Click on the <b>Hide on home page</b> button.</li>
+			</ol>
+		]]></code>
+	</content>
+</step>

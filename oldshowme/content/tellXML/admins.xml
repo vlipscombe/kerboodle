@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <tellMeHow>
+	<pageDetails>
+		<pageTitle></pageTitle>
+		<pageLink>tellMeHow.html?teachers</pageLink>
+		<linkText>Click here for the Teacher guide</linkText>
+	</pageDetails>
+	<topics>
+		<topic>
+			<topicTitle>Welcome to Kerboodle</topicTitle>
+			<topicShort>Welcome</topicShort>
+			<topicFile>admins/welcome</topicFile>	
+		</topic>
+		<topic>
+			<topicTitle>New Accounts</topicTitle>
+			<topicShort>CSTA</topicShort>
+			<topicFile>admins/newAccounts</topicFile>	
+		</topic>
+		<topic>
+			<topicTitle>Managing Accounts</topicTitle>
+			<topicShort>MGA</topicShort>
+			<topicFile>admins/manageAccounts</topicFile>	
+		</topic>
+		<topic>
+			<topicTitle>Teaching Groups</topicTitle>
+			<topicShort>MAG</topicShort>
+			<topicFile>admins/manageGroups</topicFile>	
+		</topic>
+	</topics>
+ </tellMeHow>

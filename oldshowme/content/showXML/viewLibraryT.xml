@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <topic>
+	<topicTitle>Viewing the Kerboodle Library resources</topicTitle>
+	<topicDialog><![CDATA[<p>The Kerboodle resources are stored in the course Library.</p>]]></topicDialog>
+	<steps>
+		<step>
+			<stepTitle>Access the Course</stepTitle>
+			<stepTextTip><![CDATA[<p>Once logged into Kerboodle, access your course by clicking on the <b>course name</b> on your homepage or via the <b>Manage Courses</b> page.</p>]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/ViewLibrary1.png</stepScreen>
+			<stepHotspot>12,121,96,134</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>Access the Library</stepTitle>
+			<stepTextTip><![CDATA[Once you've clicked on the course name, the page will automatically open on the <b>Library</b>.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/ViewLibrary2.png</stepScreen>
+			<stepHotspot>149,148,546,167</stepHotspot>	
+		</step>
+		<step>
+			<stepTitle>View Units and Chapters</stepTitle>
+			<stepTextTip><![CDATA[Use the <b>+</b> icons to open the tree structure and view the units and chapters.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/ViewLibrary3.png</stepScreen>
+			<stepHotspot>156,189,171,200</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Click on resource titles</stepTitle>
+			<stepTextTip><![CDATA[Click on the resource titles to open the resources.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/ViewLibrary4.png</stepScreen>
+			<stepHotspot>174,217,319,230</stepHotspot>
+		</step>
+		<step>
+			<stepTitle>Resources open</stepTitle>
+			<stepTextTip><![CDATA[Your resources will then launch in a new window.]]></stepTextTip>
+			<stepScreen>content/showImages/teachers/ViewLibrary5.png</stepScreen>
+			<stepHotspot></stepHotspot>
+		</step>
+	</steps>	
+ </topic>

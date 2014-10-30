@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <step>
+	<contextInfo>
+		<title>Adding an event to your Calendar</title>
+		<id>addEvent</id>
+		<parent>calendar</parent>
+		<previousTitle>Overview of the Events Tab</previousTitle>
+		<previousLink>eventTab</previousLink>
+		<nextTitle></nextTitle>
+		<nextLink></nextLink>
+	</contextInfo>
+	<content>
+		<code><![CDATA[
+				<p>To create a new event:</p>
+				<ol>
+					<li>Click on the <b>Create a New Event</b> button.</li>
+					<li>Complete the details in the pop-up and click <b>Save</b>.</li>
+				</ol>
+				<p><b>Please note:</b> Assignments will automatically appear in your calendar.</p>
+		]]></code>
+	</content>
+</step>

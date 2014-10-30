@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+ <onThisPage>
+	<topicInfo>
+		<title>Reports</title>
+		<intro><![CDATA[
+			<p>Use this page to see reports for individual students or entire groups.</p>
+			<p>The reports tab will show the reports for both Test Yourself activities and assignment reports.</p>
+		]]></intro>
+	</topicInfo>
+	<content>
+		<accPath>reports</accPath>
+		<accContent>
+			<steps>findReportStu</steps>
+		</accContent>
+		<accContent>
+			<steps>findRepGrp</steps>
+		</accContent>
+		<accContent>
+			<steps>findRepCou</steps>
+		</accContent>
+		<mainContent></mainContent>
+		<related></related>
+	</content>
+</onThisPage>
